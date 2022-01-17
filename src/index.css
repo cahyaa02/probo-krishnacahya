@@ -1,0 +1,417 @@
+:root {
+  --dark-blue: #0057E4 !important;
+  --light-blue: #00EAFF !important;
+  --white: #FFFFFF !important;
+  --black: #000000 !important;
+  --logo: 'La Belle Aurore', cursive !important;
+  --title: 'Space Mono', monospace !important;
+  --body: 'Manrope', sans-serif !important
+}
+
+body {
+  font-family: var(--body) !important;
+  font-size: var(--normal-font-size);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1000%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='%230e2a47'%3e%3c/rect%3e%3cpath d='M0%2c389.107C104.406%2c392.869%2c207.799%2c516.422%2c297.911%2c463.558C386.736%2c411.45%2c344.605%2c269.324%2c372.948%2c170.32C396.07%2c89.554%2c448.56%2c19.437%2c449.107%2c-64.572C449.708%2c-156.897%2c428.577%2c-249.943%2c376.179%2c-325.961C320.427%2c-406.845%2c244.301%2c-485.704%2c147.459%2c-502.198C52.461%2c-518.378%2c-35.28%2c-455.451%2c-120.553%2c-410.564C-191.412%2c-373.264%2c-254.426%2c-326.359%2c-304.816%2c-264.124C-353.887%2c-203.518%2c-395.493%2c-135.641%2c-405.744%2c-58.337C-415.933%2c18.503%2c-379.991%2c89.868%2c-361.745%2c165.203C-338.685%2c260.416%2c-367.727%2c391.016%2c-284.426%2c442.575C-200.702%2c494.396%2c-98.4%2c385.561%2c0%2c389.107' fill='%230b2239'%3e%3c/path%3e%3cpath d='M1440 876.553C1501.922 871.7180000000001 1565.778 870.591 1618.327 837.482 1671.112 804.2239999999999 1706.503 750.281 1731.286 693.0260000000001 1755.721 636.574 1759.222 575.749 1758.241 514.244 1757.133 444.821 1767.219 368.145 1725.22 312.856 1682.722 256.91 1604.931 247.452 1538.41 224.84699999999998 1468.885 201.221 1400.807 170.171 1327.774 177.793 1246.299 186.29700000000003 1158.999 208.11900000000003 1105.371 270.043 1051.746 331.96299999999997 1050.824 421.568 1045.85 503.33 1041.214 579.539 1041.286 658.347 1077.665 725.473 1112.903 790.495 1174.57 838.338 1242.831 866.8 1304.8220000000001 892.648 1373.04 881.781 1440 876.553' fill='%23113255'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1000'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e") fixed center no-repeat !important;
+  background-size: cover !important;
+  color: var(--white) !important;
+  scroll-behavior: smooth !important
+}
+
+::-webkit-scrollbar {
+  height: 10px
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--black)
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  border: solid 4px var(--black);
+  background-color: var(--dark-blue)
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--light-blue)
+}
+
+::selection {
+  background-color: var(--light-blue);
+  color: var(--black)
+}
+
+a {
+  text-decoration: none !important;
+  color: var(--white) !important
+}
+
+a:hover {
+  color: var(--light-blue) !important
+}
+
+i {
+  padding: .75rem
+}
+
+svg {
+  margin: 0 .75rem 0 .8rem !important
+}
+
+h1,
+h2,
+h3,
+nav,
+q,
+summary {
+  font-family: var(--title) !important
+}
+
+h4,
+h5,
+h6 {
+  font-weight: 700 !important
+}
+
+summary {
+  font-size: x-large !important
+}
+
+#assets,
+img {
+  max-width: 100% !important;
+  -webkit-user-drag: none !important;
+  user-select: none !important
+}
+
+#assets {
+  max-width: 72.5% !important
+}
+
+nav {
+  padding: .75rem 0 .75rem 0 !important;
+  position: relative !important
+}
+
+.logo {
+  max-width: 3rem !important
+}
+
+.pk {
+  font-family: var(--logo) !important;
+  font-size: 1.5rem;
+  letter-spacing: .1rem
+}
+
+.pk:hover {
+  background-clip: text;
+  -webkit-background-clip: text;
+  animation: pk 2s ease-in-out infinite alternate;
+  -webkit-animation: pk 2s ease-in-out infinite alternate;
+  -moz-animation: pk 2s ease-in-out infinite alternate
+}
+
+@keyframes pk {
+  from {
+    text-shadow: 0 0 5px var(--light-blue), 0 0 10px var(--light-blue)
+  }
+
+  to {
+    text-shadow: 0 0 10px var(--light-blue), 0 0 15px var(--light-blue)
+  }
+}
+
+.nav-link {
+  color: var(--white) !important;
+  border-bottom: solid 2px transparent
+}
+
+.nav-link:hover {
+  color: var(--light-blue) !important;
+}
+
+.active {
+  color: var(--light-blue) !important;
+  border-bottom: solid 2px var(--light-blue) !important
+}
+
+footer {
+  position: absolute;
+  z-index: 100
+}
+
+span {
+  font-size: xx-large
+}
+
+.btn {
+  border: 0 !important;
+  outline: 0 !important;
+  border-radius: 50px !important;
+  padding: .75rem 2rem !important;
+  background-color: var(--dark-blue) !important;
+  color: var(--white) !important
+}
+
+.btn:hover {
+  box-shadow: 0 0 10px .5px var(--dark-blue);
+  filter: brightness(110%)
+}
+
+.btn:active {
+  transform: translateY(10px);
+  box-shadow: none !important
+}
+
+hr {
+  height: 2px !important;
+  border-radius: 50px !important
+}
+
+section {
+  padding: 3rem 0 !important
+}
+
+.card {
+  padding: 1.25rem 0 .5rem 1.25rem;
+  border-radius: 15px !important;
+  border: solid 2px #fffFFF25 !important;
+  background: #fffFFF1A !important;
+  backdrop-filter: blur(3px) !important;
+  -webkit-backdrop-filter: blur(3px) !important
+}
+
+.hero {
+  margin: 3.5rem 0
+}
+
+.hello {
+  padding-bottom: 3.5rem
+}
+
+.typeCursor {
+  font-size: larger;
+  font-weight: bolder;
+  color: var(--light-blue);
+  animation: blink 1s infinite linear
+}
+
+@keyframes blink {
+  49.99% {
+    opacity: 1
+  }
+
+  50% {
+    opacity: 0
+  }
+
+  100% {
+    opacity: 0
+  }
+}
+
+.cahyaa {
+  max-width: 130% !important
+}
+
+.pulse {
+  animation: pulse 3s infinite linear
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 var(--dark-blue)
+  }
+
+  75% {
+    box-shadow: 0 0 10px .5px var(--dark-blue)
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 var(--dark-blue)
+  }
+}
+
+.m-r-0 {
+  margin-right: 0
+}
+
+.m-l-0 {
+  margin-left: 0
+}
+
+.bi-arrow-up {
+  font-size: 1.75rem !important;
+  color: var(--white) !important
+}
+
+.bi-arrow-up:hover {
+  color: var(--light-blue) !important
+}
+
+input,
+textarea {
+  border: solid 2px var(--black) !important;
+  color: var(--white) !important
+}
+
+input:focus,
+textarea:focus {
+  border: solid 3px var(--light-blue) !important;
+  background-color: var(--black) !important;
+  border-radius: 5px;
+  box-shadow: none !important
+}
+
+.caret {
+  caret-color: var(--light-blue)
+}
+
+.bi-discord,
+.bi-github,
+.bi-linkedin,
+.bi-telegram {
+  font-size: 2.5rem
+}
+
+.bi-linkedin {
+  color: #007bb6
+}
+
+.bi-discord {
+  color: #5865f2
+}
+
+.bi-telegram {
+  color: #2ba8db
+}
+
+.projects {
+  margin-bottom: 2.75rem;
+  padding: 1.75rem !important
+}
+
+.transparent {
+  width: fit-content;
+  margin-bottom: .5rem !important;
+  padding: 0 !important;
+  cursor: text !important;
+  background: #00000000 !important
+}
+
+.transparent:hover {
+  box-shadow: none !important
+}
+
+.transparent:active {
+  transform: none !important
+}
+
+.category-time {
+  padding-left: 0 !important
+}
+
+.tag {
+  width: fit-content !important;
+  margin: .75rem .25rem .5rem .25rem !important;
+  padding: .25rem .75rem !important;
+  border-radius: 5px !important
+}
+
+.skills-n {
+  max-width: 90% !important
+}
+
+.skills-s {
+  max-width: 70% !important
+}
+
+.skills-xs {
+  max-width: 65% !important
+}
+
+@media screen and (max-width:768px) {
+  body {
+    background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='414' height='736' preserveAspectRatio='none' viewBox='0 0 414 736'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1055%26quot%3b)' fill='none'%3e%3crect width='414' height='736' x='0' y='0' fill='%230e2a47'%3e%3c/rect%3e%3cpath d='M0%2c226.165C43.964%2c236.047%2c93.767%2c229.142%2c130.381%2c202.876C166.508%2c176.959%2c176.458%2c129.388%2c192.633%2c87.973C207.915%2c48.845%2c224.333%2c10.015%2c222.089%2c-31.932C219.712%2c-76.365%2c209.146%2c-122.352%2c179.6%2c-155.624C150.191%2c-188.742%2c105.818%2c-204.07%2c62.233%2c-211.945C21.627%2c-219.282%2c-21.484%2c-217.213%2c-58.318%2c-198.612C-92.305%2c-181.449%2c-109.482%2c-145.028%2c-131.62%2c-114.05C-151.629%2c-86.052%2c-169.751%2c-58.419%2c-181.596%2c-26.109C-196.134%2c13.547%2c-226.372%2c56.951%2c-208.304%2c95.129C-190.196%2c133.392%2c-133.297%2c129.12%2c-97.466%2c151.66C-62.136%2c173.885%2c-40.723%2c217.011%2c0%2c226.165' fill='%230b2239'%3e%3c/path%3e%3cpath d='M414 985.157C460.547 979.912 501.471 958.492 542.715 936.285 587.336 912.26 642.859 896.226 664.379 850.344 685.924 804.41 671.915 748.652 652.7570000000001 701.672 635.9970000000001 660.572 592.398 640.111 564.5509999999999 605.547 535.266 569.1990000000001 528.016 512.148 485.159 493.653 442.013 475.033 393.073 497.975 348.29200000000003 512.219 304.408 526.178 256.722 538.876 228.526 575.2860000000001 200.796 611.095 203.929 660.064 198.944 705.08 194.124 748.601 189.185 791.32 199.9 833.776 212.294 882.8820000000001 223.836 938.315 265.18899999999996 967.554 306.817 996.9870000000001 363.339 990.865 414 985.157' fill='%23113255'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1055'%3e%3crect width='414' height='736' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e") fixed center no-repeat !important;
+    background-size: cover !important
+  }
+
+  h2 {
+    font-size: x-large !important
+  }
+
+  h4,
+  summary {
+    font-size: larger !important
+  }
+
+  .navbar-toggler {
+    border: none !important
+  }
+
+  .navbar-toggler-icon {
+    font-size: x-large !important
+  }
+
+  .nav-link:hover {
+    transform: none !important
+  }
+
+  footer {
+    text-align: center;
+    line-height: 45px
+  }
+
+  span {
+    font-size: large !important
+  }
+
+  #assets {
+    max-width: 70% !important;
+    padding: .75rem 2rem 2rem 2rem
+  }
+
+  .hero {
+    margin: 1rem 0 !important
+  }
+
+  .hello {
+    font-size: x-large
+  }
+
+  .cahyaa {
+    max-width: 100% !important;
+    padding: 4rem 5rem 0 5rem !important
+  }
+
+  .introduction {
+    padding: 1rem 1.5rem !important
+  }
+
+  .about-me {
+    margin: 2.5rem 3rem 0 0 !important
+  }
+
+  form {
+    margin: 1rem
+  }
+
+  #contact-lists {
+    text-align: start !important
+  }
+
+  .medsos {
+    margin-left: .75rem
+  }
+
+  .tengah {
+    width: 90% !important;
+    margin: 2.25rem 2rem 2.25rem 1.25rem
+  }
+
+  .projects {
+    width: 90% !important;
+    margin: 2.5rem 1.25rem 2.5rem 1.25rem
+  }
+}
