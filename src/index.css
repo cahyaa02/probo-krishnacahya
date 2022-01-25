@@ -3,18 +3,15 @@
   --light-blue: #00EAFF !important;
   --white: #FFFFFF !important;
   --black: #000000 !important;
-  --logo: 'La Belle Aurore', cursive !important;
-  --title: 'Space Mono', monospace !important;
-  --body: 'Manrope', sans-serif !important
+  --font-primary: 'Manrope', sans-serif !important
 }
 
 body {
-  font-family: var(--body) !important;
+  font-family: var(--font-primary) !important;
   font-size: var(--normal-font-size);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1000%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='%230e2a47'%3e%3c/rect%3e%3cpath d='M0%2c389.107C104.406%2c392.869%2c207.799%2c516.422%2c297.911%2c463.558C386.736%2c411.45%2c344.605%2c269.324%2c372.948%2c170.32C396.07%2c89.554%2c448.56%2c19.437%2c449.107%2c-64.572C449.708%2c-156.897%2c428.577%2c-249.943%2c376.179%2c-325.961C320.427%2c-406.845%2c244.301%2c-485.704%2c147.459%2c-502.198C52.461%2c-518.378%2c-35.28%2c-455.451%2c-120.553%2c-410.564C-191.412%2c-373.264%2c-254.426%2c-326.359%2c-304.816%2c-264.124C-353.887%2c-203.518%2c-395.493%2c-135.641%2c-405.744%2c-58.337C-415.933%2c18.503%2c-379.991%2c89.868%2c-361.745%2c165.203C-338.685%2c260.416%2c-367.727%2c391.016%2c-284.426%2c442.575C-200.702%2c494.396%2c-98.4%2c385.561%2c0%2c389.107' fill='%230b2239'%3e%3c/path%3e%3cpath d='M1440 876.553C1501.922 871.7180000000001 1565.778 870.591 1618.327 837.482 1671.112 804.2239999999999 1706.503 750.281 1731.286 693.0260000000001 1755.721 636.574 1759.222 575.749 1758.241 514.244 1757.133 444.821 1767.219 368.145 1725.22 312.856 1682.722 256.91 1604.931 247.452 1538.41 224.84699999999998 1468.885 201.221 1400.807 170.171 1327.774 177.793 1246.299 186.29700000000003 1158.999 208.11900000000003 1105.371 270.043 1051.746 331.96299999999997 1050.824 421.568 1045.85 503.33 1041.214 579.539 1041.286 658.347 1077.665 725.473 1112.903 790.495 1174.57 838.338 1242.831 866.8 1304.8220000000001 892.648 1373.04 881.781 1440 876.553' fill='%23113255'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1000'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e") fixed center no-repeat !important;
-  background-size: cover !important;
+  background: url(/public/images/bg-desktop.svg) fixed center / cover no-repeat;
   color: var(--white) !important;
   scroll-behavior: smooth !important
 }
