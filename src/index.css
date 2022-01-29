@@ -133,10 +133,6 @@ nav {
   border-bottom: solid 2px var(--light-blue) !important
 }
 
-footer {
-  position: absolute;
-  z-index: 100
-}
 
 span {
   font-size: xx-large
@@ -353,11 +349,6 @@ textarea:focus {
 
   .nav-link:hover {
     transform: none !important
-  }
-
-  footer {
-    text-align: center;
-    line-height: 45px
   }
 
   span {

@@ -39,7 +39,7 @@ function Projects() {
               <p>
                 I took on a front-end challenges that included creating web
                 designs through{" "}
-                <a href="https://www.frontendmentor.io" target="_blank">
+                <a href="https://www.frontendmentor.io" target="_blank" rel="noreferrer">
                   Frontend Mentor
                 </a>
                 . You can see the challenges I have completed through the table
@@ -48,7 +48,7 @@ function Projects() {
               <br />
               <a
                 href="https://frontend-mentor-challenges-pk.github.io"
-                target="_blank"
+                target="_blank" rel="noreferrer"
               >
                 <button class="btn btn-primary" onclick="this.blur();">
                   <b>Visit Project</b>
@@ -76,7 +76,7 @@ function Projects() {
                 </button>
                 <br />
                 <i class="bi bi-people-fill category-time"></i>
-                <a href="http://bit.ly/nathanaelabel" target="_blank">
+                <a href="http://bit.ly/nathanaelabel" target="_blank" rel="noreferrer">
                   Nathanael Abel Arianto
                 </a>
               </div>
@@ -90,7 +90,7 @@ function Projects() {
                 the Republic of Indonesia (KEP. 102/MEN/VI/2004 Kemnaker).
               </p>
               <br />
-              <a href="https://youtu.be/3TW4evaf5bE" target="_blank">
+              <a href="https://youtu.be/3TW4evaf5bE" target="_blank" rel="noreferrer">
                 <button class="btn btn-primary" onclick="this.blur();">
                   <b>Visit Project</b>
                 </button>
@@ -118,11 +118,11 @@ function Projects() {
                 </button>
                 <br />
                 <i class="bi bi-people-fill category-time"></i>
-                <a href="http://bit.ly/nathanaelabel" target="_blank">
+                <a href="http://bit.ly/nathanaelabel" target="_blank" rel="noreferrer">
                   Nathanael Abel Arianto
                 </a>
                 ,{" "}
-                <a href="http://bit.ly/vanness-zhong-a" target="_blank">
+                <a href="http://bit.ly/vanness-zhong-a" target="_blank" rel="noreferrer">
                   Vanness Zhong Anthony
                 </a>
               </div>
@@ -136,7 +136,7 @@ function Projects() {
                 providers.
               </p>
               <br />
-              <a href="http://bit.ly/partnerseeker2021" target="_blank">
+              <a href="http://bit.ly/partnerseeker2021" target="_blank" rel="noreferrer">
                 <button class="btn btn-primary" onclick="this.blur();">
                   <b>Visit Project</b>
                 </button>
@@ -162,7 +162,7 @@ function Projects() {
                 </button>
                 <br />
                 <i class="bi bi-people-fill category-time"></i>
-                <a href="http://bit.ly/nathanaelabel" target="_blank">
+                <a href="http://bit.ly/nathanaelabel" target="_blank" rel="noreferrer">
                   Nathanael Abel Arianto
                 </a>
               </div>
@@ -177,7 +177,7 @@ function Projects() {
                 Indonesia (KEP. 102/MEN/VI/2004 Kemnaker).
               </p>
               <br />
-              <a href="http://bit.ly/LemburanKu" target="_blank">
+              <a href="http://bit.ly/LemburanKu" target="_blank" rel="noreferrer">
                 <button class="btn btn-primary" onclick="this.blur();">
                   <b>Visit Project</b>
                 </button>
