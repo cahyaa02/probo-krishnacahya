@@ -4,13 +4,20 @@ import { NavLink } from "react-router-dom";
 function Navigation() {
   return (
     <div className="navigation">
-      <nav className="navbar navbar-expand-lg navbar-dark user-select-none">
+      <nav className="navbar navbar-expand-lg navbar-dark py-3 user-select-none">
         <div className="container">
-          <NavLink className="navbar-brand" to="/">
-            <strong>Probo Krishnacahya</strong>
+          <NavLink
+            className="navbar-brand"
+            to="/"
+            data-bs-toggle="tooltip"
+            data-bs-placement="bottom"
+            title="Homepage"
+          >
+            <img src="images/logo.svg" alt="Logo" class="logo me-2" />
+            <strong class="pk">Probo Krishnacahya</strong>
           </NavLink>
           <button
-            class="navbar-toggler"
+            class="navbar-toggler collapsed border-0"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarNav"
@@ -19,6 +26,7 @@ function Navigation() {
             aria-label="Toggle navigation"
           >
             <span class="navbar-toggler-icon"></span>
+            <span class="bi bi-x-lg fs-1"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav ms-auto">

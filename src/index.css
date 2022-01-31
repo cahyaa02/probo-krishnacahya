@@ -1,9 +1,10 @@
 :root {
-  --dark-blue: #0057E4 !important;
-  --light-blue: #00EAFF !important;
-  --white: #FFFFFF !important;
-  --black: #000000 !important;
-  --font-primary: 'Manrope', sans-serif !important
+  --color-primary: #0057E4 !important;
+  --color-secondary: #00EAFF !important;
+  --text-primary: #FFFFFF !important;
+  --text-secondary: #000000 !important;
+  --font-primary: 'Manrope', sans-serif !important;
+  --font-secondary: 'Exo 2', sans-serif !important;
 }
 
 body {
@@ -11,8 +12,7 @@ body {
   font-size: var(--normal-font-size);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: url(/public/images/bg-desktop.svg) fixed center / cover no-repeat;
-  color: var(--white) !important;
+  background: url(/public/images/background-desktop.svg) fixed center / cover no-repeat;
   scroll-behavior: smooth !important
 }
 
@@ -21,35 +21,36 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background-color: var(--black)
+  background-color: var(--text-secondary)
 }
 
 ::-webkit-scrollbar-thumb {
   border-radius: 10px;
-  border: solid 4px var(--black);
-  background-color: var(--dark-blue)
+  border: solid 4px var(--text-secondary);
+  background-color: var(--color-primary)
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background-color: var(--light-blue)
+  background-color: var(--color-secondary)
 }
 
 ::selection {
-  background-color: var(--light-blue);
-  color: var(--black)
+  background-color: var(--color-secondary);
+  color: var(--text-secondary)
 }
 
 a {
   text-decoration: none !important;
-  color: var(--white) !important
+  color: var(--text-primary) !important;
 }
 
 a:hover {
-  color: var(--light-blue) !important
+  color: var(--color-secondary) !important;
 }
 
-i {
-  padding: .75rem
+.social-media {
+  color: var(--color-secondary);
+  font-size: xx-large;
 }
 
 svg {
@@ -58,21 +59,21 @@ svg {
 
 h1,
 h2,
-h3,
-nav,
-q,
-summary {
-  font-family: var(--title) !important
+h3 {
+  font-family: var(--font-primary);
+  font-weight: 800 !important;
 }
 
 h4,
 h5,
 h6 {
-  font-weight: 700 !important
+  font-family: var(--font-secondary);
+  font-weight: 600;
 }
 
-summary {
-  font-size: x-large !important
+nav,
+footer {
+  font-family: var(--font-secondary);
 }
 
 #assets,
@@ -86,19 +87,18 @@ img {
   max-width: 72.5% !important
 }
 
-nav {
-  padding: .75rem 0 .75rem 0 !important;
-  position: relative !important
+.logo {
+  max-width: 10% !important;
 }
 
-.logo {
+.font-secondary {
   max-width: 3rem !important
 }
 
 .pk {
-  font-family: var(--logo) !important;
+  font-family: var(--font-secondary) !important;
   font-size: 1.5rem;
-  letter-spacing: .1rem
+  border-bottom: transparent !important
 }
 
 .pk:hover {
@@ -111,50 +111,56 @@ nav {
 
 @keyframes pk {
   from {
-    text-shadow: 0 0 5px var(--light-blue), 0 0 10px var(--light-blue)
+    text-shadow: 0 0 1px var(--color-secondary), 0 0 3px var(--color-secondary)
   }
 
   to {
-    text-shadow: 0 0 10px var(--light-blue), 0 0 15px var(--light-blue)
+    text-shadow: 0 0 3px var(--color-secondary), 0 0 5px var(--color-secondary)
   }
 }
 
 .nav-link {
-  color: var(--white) !important;
-  border-bottom: solid 2px transparent
+  color: var(--text-primary) !important;
 }
 
 .nav-link:hover {
-  color: var(--light-blue) !important;
+  color: var(--color-secondary) !important;
 }
 
-.active {
-  color: var(--light-blue) !important;
-  border-bottom: solid 2px var(--light-blue) !important
+.nav-link.active {
+  font-weight: 800 !important;
+  color: var(--color-secondary) !important;
+  border-bottom: solid 2px var(--color-secondary);
 }
 
+.navbar-toggler.collapsed .bi.bi-x-lg {
+  display: none;
+}
+
+.navbar-toggler:not(.collapsed) .navbar-toggler-icon {
+  display: inline;
+}
 
 span {
-  font-size: xx-large
+  font-size: xx-large;
 }
 
 .btn {
   border: 0 !important;
   outline: 0 !important;
-  border-radius: 50px !important;
-  padding: .75rem 2rem !important;
-  background-color: var(--dark-blue) !important;
-  color: var(--white) !important
+  border-radius: 5px !important;
+  padding: .75rem 1rem !important;
+  background-color: var(--color-primary) !important;
+  color: var(--text-primary) !important
 }
 
 .btn:hover {
-  box-shadow: 0 0 10px .5px var(--dark-blue);
-  filter: brightness(110%)
+  box-shadow: 0 0 10px .5px var(--color-primary);
+  filter: brightness(110%);
 }
 
 .btn:active {
-  transform: translateY(10px);
-  box-shadow: none !important
+  transform: scale(.9);
 }
 
 hr {
@@ -167,27 +173,22 @@ section {
 }
 
 .card {
-  padding: 1.25rem 0 .5rem 1.25rem;
   border-radius: 15px !important;
   border: solid 2px #fffFFF25 !important;
   background: #fffFFF1A !important;
-  backdrop-filter: blur(3px) !important;
-  -webkit-backdrop-filter: blur(3px) !important
+  backdrop-filter: blur(5px) !important;
+  -webkit-backdrop-filter: blur(5px) !important
 }
 
 .hero {
   margin: 3.5rem 0
 }
 
-.hello {
-  padding-bottom: 3.5rem
-}
-
 .typeCursor {
   font-size: larger;
   font-weight: bolder;
-  color: var(--light-blue);
-  animation: blink 1s infinite linear
+  color: var(--color-secondary);
+  animation: blink 1s infinite linear;
 }
 
 @keyframes blink {
@@ -214,15 +215,15 @@ section {
 
 @keyframes pulse {
   0% {
-    box-shadow: 0 0 0 0 var(--dark-blue)
+    box-shadow: 0 0 0 0 var(--color-primary)
   }
 
   75% {
-    box-shadow: 0 0 10px .5px var(--dark-blue)
+    box-shadow: 0 0 10px .5px var(--color-primary)
   }
 
   100% {
-    box-shadow: 0 0 0 0 var(--dark-blue)
+    box-shadow: 0 0 0 0 var(--color-primary)
   }
 }
 
@@ -236,48 +237,29 @@ section {
 
 .bi-arrow-up {
   font-size: 1.75rem !important;
-  color: var(--white) !important
+  color: var(--text-primary) !important
 }
 
 .bi-arrow-up:hover {
-  color: var(--light-blue) !important
+  color: var(--color-secondary) !important
 }
 
 input,
 textarea {
-  border: solid 2px var(--black) !important;
-  color: var(--white) !important
+  border: solid 2px var(--text-secondary) !important;
+  color: var(--text-primary) !important
 }
 
 input:focus,
 textarea:focus {
-  border: solid 3px var(--light-blue) !important;
-  background-color: var(--black) !important;
+  border: solid 3px var(--color-secondary) !important;
+  background-color: var(--text-secondary) !important;
   border-radius: 5px;
   box-shadow: none !important
 }
 
 .caret {
-  caret-color: var(--light-blue)
-}
-
-.bi-discord,
-.bi-github,
-.bi-linkedin,
-.bi-telegram {
-  font-size: 2.5rem
-}
-
-.bi-linkedin {
-  color: #007bb6
-}
-
-.bi-discord {
-  color: #5865f2
-}
-
-.bi-telegram {
-  color: #2ba8db
+  caret-color: var(--color-secondary)
 }
 
 .projects {
@@ -324,10 +306,13 @@ textarea:focus {
   max-width: 65% !important
 }
 
+.text-footer {
+  font-size: large !important;
+}
+
 @media screen and (max-width:768px) {
   body {
-    background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='414' height='736' preserveAspectRatio='none' viewBox='0 0 414 736'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1055%26quot%3b)' fill='none'%3e%3crect width='414' height='736' x='0' y='0' fill='%230e2a47'%3e%3c/rect%3e%3cpath d='M0%2c226.165C43.964%2c236.047%2c93.767%2c229.142%2c130.381%2c202.876C166.508%2c176.959%2c176.458%2c129.388%2c192.633%2c87.973C207.915%2c48.845%2c224.333%2c10.015%2c222.089%2c-31.932C219.712%2c-76.365%2c209.146%2c-122.352%2c179.6%2c-155.624C150.191%2c-188.742%2c105.818%2c-204.07%2c62.233%2c-211.945C21.627%2c-219.282%2c-21.484%2c-217.213%2c-58.318%2c-198.612C-92.305%2c-181.449%2c-109.482%2c-145.028%2c-131.62%2c-114.05C-151.629%2c-86.052%2c-169.751%2c-58.419%2c-181.596%2c-26.109C-196.134%2c13.547%2c-226.372%2c56.951%2c-208.304%2c95.129C-190.196%2c133.392%2c-133.297%2c129.12%2c-97.466%2c151.66C-62.136%2c173.885%2c-40.723%2c217.011%2c0%2c226.165' fill='%230b2239'%3e%3c/path%3e%3cpath d='M414 985.157C460.547 979.912 501.471 958.492 542.715 936.285 587.336 912.26 642.859 896.226 664.379 850.344 685.924 804.41 671.915 748.652 652.7570000000001 701.672 635.9970000000001 660.572 592.398 640.111 564.5509999999999 605.547 535.266 569.1990000000001 528.016 512.148 485.159 493.653 442.013 475.033 393.073 497.975 348.29200000000003 512.219 304.408 526.178 256.722 538.876 228.526 575.2860000000001 200.796 611.095 203.929 660.064 198.944 705.08 194.124 748.601 189.185 791.32 199.9 833.776 212.294 882.8820000000001 223.836 938.315 265.18899999999996 967.554 306.817 996.9870000000001 363.339 990.865 414 985.157' fill='%23113255'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1055'%3e%3crect width='414' height='736' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e") fixed center no-repeat !important;
-    background-size: cover !important
+    background: url(/public/images/background-mobile.svg) fixed center / cover no-repeat !important;
   }
 
   h2 {
@@ -364,17 +349,9 @@ textarea:focus {
     margin: 1rem 0 !important
   }
 
-  .hello {
-    font-size: x-large
-  }
-
   .cahyaa {
     max-width: 100% !important;
     padding: 4rem 5rem 0 5rem !important
-  }
-
-  .introduction {
-    padding: 1rem 1.5rem !important
   }
 
   .about-me {
@@ -383,6 +360,11 @@ textarea:focus {
 
   form {
     margin: 1rem
+  }
+
+  .marker {
+    border: 0 !important;
+    border-right: solid 10px var(--color-secondary) !important;
   }
 
   #contact-lists {

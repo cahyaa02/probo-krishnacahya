@@ -4,7 +4,7 @@ function Skills() {
   return (
     <div className="skills">
       <div class="container">
-        <section id="above-the-fold">
+        <section id="above-the-fold" data-aos="fade-up">
           <div class="container">
             <div class="row text-center">
               <div class="col">
@@ -14,7 +14,7 @@ function Skills() {
           </div>
         </section>
 
-        <section id="content">
+        <section id="content" data-aos="fade-up">
           <div class="container">
             &emsp;Information of Technology Skills
             <h5 class="text-center">Computer Languages</h5>
