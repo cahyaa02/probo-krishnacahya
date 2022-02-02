@@ -164,33 +164,14 @@ function Skills() {
               </div>
 
               <div class="col-md-3 card projects">
-                <img src="https://raw.githubusercontent.com/vscode-icons/vscode-icons/5eedead0627363aa66939b451cef3892ad303b29/icons/file_type_csharp2.svg" />
-                <p class="text-center mt-3">C#</p>
+                <img src="https://raw.githubusercontent.com/vscode-icons/vscode-icons/5eedead0627363aa66939b451cef3892ad303b29/icons/file_type_python.svg" />
+                <p class="text-center mt-3">Python</p>
                 <div class="progress">
-                  {/* <div
-                      class="progress-bar"
-                      role="progressbar"
-                      style="width: 25%;"
-                      aria-valuenow="25"
-                      aria-valuemin="0"
-                      aria-valuemax="100"
-                    >
-                      25%
-                    </div> */}
+                  {/* <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25"
+                                    aria-valuemin="0" aria-valuemax="100">25%</div> */}
                 </div>
               </div>
             </div>
-            {/* <div class="row align-items-center justify-content-around">
-                        <div class="col-md-3 card projects">
-                            <img
-                                src="https://raw.githubusercontent.com/vscode-icons/vscode-icons/5eedead0627363aa66939b451cef3892ad303b29/icons/file_type_python.svg" />
-                            <p class="text-center mt-3">Python</p>
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25"
-                                    aria-valuemin="0" aria-valuemax="100">25%</div>
-                            </div>
-                        </div>
-                    </div> */}
             <h5 class="text-center">Frameworks</h5>
             <br />
             <div class="row align-items-center justify-content-around">

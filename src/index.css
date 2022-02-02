@@ -48,13 +48,20 @@ a:hover {
   color: var(--color-secondary) !important;
 }
 
-.social-media {
+.social-media:hover {
   color: var(--color-secondary);
-  font-size: xx-large;
 }
 
-svg {
-  margin: 0 .75rem 0 .8rem !important
+.tooltip {
+  font-family: var(--font-primary) !important;
+}
+
+img,
+a,
+.nav-link,
+.page-link {
+  -webkit-user-drag: none;
+  user-select: none;
 }
 
 h1,
@@ -173,11 +180,42 @@ section {
 }
 
 .card {
+  padding: 1.5rem 2rem 2rem 2rem;
   border-radius: 15px !important;
   border: solid 2px #fffFFF25 !important;
   background: #fffFFF1A !important;
   backdrop-filter: blur(5px) !important;
   -webkit-backdrop-filter: blur(5px) !important
+}
+
+.badge {
+  padding: .75rem;
+  font-size: medium;
+}
+
+.truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.marker {
+  border-right: solid 10px var(--color-secondary) !important;
+}
+
+#pills-web-application-tab.active,
+#pills-mobile-application-tab.active,
+#pills-desktop-application-tab.active {
+  background-color: var(--color-secondary);
+  color: var(--text-secondary) !important;
+}
+
+#pills-web-application-tab.nav-link:not(.active),
+#pills-mobile-application-tab.nav-link:not(.active),
+#pills-desktop-application-tab.nav-link:not(.active) {
+  color: var(--color-secondary) !important;
 }
 
 .hero {
@@ -262,11 +300,6 @@ textarea:focus {
   caret-color: var(--color-secondary)
 }
 
-.projects {
-  margin-bottom: 2.75rem;
-  padding: 1.75rem !important
-}
-
 .transparent {
   width: fit-content;
   margin-bottom: .5rem !important;
@@ -285,13 +318,6 @@ textarea:focus {
 
 .category-time {
   padding-left: 0 !important
-}
-
-.tag {
-  width: fit-content !important;
-  margin: .75rem .25rem .5rem .25rem !important;
-  padding: .25rem .75rem !important;
-  border-radius: 5px !important
 }
 
 .skills-n {
@@ -362,26 +388,11 @@ textarea:focus {
     margin: 1rem
   }
 
-  .marker {
-    border: 0 !important;
-    border-right: solid 10px var(--color-secondary) !important;
-  }
-
   #contact-lists {
     text-align: start !important
   }
 
   .medsos {
     margin-left: .75rem
-  }
-
-  .tengah {
-    width: 90% !important;
-    margin: 2.25rem 2rem 2.25rem 1.25rem
-  }
-
-  .projects {
-    width: 90% !important;
-    margin: 2.5rem 1.25rem 2.5rem 1.25rem
   }
 }

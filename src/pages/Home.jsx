@@ -39,9 +39,9 @@ function Home() {
 
         <section id="content" data-aos="fade-up">
           <div class="row align-items-center justify-content-around">
-            <div class="col-md-6 card pt-2">
+            <div class="col-md-6 card pt-4 pb-2 px-0">
               <div class="row mx-0">
-                <div class="col-md-6 my-4 text-center">
+                <div class="col-md-6 text-center">
                   <img
                     src="images/author-card.svg"
                     id="assets"
@@ -49,7 +49,7 @@ function Home() {
                     loading="lazy"
                   />
                 </div>
-                <div class="col-md-6 my-3 pt-1">
+                <div class="col-md-6">
                   <div class="row">
                     <p>
                       <i
