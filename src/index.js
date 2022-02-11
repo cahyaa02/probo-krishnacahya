@@ -63,7 +63,7 @@ var typewriter = new Typewriter(typewriting, {
 });
 typewriter.typeString('Frontend Developer').pauseFor(3000).deleteAll(30)
     .typeString('UI/UX Designer').pauseFor(3000).deleteAll(30)
-    .typeString('DevOps Engineer').pauseFor(3000).deleteAll(30)
+    .typeString('DevSecOps Engineer').pauseFor(3000).deleteAll(30)
     .start();
 
 serviceWorker.unregister();

@@ -1,41 +1,68 @@
-import React from "react";
+import React, { useEffect } from "react";
 
-function Home() {
+export default function Home() {
+  useEffect(() => {
+    document.title = "Probo Krishnacahya";
+  }, []);
+
   return (
     <div className="home">
       <div class="container">
-        <section id="above-the-fold" data-aos="fade-up">
-          <div class="row">
-            <div class="col-md-8">
-              <div>
-                <span class="fs-1">
-                  Hello everyone &#128075;
-                  <br />
-                  <span class="fs-1">I'm </span>
-                  <span class="fs-1 fw-bold">Probo Krishnacahya</span>
-                  <span class="fs-1">.</span>
-                </span>
-                <br />
-                <span id="typewriting"></span>
-                <br />
-                <a href="contacts">
-                  <button class="btn btn-primary pulse mt-5">
-                    <i className="bi bi-emoji-smile"></i>&emsp;
-                    <strong>Get in touch</strong>
-                  </button>
-                </a>
-              </div>
-            </div>
-            <div class="col-md-3">
+        <div class="col mt-4" data-aos="fade-up">
+          <div class="row flex-lg-row-reverse align-items-center">
+            <div class="col-12 col-sm-6 col-lg-6 text-center">
               <img
                 src="images/author-hero.svg"
+                class="hero-img"
                 alt="Probo Krishnacahya"
                 loading="lazy"
-                class="cahyaa"
               />
             </div>
+            <div class="col-lg-6 hero-text">
+              <span class="fs-1">
+                Hello everyone &#128075;
+                <br />
+                <span class="fs-1">I'm </span>
+                <span class="fs-1 fw-bold">Probo Krishnacahya</span>
+                <span class="fs-1">.</span>
+              </span>
+              <br />
+              <span id="typewriting" class="text-white-50"></span>
+              <br />
+              <div class="d-grid gap-2 d-md-flex justify-content-md-start mt-5">
+                <button
+                  type="button"
+                  class="btn btn-primary btn-lg pulse px-4 me-md-2"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    window.location.href = "/contacts";
+                  }}
+                >
+                  <i class="bi bi-emoji-smile"></i>&emsp;
+                  <strong>Get in touch</strong>
+                </button>
+                {/* <button
+                  type="button"
+                  class="btn btn-outline-primary btn-lg px-4 me-md-2"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    downloadFile("images/logo.svg");
+                  }}
+                >
+                  <i class="bi bi-download"></i>&emsp;
+                  <strong>Download Resume</strong>
+                </button> */}
+              </div>
+            </div>
           </div>
-        </section>
+          <h3
+            class="scroll-down text-center mt-5"
+            data-bs-toggle="tooltip"
+            title="Scroll Down"
+          >
+            <i class="bi bi-chevron-double-down"></i>
+          </h3>
+        </div>
 
         <section id="content" data-aos="fade-up">
           <div class="row align-items-center justify-content-around">
@@ -120,4 +147,9 @@ function Home() {
   );
 }
 
-export default Home;
+function downloadFile(filePath) {
+  var link = document.createElement("a");
+  link.href = filePath;
+  link.download = filePath.substr(filePath.lastIndexOf("/") + 1);
+  link.click();
+}

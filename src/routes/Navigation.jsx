@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-function Navigation() {
+export default function Navigation() {
   return (
     <div className="navigation">
       <nav className="navbar navbar-expand-lg navbar-dark py-3 user-select-none">
@@ -13,8 +13,8 @@ function Navigation() {
             data-bs-placement="bottom"
             title="Homepage"
           >
-            <img src="images/logo.svg" alt="Logo" class="logo me-2" />
-            <strong class="pk">Probo Krishnacahya</strong>
+            {/* <img src="images/logo.svg" alt="Logo" class="logo me-2" /> */}
+            <strong class="pk">PK&emsp;Probo Krishnacahya</strong>
           </NavLink>
           <button
             class="navbar-toggler collapsed border-0"
@@ -32,7 +32,7 @@ function Navigation() {
             <ul className="navbar-nav ms-auto">
               <li className="nav-item me-4">
                 <NavLink className="nav-link" to="contacts">
-                  Contact
+                  Contacts
                 </NavLink>
               </li>
               <li className="nav-item me-4">
@@ -57,5 +57,3 @@ function Navigation() {
     </div>
   );
 }
-
-export default Navigation;

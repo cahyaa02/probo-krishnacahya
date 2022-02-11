@@ -1,6 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 
-function Projects() {
+export default function Projects() {
+  useEffect(() => {
+    document.title = "Projects";
+  }, []);
+
   return (
     <div className="projects">
       <ul
@@ -366,5 +370,3 @@ function Projects() {
     </div>
   );
 }
-
-export default Projects;

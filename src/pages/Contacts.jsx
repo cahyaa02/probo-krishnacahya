@@ -1,6 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 
-function Contacts() {
+export default function Contacts() {
+  useEffect(() => {
+    document.title = "Contacts";
+  }, []);
+
   return (
     <div className="contacts">
       <div class="container">
@@ -246,5 +250,3 @@ function Contacts() {
     </div>
   );
 }
-
-export default Contacts;

@@ -153,21 +153,26 @@ span {
 }
 
 .btn {
-  border: 0 !important;
-  outline: 0 !important;
   border-radius: 5px !important;
   padding: .75rem 1rem !important;
-  background-color: var(--color-primary) !important;
   color: var(--text-primary) !important
-}
-
-.btn:hover {
-  box-shadow: 0 0 10px .5px var(--color-primary);
-  filter: brightness(110%);
 }
 
 .btn:active {
   transform: scale(.9);
+}
+
+.btn-outline-primary {
+  border: solid 2px var(--color-secondary) !important;
+  color: var(--color-secondary) !important;
+}
+
+.btn-outline-primary:hover {
+  background-color: transparent;
+}
+
+.btn-outline-primary:active {
+  border: solid 2px var(--color-secondary) !important;
 }
 
 hr {
@@ -185,7 +190,17 @@ section {
   border: solid 2px #fffFFF25 !important;
   background: #fffFFF1A !important;
   backdrop-filter: blur(5px) !important;
-  -webkit-backdrop-filter: blur(5px) !important
+  -webkit-backdrop-filter: blur(5px) !important;
+}
+
+.keahlian {
+  border-radius: 7.5px !important;
+  border: solid 2px #fffFFF25 !important;
+  background: #fffFFF1A !important;
+}
+
+.accordion-button.collapsed::after {
+  background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
 }
 
 .badge {
@@ -218,12 +233,26 @@ section {
   color: var(--color-secondary) !important;
 }
 
-.hero {
-  margin: 3.5rem 0
+.progress-bar {
+  animation: animateBar 1s ease-in 1;
+}
+
+@keyframes animateBar {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.Typewriter__wrapper {
+  font-size: x-large;
 }
 
 .typeCursor {
-  font-size: larger;
+  font-size: xx-large;
   font-weight: bolder;
   color: var(--color-secondary);
   animation: blink 1s infinite linear;
@@ -231,38 +260,60 @@ section {
 
 @keyframes blink {
   49.99% {
-    opacity: 1
+    opacity: 1;
   }
 
   50% {
-    opacity: 0
+    opacity: 0;
   }
 
   100% {
-    opacity: 0
+    opacity: 0;
   }
 }
 
-.cahyaa {
-  max-width: 130% !important
-}
-
 .pulse {
-  animation: pulse 3s infinite linear
+  animation: pulse 3s infinite linear;
 }
 
 @keyframes pulse {
   0% {
-    box-shadow: 0 0 0 0 var(--color-primary)
+    box-shadow: 0 0 0 0 var(--color-primary);
   }
 
   75% {
-    box-shadow: 0 0 10px .5px var(--color-primary)
+    box-shadow: 0 0 10px .5px var(--color-primary);
   }
 
   100% {
-    box-shadow: 0 0 0 0 var(--color-primary)
+    box-shadow: 0 0 0 0 var(--color-primary);
   }
+}
+
+.scroll-down {
+  animation: bounce 2s infinite;
+}
+
+.bounce {
+  animation: bounce linear;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-20px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.hero-img {
+  max-width: 80% !important;
 }
 
 .m-r-0 {
@@ -275,17 +326,17 @@ section {
 
 .bi-arrow-up {
   font-size: 1.75rem !important;
-  color: var(--text-primary) !important
+  color: var(--text-primary) !important;
 }
 
 .bi-arrow-up:hover {
-  color: var(--color-secondary) !important
+  color: var(--color-secondary) !important;
 }
 
 input,
 textarea {
   border: solid 2px var(--text-secondary) !important;
-  color: var(--text-primary) !important
+  color: var(--text-primary) !important;
 }
 
 input:focus,
@@ -293,43 +344,11 @@ textarea:focus {
   border: solid 3px var(--color-secondary) !important;
   background-color: var(--text-secondary) !important;
   border-radius: 5px;
-  box-shadow: none !important
+  box-shadow: none !important;
 }
 
 .caret {
-  caret-color: var(--color-secondary)
-}
-
-.transparent {
-  width: fit-content;
-  margin-bottom: .5rem !important;
-  padding: 0 !important;
-  cursor: text !important;
-  background: #00000000 !important
-}
-
-.transparent:hover {
-  box-shadow: none !important
-}
-
-.transparent:active {
-  transform: none !important
-}
-
-.category-time {
-  padding-left: 0 !important
-}
-
-.skills-n {
-  max-width: 90% !important
-}
-
-.skills-s {
-  max-width: 70% !important
-}
-
-.skills-xs {
-  max-width: 65% !important
+  caret-color: var(--color-secondary);
 }
 
 .text-footer {
@@ -371,13 +390,13 @@ textarea:focus {
     padding: .75rem 2rem 2rem 2rem
   }
 
-  .hero {
-    margin: 1rem 0 !important
+  .hero-text {
+    margin: 2rem 0;
+    text-align: center;
   }
 
-  .cahyaa {
-    max-width: 100% !important;
-    padding: 4rem 5rem 0 5rem !important
+  .hero-img {
+    max-width: 75% !important;
   }
 
   .about-me {

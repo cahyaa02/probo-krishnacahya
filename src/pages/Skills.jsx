@@ -1,407 +1,539 @@
-import React from "react";
+import React, { useEffect } from "react";
 
-function Skills() {
+export default function Skills() {
+  useEffect(() => {
+    document.title = "Skills";
+  }, []);
+
   return (
     <div className="skills">
-      <div class="container">
-        <section id="above-the-fold" data-aos="fade-up">
-          <div class="container">
-            <div class="row text-center">
-              <div class="col">
-                <h2>These are the categories of my specialties</h2>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section id="content" data-aos="fade-up">
-          <div class="container">
-            &emsp;Information of Technology Skills
-            <h5 class="text-center">Computer Languages</h5>
-            <h5 class="text-center">
-              (Programming, Scripting, Markup, Stylesheet, Preprocessor, etc.)
-            </h5>
-            <br />
-            <div class="row align-items-center justify-content-around">
-              <div class="col-md-3 card projects">
-                <img src="https://raw.githubusercontent.com/vscode-icons/vscode-icons/5eedead0627363aa66939b451cef3892ad303b29/icons/file_type_html.svg" />
-                <p class="text-center mt-3">HyperText Markup Language 5</p>
-                <div class="progress">
-                  {/* <div
-                      class="progress-bar"
-                      role="progressbar"
-                      style="width: 87%;"
-                      aria-valuenow="87"
-                      aria-valuemin="0"
-                      aria-valuemax="100"
-                    >
-                      87%
-                    </div> */}
-                </div>
-              </div>
-
-              <div class="col-md-3 card projects">
-                <img src="https://raw.githubusercontent.com/vscode-icons/vscode-icons/5eedead0627363aa66939b451cef3892ad303b29/icons/file_type_css.svg" />
-                <p class="text-center mt-3">Cascading Style Sheets 3</p>
-                <div class="progress">
-                  {/* <div
-                      class="progress-bar"
-                      role="progressbar"
-                      style="width: 85%;"
-                      aria-valuenow="85"
-                      aria-valuemin="0"
-                      aria-valuemax="100"
-                    >
-                      85%
-                    </div> */}
-                </div>
-              </div>
-
-              <div class="col-md-3 card projects">
-                <img src="https://raw.githubusercontent.com/vscode-icons/vscode-icons/5eedead0627363aa66939b451cef3892ad303b29/icons/file_type_xml.svg" />
-                <p class="text-center mt-3">Extensible Markup Language</p>
-                <div class="progress">
-                  {/* <div
-                      class="progress-bar"
-                      role="progressbar"
-                      style="width: 75%;"
-                      aria-valuenow="75"
-                      aria-valuemin="0"
-                      aria-valuemax="100"
-                    >
-                      75%
-                    </div> */}
-                </div>
-              </div>
-            </div>
-            <div class="row align-items-center justify-content-around">
-              <div class="col-md-3 card projects">
-                <img src="https://raw.githubusercontent.com/vscode-icons/vscode-icons/5eedead0627363aa66939b451cef3892ad303b29/icons/file_type_java.svg" />
-                <p class="text-center mt-3">Java</p>
-                <div class="progress">
-                  {/* <div
-                      class="progress-bar"
-                      role="progressbar"
-                      style="width: 70%;"
-                      aria-valuenow="70"
-                      aria-valuemin="0"
-                      aria-valuemax="100"
-                    >
-                      70%
-                    </div> */}
-                </div>
-              </div>
-
-              <div class="col-md-3 card projects">
-                <img src="https://raw.githubusercontent.com/vscode-icons/vscode-icons/5eedead0627363aa66939b451cef3892ad303b29/icons/file_type_php.svg" />
-                <p class="text-center mt-3">Hypertext Preprocessor</p>
-                <div class="progress">
-                  {/* <div
-                      class="progress-bar"
-                      role="progressbar"
-                      style="width: 55%;"
-                      aria-valuenow="55"
-                      aria-valuemin="0"
-                      aria-valuemax="100"
-                    >
-                      55%
-                    </div> */}
-                </div>
-              </div>
-
-              <div class="col-md-3 card projects">
-                <img src="https://raw.githubusercontent.com/vscode-icons/vscode-icons/5eedead0627363aa66939b451cef3892ad303b29/icons/file_type_sql.svg" />
-                <p class="text-center mt-3">Structured Query Language</p>
-                <div class="progress">
-                  {/* <div
-                      class="progress-bar"
-                      role="progressbar"
-                      style="width: 50%;"
-                      aria-valuenow="50"
-                      aria-valuemin="0"
-                      aria-valuemax="100"
-                    >
-                      50%
-                    </div> */}
-                </div>
-              </div>
-            </div>
-            <div class="row align-items-center justify-content-around">
-              <div class="col-md-3 card projects">
-                <img src="https://raw.githubusercontent.com/vscode-icons/vscode-icons/5eedead0627363aa66939b451cef3892ad303b29/icons/file_type_sass.svg" />
-                <p class="text-center mt-3">
-                  Syntactically Awesome Style Sheets
-                </p>
-                <div class="progress">
-                  {/* <div
-                      class="progress-bar"
-                      role="progressbar"
-                      style="width: 30%;"
-                      aria-valuenow="30"
-                      aria-valuemin="0"
-                      aria-valuemax="100"
-                    >
-                      30%
-                    </div> */}
-                </div>
-              </div>
-
-              <div class="col-md-3 card projects">
-                <img src="https://raw.githubusercontent.com/vscode-icons/vscode-icons/5eedead0627363aa66939b451cef3892ad303b29/icons/file_type_js_official.svg" />
-                <p class="text-center mt-3">JavaScript</p>
-                <div class="progress">
-                  {/* <div
-                      class="progress-bar"
-                      role="progressbar"
-                      style="width: 30%;"
-                      aria-valuenow="30"
-                      aria-valuemin="0"
-                      aria-valuemax="100"
-                    >
-                      30%
-                    </div> */}
-                </div>
-              </div>
-
-              <div class="col-md-3 card projects">
-                <img src="https://raw.githubusercontent.com/vscode-icons/vscode-icons/5eedead0627363aa66939b451cef3892ad303b29/icons/file_type_python.svg" />
-                <p class="text-center mt-3">Python</p>
-                <div class="progress">
-                  {/* <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25"
-                                    aria-valuemin="0" aria-valuemax="100">25%</div> */}
-                </div>
-              </div>
-            </div>
-            <h5 class="text-center">Frameworks</h5>
-            <br />
-            <div class="row align-items-center justify-content-around">
-              <div class="col-md-3 card projects">
-                <img
-                  src="https://d33wubrfki0l68.cloudfront.net/7d1799801f74c0b0b44ce2d0d60a03ee3663163d/6ac3e/assets/img/bootstrap.svg"
-                  class="skills-n align-self-center"
-                />
-                <p class="text-center mt-3">Bootstrap</p>
-                <div class="progress">
-                  {/* <div
-                      class="progress-bar"
-                      role="progressbar"
-                      style="width: 77%;"
-                      aria-valuenow="77"
-                      aria-valuemin="0"
-                      aria-valuemax="100"
-                    >
-                      77%
-                    </div> */}
-                </div>
-              </div>
-
-              <div class="col-md-3 card projects">
-                <img src="https://d33wubrfki0l68.cloudfront.net/2f53b1c69dd9b23e4768852a5ee033bdc9d73aff/ab528/assets/img/reactjs.svg" />
-                <p class="text-center mt-3">ReactJS</p>
-                <div class="progress">
-                  {/* <div
-                      class="progress-bar"
-                      role="progressbar"
-                      style="width: 25%;"
-                      aria-valuenow="25"
-                      aria-valuemin="0"
-                      aria-valuemax="100"
-                    >
-                      25%
-                    </div> */}
-                </div>
-              </div>
-
-              <div class="col-md-3 card projects">
-                <img
-                  src="https://d33wubrfki0l68.cloudfront.net/02573bd8f6dd4e77465d1c2228ece65f991f98e1/e3a2f/assets/img/laravel.svg"
-                  class="skills-s align-self-center"
-                />
-                <p class="text-center mt-3">Laravel</p>
-                {/* <div class="progress">
-                    <div
-                      class="progress-bar"
-                      role="progressbar"
-                      style="width: 30%;"
-                      aria-valuenow="30"
-                      aria-valuemin="0"
-                      aria-valuemax="100"
-                    >
-                      30%
-                    </div> */}
-              </div>
-            </div>
-          </div>
-          {/* <div class="row align-items-center justify-content-around">
-                        <div class="col-md-3 card projects">
-                            <img src="assets/img/flutter.svg" class="skills-s align-self-center" />
-                            <p class="text-center mt-3">Flutter</p>
-                            <div class="progress">
-                                <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25"
-                                    aria-valuemin="0" aria-valuemax="100">25%</div>
-                            </div>
+      <section id="content">
+        <div class="container">
+          <h2 class="text-center mb-5" data-aos="fade-up">
+            These are the categories of my specialties
+          </h2>
+          <div class="accordion" id="accordionExample" data-aos="fade-up">
+            <div class="accordion-item border-0 bg-transparent">
+              <h2 class="accordion-header" id="headingOne">
+                <button
+                  class="accordion-button border-0 bg-transparent text-white"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                >
+                  <strong>
+                    <i class="bi bi-code-slash"></i>&emsp;Information of
+                    Technology
+                  </strong>
+                </button>
+              </h2>
+              <div
+                id="collapseOne"
+                class="accordion-collapse collapse show"
+                aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <div
+                    class="row row-cols-1 row-cols-md-4 g-4"
+                  >
+                    <div class="col">
+                      <div class="keahlian h-100">
+                        <img
+                          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg"
+                          class="card-img-top pt-3"
+                          alt="HTML5"
+                        />
+                        <div class="card-body">
+                          <h5 class="card-title">
+                            HyperText Markup Language 5
+                          </h5>
                         </div>
-                    </div>  */}
-          <h5 class="text-center">Other Development Tools</h5>
-          <br />
-          <div class="row align-items-center justify-content-around">
-            <div class="col-md-3 card projects">
-              <img
-                src="https://d33wubrfki0l68.cloudfront.net/3df477673f4dae8ac0cb292802475f957f3b0688/39b50/assets/img/github.svg"
-                class="img-fluid"
-              />
-              <p class="text-center mt-3">GitHub</p>
-              <div class="progress">
-                {/* <div
-                      class="progress-bar"
-                      role="progressbar"
-                      style="width: 75%;"
-                      aria-valuenow="75"
-                      aria-valuemin="0"
-                      aria-valuemax="100"
-                    >
-                      75%
-                    </div> */}
+                        <div class="card-footer border-0 bg-transparent pb-3">
+                          <div class="progress">
+                            <div
+                              class="progress-bar"
+                              role="progressbar"
+                              style={{ width: "87%" }}
+                              aria-valuenow="87"
+                              aria-valuemin="0"
+                              aria-valuemax="100"
+                            >
+                              87%
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="keahlian h-100">
+                        <img
+                          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg"
+                          class="card-img-top pt-3"
+                          alt="CSS3"
+                        />
+                        <div class="card-body">
+                          <h5 class="card-title">Cascading Style Sheets 3</h5>
+                        </div>
+                        <div class="card-footer border-0 bg-transparent pb-3">
+                          <div class="progress">
+                            <div
+                              class="progress-bar"
+                              role="progressbar"
+                              style={{ width: "85%" }}
+                              aria-valuenow="85"
+                              aria-valuemin="0"
+                              aria-valuemax="100"
+                            >
+                              85%
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="keahlian h-100">
+                        <img
+                          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original-wordmark.svg"
+                          class="card-img-top pt-3"
+                          alt="Java"
+                        />
+                        <div class="card-body">
+                          <h5 class="card-title">Java</h5>
+                        </div>
+                        <div class="card-footer border-0 bg-transparent pb-3">
+                          <div class="progress">
+                            <div
+                              class="progress-bar"
+                              role="progressbar"
+                              style={{ width: "70%" }}
+                              aria-valuenow="70"
+                              aria-valuemin="0"
+                              aria-valuemax="100"
+                            >
+                              70%
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="keahlian h-100">
+                        <img
+                          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                          class="card-img-top px-3 pt-3"
+                          alt="JavaScript"
+                        />
+                        <div class="card-body">
+                          <h5 class="card-title">JavaScript</h5>
+                        </div>
+                        <div class="card-footer border-0 bg-transparent pb-3">
+                          <div class="progress">
+                            <div
+                              class="progress-bar"
+                              role="progressbar"
+                              style={{ width: "36%" }}
+                              aria-valuenow="36"
+                              aria-valuemin="0"
+                              aria-valuemax="100"
+                            >
+                              36%
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="keahlian h-100">
+                        <img
+                          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-plain-wordmark.svg"
+                          class="card-img-top pt-3"
+                          alt="Laravel"
+                        />
+                        <div class="card-body">
+                          <h5 class="card-title">Laravel</h5>
+                        </div>
+                        <div class="card-footer border-0 bg-transparent pb-3">
+                          <div class="progress">
+                            <div
+                              class="progress-bar"
+                              role="progressbar"
+                              style={{ width: "75%" }}
+                              aria-valuenow="75"
+                              aria-valuemin="0"
+                              aria-valuemax="100"
+                            >
+                              75%
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="keahlian h-100">
+                        <img
+                          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg"
+                          class="card-img-top px-3 pt-3"
+                          alt="MySQL"
+                        />
+                        <div class="card-body">
+                          <h5 class="card-title">MySQL</h5>
+                        </div>
+                        <div class="card-footer border-0 bg-transparent pb-3">
+                          <div class="progress">
+                            <div
+                              class="progress-bar"
+                              role="progressbar"
+                              style={{ width: "66%" }}
+                              aria-valuenow="66"
+                              aria-valuemin="0"
+                              aria-valuemax="100"
+                            >
+                              66%
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="keahlian h-100">
+                        <img
+                          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg"
+                          class="card-img-top px-3 pt-3"
+                          alt="PHP"
+                        />
+                        <div class="card-body">
+                          <h5 class="card-title">Hypertext Preprocessor</h5>
+                        </div>
+                        <div class="card-footer border-0 bg-transparent pb-3">
+                          <div class="progress">
+                            <div
+                              class="progress-bar"
+                              role="progressbar"
+                              style={{ width: "58%" }}
+                              aria-valuenow="58"
+                              aria-valuemin="0"
+                              aria-valuemax="100"
+                            >
+                              58%
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="keahlian h-100">
+                        <img
+                          src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg"
+                          class="card-img-top px-3 pt-3"
+                          alt="ReactJS"
+                        />
+                        <div class="card-body">
+                          <h5 class="card-title">ReactJS</h5>
+                        </div>
+                        <div class="card-footer border-0 bg-transparent pb-3">
+                          <div class="progress">
+                            <div
+                              class="progress-bar"
+                              role="progressbar"
+                              style={{ width: "50%" }}
+                              aria-valuenow="50"
+                              aria-valuemin="0"
+                              aria-valuemax="100"
+                            >
+                              50%
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-
-            <div class="col-md-3 card projects">
-              <img
-                src="https://d33wubrfki0l68.cloudfront.net/d118709b21285e4a4183ce130c0678155c4d8496/bb349/assets/img/trello.svg"
-                class="img-fluid"
-              />
-              <p class="text-center mt-3">Trello</p>
-              <div class="progress">
-                {/* <div
-                      class="progress-bar"
-                      role="progressbar"
-                      style="width: 85%;"
-                      aria-valuenow="85"
-                      aria-valuemin="0"
-                      aria-valuemax="100"
-                    >
-                      85%
-                    </div> */}
+            <div class="accordion-item border-0 bg-transparent">
+              <h2 class="accordion-header" id="headingTwo">
+                <button
+                  class="accordion-button collapsed border-0 bg-transparent text-white"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
+                  <strong>
+                    <i class="bi bi-vector-pen"></i>&emsp;Visual Design
+                  </strong>
+                </button>
+              </h2>
+              <div
+                id="collapseTwo"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingTwo"
+                data-bs-parent="#accordionExample"
+              >
+                  <div
+                    id="collapseTwo"
+                    class="accordion-collapse collapse show"
+                    aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample"
+                  >
+                    <div class="accordion-body">
+                      <div
+                        class="row row-cols-1 row-cols-md-4 g-4"
+                      >
+                        <div class="col">
+                          <div class="keahlian h-100">
+                            <img
+                              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
+                              class="card-img-top pt-3"
+                              alt="Figma"
+                            />
+                            <div class="card-body">
+                              <h5 class="card-title">
+                              Figma
+                              </h5>
+                            </div>
+                            <div class="card-footer border-0 bg-transparent pb-3">
+                              <div class="progress">
+                                <div
+                                  class="progress-bar"
+                                  role="progressbar"
+                                  style={{ width: "76%" }}
+                                  aria-valuenow="76"
+                                  aria-valuemin="0"
+                                  aria-valuemax="100"
+                                >
+                                  76%
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="keahlian h-100">
+                            <img
+                              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/illustrator/illustrator-plain.svg"
+                              class="card-img-top px-3 pt-3"
+                              alt="Ai"
+                            />
+                            <div class="card-body">
+                              <h5 class="card-title">
+                              Adobe Illustrator
+                              </h5>
+                            </div>
+                            <div class="card-footer border-0 bg-transparent pb-3">
+                              <div class="progress">
+                                <div
+                                  class="progress-bar"
+                                  role="progressbar"
+                                  style={{ width: "68%" }}
+                                  aria-valuenow="68"
+                                  aria-valuemin="0"
+                                  aria-valuemax="100"
+                                >
+                                  68%
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="keahlian h-100">
+                            <img
+                              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg"
+                              class="card-img-top px-3 pt-3"
+                              alt="Ps"
+                            />
+                            <div class="card-body">
+                              <h5 class="card-title">Adobe Photoshop</h5>
+                            </div>
+                            <div class="card-footer border-0 bg-transparent pb-3">
+                              <div class="progress">
+                                <div
+                                  class="progress-bar"
+                                  role="progressbar"
+                                  style={{ width: "45%" }}
+                                  aria-valuenow="45"
+                                  aria-valuemin="0"
+                                  aria-valuemax="100"
+                                >
+                                  45%
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="keahlian h-100">
+                            <img
+                              src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Adobe_Photoshop_Lightroom_CC_logo.svg/1024px-Adobe_Photoshop_Lightroom_CC_logo.svg.png"
+                              class="card-img-top px-3 pt-3"
+                              alt="Lr"
+                            />
+                            <div class="card-body">
+                              <h5 class="card-title">Adobe Lightroom</h5>
+                            </div>
+                            <div class="card-footer border-0 bg-transparent pb-3">
+                              <div class="progress">
+                                <div
+                                  class="progress-bar"
+                                  role="progressbar"
+                                  style={{ width: "82%" }}
+                                  aria-valuenow="82"
+                                  aria-valuemin="0"
+                                  aria-valuemax="100"
+                                >
+                                  82%
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="keahlian h-100">
+                            <img
+                              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/premierepro/premierepro-original.svg"
+                              class="card-img-top px-3 pt-3"
+                              alt="Pr"
+                            />
+                            <div class="card-body">
+                              <h5 class="card-title">Adobe Premiere Pro</h5>
+                            </div>
+                            <div class="card-footer border-0 bg-transparent pb-3">
+                              <div class="progress">
+                                <div
+                                  class="progress-bar"
+                                  role="progressbar"
+                                  style={{ width: "55%" }}
+                                  aria-valuenow="55"
+                                  aria-valuemin="0"
+                                  aria-valuemax="100"
+                                >
+                                  55%
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="keahlian h-100">
+                            <img
+                              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/aftereffects/aftereffects-original.svg"
+                              class="card-img-top px-3 pt-3"
+                              alt="MySQL"
+                            />
+                            <div class="card-body">
+                              <h5 class="card-title">Adobe After Effects</h5>
+                            </div>
+                            <div class="card-footer border-0 bg-transparent pb-3">
+                              <div class="progress">
+                                <div
+                                  class="progress-bar"
+                                  role="progressbar"
+                                  style={{ width: "40%" }}
+                                  aria-valuenow="40"
+                                  aria-valuemin="0"
+                                  aria-valuemax="100"
+                                >
+                                  40%
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        {/* <div class="col">
+                          <div class="keahlian h-100">
+                            <img
+                              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg"
+                              class="card-img-top px-3 pt-3"
+                              alt="PHP"
+                            />
+                            <div class="card-body">
+                              <h5 class="card-title">Hypertext Preprocessor</h5>
+                            </div>
+                            <div class="card-footer border-0 bg-transparent pb-3">
+                              <div class="progress">
+                                <div
+                                  class="progress-bar"
+                                  role="progressbar"
+                                  style={{ width: "58%" }}
+                                  aria-valuenow="58"
+                                  aria-valuemin="0"
+                                  aria-valuemax="100"
+                                >
+                                  58%
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="keahlian h-100">
+                            <img
+                              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg"
+                              class="card-img-top px-3 pt-3"
+                              alt="ReactJS"
+                            />
+                            <div class="card-body">
+                              <h5 class="card-title">ReactJS</h5>
+                            </div>
+                            <div class="card-footer border-0 bg-transparent pb-3">
+                              <div class="progress">
+                                <div
+                                  class="progress-bar"
+                                  role="progressbar"
+                                  style={{ width: "50%" }}
+                                  aria-valuenow="50"
+                                  aria-valuemin="0"
+                                  aria-valuemax="100"
+                                >
+                                  50%
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div> */}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item border-0 bg-transparent">
+                <h2 class="accordion-header" id="headingThree">
+                  <button
+                    class="accordion-button collapsed border-0 bg-transparent text-white"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree"
+                    aria-expanded="false"
+                    aria-controls="collapseThree"
+                  >
+                    <strong>
+                      <i class="bi bi-translate"></i>&emsp;Human Languages
+                    </strong>
+                  </button>
+                </h2>
+                <div
+                  id="collapseThree"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingThree"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <ul>
+                      <li>Indonesian: Fluent (Native Language)</li>
+                      <li>English: Intermediate Level</li>
+                      <li>Mandarin: Basic Level</li>
+                    </ul>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-          <hr />
-          &emsp;Visual Design Skills
-          <h5 class="text-center">User Interface - User Experience</h5>
-          <br />
-          <div class="row align-items-center justify-content-around">
-            <div class="col-md-3 card projects">
-              <img
-                src="https://d33wubrfki0l68.cloudfront.net/1a7d988d49ac113613c47c3a7238ccd5a90d6862/6c14e/assets/img/figma.svg"
-                class="skills-xs align-self-center"
-              />
-              <p class="text-center mt-3">Figma</p>
-              <div class="progress">
-                {/* <div
-                      class="progress-bar"
-                      role="progressbar"
-                      style="width: 70%;"
-                      aria-valuenow="70"
-                      aria-valuemin="0"
-                      aria-valuemax="100"
-                    >
-                      70%
-                    </div> */}
-              </div>
-            </div>
-
-            <div class="col-md-3 card projects">
-              <img src="https://d33wubrfki0l68.cloudfront.net/9155900a102d3245e4e3c95090008db89ab660b9/789f3/assets/img/adobe-xd.png" />
-              <p class="text-center mt-3">Adobe XD</p>
-              <div class="progress">
-                {/* <div
-                      class="progress-bar"
-                      role="progressbar"
-                      style="width: 50%;"
-                      aria-valuenow="50"
-                      aria-valuemin="0"
-                      aria-valuemax="100"
-                    >
-                      50%
-                    </div> */}
-              </div>
-            </div>
-
-            <div class="col-md-3 card projects">
-              <img src="https://d33wubrfki0l68.cloudfront.net/7d8329d8d0f426bac76062bfef01113a360cfa58/0b7b6/assets/img/invision-studio.svg" />
-              <p class="text-center mt-3">InVision Studio</p>
-              <div class="progress">
-                {/* <div
-                      class="progress-bar"
-                      role="progressbar"
-                      style="width: 40%;"
-                      aria-valuenow="40"
-                      aria-valuemin="0"
-                      aria-valuemax="100"
-                    >
-                      40%
-                    </div> */}
-              </div>
-            </div>
-          </div>
-          <h5 class="text-center">Multimedia</h5>
-          <br />
-          <div class="row align-items-center justify-content-around">
-            <div class="col-md-3 card projects">
-              <img src="https://d33wubrfki0l68.cloudfront.net/6a5952fc41518b5e24c83f4a9e8c239e8161a93c/de0cb/assets/img/adobe-illustrator.png" />
-              <p class="text-center mt-3">Adobe Illustrator</p>
-              <div class="progress">
-                {/* <div
-                      class="progress-bar"
-                      role="progressbar"
-                      style="width: 67%;"
-                      aria-valuenow="67"
-                      aria-valuemin="0"
-                      aria-valuemax="100"
-                    >
-                      67%
-                    </div> */}
-              </div>
-            </div>
-
-            <div class="col-md-3 card projects">
-              <img src="https://d33wubrfki0l68.cloudfront.net/ec2036ef9b1cb6df5f7964d668b880bf97b97eed/95aa2/assets/img/adobe-photoshop.png" />
-              <p class="text-center mt-3">Adobe Photoshop</p>
-              <div class="progress">
-                {/* <div
-                      class="progress-bar"
-                      role="progressbar"
-                      style="width: 45%;"
-                      aria-valuenow="45"
-                      aria-valuemin="0"
-                      aria-valuemax="100"
-                    >
-                      45%
-                    </div> */}
-              </div>
-            </div>
-
-            <div class="col-md-3 card projects">
-              <img src="https://d33wubrfki0l68.cloudfront.net/8368fae687ce210224939da2b83464aaefbca9dc/5e93c/assets/img/adobe-premiere-pro.png" />
-              <p class="text-center mt-3">Adobe Premiere Pro</p>
-              <div class="progress">
-                {/* <div
-                      class="progress-bar"
-                      role="progressbar"
-                      style="width: 55%;"
-                      aria-valuenow="55"
-                      aria-valuemin="0"
-                      aria-valuemax="100"
-                    >
-                      55%
-                    </div> */}
-              </div>
-            </div>
-          </div>
-        </section>
-      </div>
+        </div>
+      </section>
     </div>
   );
 }
-
-export default Skills;
