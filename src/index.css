@@ -91,7 +91,7 @@ img {
 }
 
 #assets {
-  max-width: 72.5% !important
+  max-width: 75% !important
 }
 
 .logo {
@@ -158,6 +158,10 @@ span {
   color: var(--text-primary) !important
 }
 
+.btn:hover {
+  color: var(--text-primary) !important;
+}
+
 .btn:active {
   transform: scale(.9);
 }
@@ -199,6 +203,14 @@ section {
   background: #fffFFF1A !important;
 }
 
+.kontak {
+  border-radius: 7.5px !important;
+  border-right: solid 10px var(--color-secondary) !important;
+  background: #fffFFF1A !important;
+  backdrop-filter: blur(5px) !important;
+  -webkit-backdrop-filter: blur(5px) !important;
+}
+
 .accordion-button.collapsed::after {
   background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
 }
@@ -216,9 +228,6 @@ section {
   -webkit-box-orient: vertical;
 }
 
-.marker {
-  border-right: solid 10px var(--color-secondary) !important;
-}
 
 #pills-web-application-tab.active,
 #pills-mobile-application-tab.active,
@@ -397,10 +406,6 @@ textarea:focus {
 
   .hero-img {
     max-width: 75% !important;
-  }
-
-  .about-me {
-    margin: 2.5rem 3rem 0 0 !important
   }
 
   form {
