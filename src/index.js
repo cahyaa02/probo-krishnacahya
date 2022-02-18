@@ -1,40 +1,34 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import './scripts/script.js';
-// import App from './App';
-import * as serviceWorker from "./serviceWorker";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import reportWebVitals from './reportWebVitals';
+import * as serviceWorker from "./serviceWorker";
 import { Tooltip } from 'bootstrap';
 import AOS from 'aos';
 import "aos/dist/aos.css";
 import Typewriter from 'typewriter-effect/dist/core';
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-
+import './index.css';
+import './scripts/script.js';
 import {
     Navigation,
+    PageNotFound,
     Home,
     Contacts,
     Projects,
-    Skills
+    Skills,
+    Blogs
 } from "./scripts/export";
-
-// ReactDOM.render(
-//   <React.StrictMode>
-//     <App />
-//   </React.StrictMode>,
-//   document.getElementById('root')
-// );
 
 ReactDOM.render(
     <Router>
         <Navigation />
         <Routes>
+            <Route path="*" element={<PageNotFound />} />
             <Route path="/" element={<Home />} />
             <Route path="/contacts" element={<Contacts />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/skills" element={<Skills />} />
-            {/* <Route path="/blogs" element={<Blogs />} /> */}
+            <Route path="/blogs" element={<Blogs />} />
         </Routes>
     </Router>,
 

@@ -11,9 +11,9 @@ export default function Home() {
       <div className="container">
         <div className="col mt-4" data-aos="fade-up">
           <div className="row flex-lg-row-reverse align-items-center">
-            <div className="col-12 col-sm-6 col-lg-6 text-center">
+            <div className="col-12 col-sm-6 col-md-12 col-lg-6 text-center">
               <img
-                src="images/author-hero.svg"
+                src="images/assets/author-hero.svg"
                 className="hero-img"
                 alt="Probo Krishnacahya"
                 loading="lazy"
@@ -27,26 +27,15 @@ export default function Home() {
                 <span className="fs-1 fw-bold">Probo Krishnacahya</span>
                 <span className="fs-1">.</span>
               </span>
+              <hr />
+              <span id="typewriting"></span>
               <br />
-              <span id="typewriting" className="text-white-50"></span>
-              <br />
-              <div className="d-grid gap-2 d-md-flex justify-content-md-start mt-5">
-                {/* <button
-                  type="button"
-                  className="btn btn-primary btn-lg pulse px-4 me-md-2"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    window.location.href = "/contacts";
-                  }}
-                >
-                  <i className="bi bi-emoji-smile"></i>&emsp;
-                  <strong>Get in touch</strong>
-                </button> */}
+              <div className="d-grid gap-4 d-md-block justify-content-md-start mt-5">
                 <NavLink
                   className="btn btn-primary btn-lg pulse px-4 me-md-2"
                   to="/contacts"
                 >
-                  <i className="bi bi-emoji-smile"></i>&emsp;
+                  <i className="bi bi-person-plus-fill"></i>&emsp;
                   <strong>Get in touch</strong>
                 </NavLink>
                 {/* <button
@@ -54,7 +43,7 @@ export default function Home() {
                   className="btn btn-outline-primary btn-lg px-4 me-md-2"
                   onClick={(e) => {
                     e.preventDefault();
-                    downloadFile("images/logo.svg");
+                    downloadFile("images/homepage/resume.svg");
                   }}
                 >
                   <i className="bi bi-download"></i>&emsp;
@@ -76,10 +65,10 @@ export default function Home() {
           <div className="row g-3">
             <div className="col-xl-6 align-self-center">
               <div className="card pb-1">
-                <div className="row">
+                <div className="row g-3">
                   <div className="col-xl-6 text-center pt-xl-1">
                     <img
-                      src="images/author-card.svg"
+                      src="images/assets/author-card.svg"
                       id="assets"
                       alt="Probo Krishnacahya"
                       loading="lazy"
@@ -101,7 +90,7 @@ export default function Home() {
                           data-bs-toggle="tooltip"
                           title="City"
                         ></i>
-                        &emsp; Surabaya
+                        &emsp; Surabaya, East Java
                       </p>
                       <p>
                         <i

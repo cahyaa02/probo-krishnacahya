@@ -13,11 +13,12 @@ export default function Navigation() {
             data-bs-placement="bottom"
             title="Homepage"
           >
-            {/* <img src="images/logo.svg" alt="Logo" class="logo me-2" /> */}
-            <strong class="pk">PK&emsp;Probo Krishnacahya</strong>
+            <strong className="pk">
+              <span id="logo">PK</span>&emsp;Probo Krishnacahya
+            </strong>
           </NavLink>
           <button
-            class="navbar-toggler collapsed border-0"
+            className="navbar-toggler collapsed border border-2 border-secondary bg-dark"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarNav"
@@ -25,17 +26,17 @@ export default function Navigation() {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
-            <span class="bi bi-x-lg fs-1"></span>
+            <span className="navbar-toggler-icon"></span>
+            <span className="bi bi-x-lg fs-1"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
-            <ul className="navbar-nav ms-auto">
-              <li className="nav-item me-4">
+            <ul className="navbar-nav ms-auto gap-3">
+              <li className="nav-item">
                 <NavLink className="nav-link" to="contacts">
                   Contacts
                 </NavLink>
               </li>
-              <li className="nav-item me-4">
+              <li className="nav-item">
                 <NavLink className="nav-link" to="projects">
                   Projects
                 </NavLink>
@@ -45,11 +46,11 @@ export default function Navigation() {
                   Skills
                 </NavLink>
               </li>
-              {/* <li className="nav-item">
+              <li className="nav-item">
                 <NavLink className="nav-link" to="blogs">
                   Blogs
                 </NavLink>
-              </li> */}
+              </li>
             </ul>
           </div>
         </div>

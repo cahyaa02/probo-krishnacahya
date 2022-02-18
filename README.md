@@ -1,3 +1,38 @@
+# List of Features (Coming Soon):
+*:
+- Listen to internet connection (make Preloader for load pages or Skeleton for load contents).
+- Flying particles background.
+- Embed Audio (Songs).
+- Using [Chakra UI](https://chakra-ui.com/).
+
+=====||=====
+
+/:
+- Add Resume on CTA Download Button.
+- 3D Hero section using [WebGL](https://experiments.withgoogle.com/search?q=WebGL) ~ [Three.js](https://threejs.org/)
+	- Animated futuristic sphere or blobs (?)
+	- Donuts with 360 degree rotating & swipe interaction (?)
+	- Shiny ball with 360 degree rotating, mouse hover & swipe interaction (?)
+- 3d Character using [Spline](https://spline.design/).
+
+=====||=====
+
+/projects:
+- Search Bar using https://www.algolia.com/
+- Make Detail Project Info's Page (Explanation + Carousel).
+
+=====||=====
+
+/contacts:
+- Send contact form to Email or Spreadsheet.
+
+=====||=====
+
+/blogs:
+- [Strapi](https://strapi.io/) Fetch API for the contents.
+
+<hr />
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,3 +103,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+<hr />
+
+© Probo Krishnacahya

@@ -5,6 +5,7 @@
   --text-secondary: #000000 !important;
   --font-primary: 'Manrope', sans-serif !important;
   --font-secondary: 'Exo 2', sans-serif !important;
+  --font-tertiary: 'La Belle Aurore', cursive !important;
 }
 
 body {
@@ -12,7 +13,7 @@ body {
   font-size: var(--normal-font-size);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: url(/public/images/background-desktop.svg) fixed center / cover no-repeat;
+  background: url(/public/images/assets/background-desktop.svg) fixed center / cover no-repeat;
   scroll-behavior: smooth !important
 }
 
@@ -94,8 +95,8 @@ img {
   max-width: 75% !important
 }
 
-.logo {
-  max-width: 10% !important;
+#logo {
+  font-family: var(--font-tertiary);
 }
 
 .font-secondary {
@@ -197,6 +198,10 @@ section {
   -webkit-backdrop-filter: blur(5px) !important;
 }
 
+.card-img-top {
+  max-width: 70% !important;
+}
+
 .keahlian {
   border-radius: 7.5px !important;
   border: solid 2px #fffFFF25 !important;
@@ -215,6 +220,12 @@ section {
   background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
 }
 
+.fi {
+  background-size: contain;
+  background-position: 50%;
+  background-repeat: no-repeat;
+}
+
 .badge {
   padding: .75rem;
   font-size: medium;
@@ -227,7 +238,6 @@ section {
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
 }
-
 
 #pills-web-application-tab.active,
 #pills-mobile-application-tab.active,
@@ -366,7 +376,7 @@ textarea:focus {
 
 @media screen and (max-width:768px) {
   body {
-    background: url(/public/images/background-mobile.svg) fixed center / cover no-repeat !important;
+    background: url(/public/images/assets/background-mobile.svg) fixed center / cover no-repeat !important;
   }
 
   h2 {
@@ -376,10 +386,6 @@ textarea:focus {
   h4,
   summary {
     font-size: larger !important
-  }
-
-  .navbar-toggler {
-    border: none !important
   }
 
   .navbar-toggler-icon {
@@ -396,7 +402,6 @@ textarea:focus {
 
   #assets {
     max-width: 70% !important;
-    padding: .75rem 2rem 2rem 2rem
   }
 
   .hero-text {
@@ -410,13 +415,5 @@ textarea:focus {
 
   form {
     margin: 1rem
-  }
-
-  #contact-lists {
-    text-align: start !important
-  }
-
-  .medsos {
-    margin-left: .75rem
   }
 }
