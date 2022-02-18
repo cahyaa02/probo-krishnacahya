@@ -8,7 +8,6 @@ import AOS from 'aos';
 import "aos/dist/aos.css";
 import Typewriter from 'typewriter-effect/dist/core';
 import './index.css';
-import './scripts/script.js';
 import {
     Navigation,
     PageNotFound,

@@ -803,6 +803,68 @@ export default function Skills() {
           </div>
         </div>
       </section>
+      <div className="text-center mb-5">
+          <div className="d-inline me-3">
+            <span className="fs-6">Hand-Coded using&ensp;</span>
+            <span>
+              <a href="http://www.w3.org/TR/html5/">
+                <img
+                  src="images/skills/hypertext-markup-language-5.svg"
+                  className="technology"
+                  alt="HTML5"
+                  data-bs-toggle="tooltip"
+                  title="HyperText Markup Language 5"
+                />
+              </a>
+              &ensp;
+              <a href="http://www.w3.org/TR/CSS/">
+                <img
+                  src="images/skills/cascading-style-sheets-3.svg"
+                  className="technology"
+                  alt="CSS3"
+                  data-bs-toggle="tooltip"
+                  title="Cascading Style Sheets 3"
+                />
+              </a>
+              &ensp;
+              <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">
+                <img
+                  src="images/skills/javascript.svg"
+                  className="technology"
+                  alt="JavaScript"
+                  data-bs-toggle="tooltip"
+                  title="JavaScript"
+                />
+              </a>
+              &ensp;
+              <a href="https://reactjs.org/">
+                <img
+                  src="images/skills/reactjs.svg"
+                  className="technology"
+                  alt="ReactJS"
+                  data-bs-toggle="tooltip"
+                  title="ReactJS"
+                />
+              </a>
+            </span>
+          </div>
+          <br />
+          <br />
+          <div className="d-inline">
+            <span className="fs-6">Deployed using&ensp;</span>
+            <span>
+              <a href="https://www.netlify.com/">
+                <img
+                  src="images/homepage/netlify.svg"
+                  className="technology"
+                  alt="Netlify"
+                  data-bs-toggle="tooltip"
+                  title="Netlify"
+                />
+              </a>
+            </span>
+          </div>
+        </div>
     </div>
   );
 }

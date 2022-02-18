@@ -11,14 +11,14 @@
 - Add Resume on CTA Download Button.
 - 3D Hero section using [WebGL](https://experiments.withgoogle.com/search?q=WebGL) ~ [Three.js](https://threejs.org/)
 	- Animated futuristic sphere or blobs (?)
-	- Donuts with 360 degree rotating & swipe interaction (?)
-	- Shiny ball with 360 degree rotating, mouse hover & swipe interaction (?)
+	- Donuts with moving 360 degree rotating & swipe interaction (?)
+	- Shiny ball with moving 360 degree rotating, mouse hover & swipe interaction (?)
 - 3d Character using [Spline](https://spline.design/).
 
 =====||=====
 
 /projects:
-- Search Bar using https://www.algolia.com/
+- Search Bar using [Algolia](https://www.algolia.com/)
 - Make Detail Project Info's Page (Explanation + Carousel).
 
 =====||=====

@@ -95,6 +95,10 @@ img {
   max-width: 75% !important
 }
 
+.technology {
+  max-width: 5% !important;
+}
+
 #logo {
   font-family: var(--font-tertiary);
 }
@@ -372,6 +376,11 @@ textarea:focus {
 
 .text-footer {
   font-size: large !important;
+}
+
+#myBtn:hover {
+  cursor: pointer;
+  color: var(--color-secondary);
 }
 
 @media screen and (max-width:768px) {
