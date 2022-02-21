@@ -9,18 +9,18 @@ import "aos/dist/aos.css";
 import Typewriter from 'typewriter-effect/dist/core';
 import './index.css';
 import {
-    Navigation,
+    Header,
     PageNotFound,
     Home,
     Contacts,
     Projects,
     Skills,
     Blogs
-} from "./scripts/export";
+} from "./script/export";
 
 ReactDOM.render(
     <Router>
-        <Navigation />
+        <Header />
         <Routes>
             <Route path="*" element={<PageNotFound />} />
             <Route path="/" element={<Home />} />
@@ -56,7 +56,7 @@ var typewriter = new Typewriter(typewriting, {
 });
 typewriter.typeString('Frontend Developer').pauseFor(3000).deleteAll(30)
     .typeString('UI/UX Designer').pauseFor(3000).deleteAll(30)
-    .typeString('DevSecOps Engineer').pauseFor(3000).deleteAll(30)
+    // .typeString('DevSecOps Engineer').pauseFor(3000).deleteAll(30)
     .start();
 
 serviceWorker.unregister();

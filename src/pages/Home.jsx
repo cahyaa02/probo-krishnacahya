@@ -38,17 +38,17 @@ export default function Home() {
                   <i className="bi bi-person-plus-fill"></i>&emsp;
                   <strong>Get in touch</strong>
                 </NavLink>
-                {/* <button
+                <button
                   type="button"
                   className="btn btn-outline-primary btn-lg px-4 me-md-2"
                   onClick={(e) => {
                     e.preventDefault();
-                    downloadFile("images/homepage/resume.svg");
+                    downloadFile("pdf/home/resume.pdf");
                   }}
                 >
                   <i className="bi bi-download"></i>&emsp;
                   <strong>Download Resume</strong>
-                </button> */}
+                </button>
               </div>
             </div>
           </div>

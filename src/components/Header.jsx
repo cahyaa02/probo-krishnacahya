@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-export default function Navigation() {
+export default function Header() {
   return (
     <div className="navigation">
       <nav className="navbar navbar-expand-lg navbar-dark user-select-none py-3">
@@ -11,7 +11,7 @@ export default function Navigation() {
             to="/"
             data-bs-toggle="tooltip"
             data-bs-placement="bottom"
-            title="Homepage"
+            title="Home"
           >
             <strong className="pk">
               <span id="logo">PK</span>&emsp;Probo Krishnacahya

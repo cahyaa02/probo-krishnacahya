@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="h-100">
+<html lang="en" dir="ltr" class="h-100">
 
 <head>
   <!-- HyperText Markup Language Meta Tags -->
@@ -31,9 +31,9 @@
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap&family=Exo+2:wght@700&display=swap&family=La+Belle+Aurore&display=swap"
+    rel="stylesheet">
 
   <!-- Web Application Manifest -->
   <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
@@ -43,6 +43,7 @@
 
   <!-- Tab Page Title -->
   <title>Probo Krishnacahya</title>
+  <script src="%PUBLIC_URL%/scripts/script.js"></script>
 </head>
 
 <body class="text-white d-flex flex-column h-100">
@@ -54,7 +55,7 @@
     <div class="mx-auto">
       <div class="container">
         <span class="text-footer">&copy; 2022</span>
-        <a href="/" data-bs-toggle="tooltip" title="Homepage">
+        <a href="/" data-bs-toggle="tooltip" title="Home">
           &nbsp;<span class="text-footer text-info">Probo Krishnacahya</span>
         </a>
         <hr />
@@ -89,8 +90,8 @@
     </div>
   </footer>
 
+  <!-- //* Scroll to Top Page's Button -->
   <script>
-    //* Scroll to Top Page's Button
     var mybutton = document.getElementById("myBtn");
 
     function scrollToTop() {

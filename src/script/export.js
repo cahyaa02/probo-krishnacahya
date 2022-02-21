@@ -1,4 +1,4 @@
-export { default as Navigation } from "../routes/Navigation";
+export { default as Header } from "../components/Header";
 export { default as PageNotFound } from "../error/404Page";
 export { default as Home } from "../pages/Home";
 export { default as Contacts } from "../pages/Contacts";

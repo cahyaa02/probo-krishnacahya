@@ -33,7 +33,7 @@ export default function PageNotFound() {
                 <br />
                 <NavLink className="btn btn-light btn-lg px-4" to="/">
                   <i className="bi bi-house-door text-danger"></i>&emsp;
-                  <strong className="text-danger">Back to Homepage</strong>
+                  <strong className="text-danger">Back to Home</strong>
                 </NavLink>
               </div>
             </div>
