@@ -16,9 +16,9 @@ export default function Blogs() {
           >
             <div>
               <h1>
-                <i className="bi bi-blockquote-left"></i>
+                <i className="fa-solid fa-pen-to-square fa-2x mb-3"></i>
                 <br />
-                Coming Soon :)
+                Coming Soon &#128513;
               </h1>
             </div>
           </div>

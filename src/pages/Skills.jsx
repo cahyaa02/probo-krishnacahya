@@ -7,18 +7,18 @@ export default function Skills() {
 
   return (
     <div className="skills">
-      <div className="container mt-5">
-        <h3 className="text-center mb-3">Certifications</h3>
+      <div className="container mt-5" data-aos="fade-up">
+        <h5 className="text-center mb-3">Certifications</h5>
         <div
-          id="carouselExampleDark"
-          className="carousel carousel-dark slide"
+          id="carouselExample"
+          className="carousel slide"
           data-bs-interval="5000"
           data-bs-ride="carousel"
         >
           <div className="carousel-indicators">
             <button
               type="button"
-              data-bs-target="#carouselExampleDark"
+              data-bs-target="#carouselExample"
               data-bs-slide-to="0"
               data-bs-toggle="tooltip"
               title="Slide 1"
@@ -28,7 +28,7 @@ export default function Skills() {
             ></button>
             <button
               type="button"
-              data-bs-target="#carouselExampleDark"
+              data-bs-target="#carouselExample"
               data-bs-slide-to="1"
               data-bs-toggle="tooltip"
               title="Slide 2"
@@ -36,7 +36,7 @@ export default function Skills() {
             ></button>
             <button
               type="button"
-              data-bs-target="#carouselExampleDark"
+              data-bs-target="#carouselExample"
               data-bs-slide-to="2"
               data-bs-toggle="tooltip"
               title="Slide 3"
@@ -44,7 +44,7 @@ export default function Skills() {
             ></button>
             <button
               type="button"
-              data-bs-target="#carouselExampleDark"
+              data-bs-target="#carouselExample"
               data-bs-slide-to="3"
               data-bs-toggle="tooltip"
               title="Slide 4"
@@ -52,7 +52,7 @@ export default function Skills() {
             ></button>
             <button
               type="button"
-              data-bs-target="#carouselExampleDark"
+              data-bs-target="#carouselExample"
               data-bs-slide-to="4"
               data-bs-toggle="tooltip"
               title="Slide 5"
@@ -60,7 +60,7 @@ export default function Skills() {
             ></button>
             <button
               type="button"
-              data-bs-target="#carouselExampleDark"
+              data-bs-target="#carouselExample"
               data-bs-slide-to="5"
               data-bs-toggle="tooltip"
               title="Slide 6"
@@ -68,7 +68,7 @@ export default function Skills() {
             ></button>
             <button
               type="button"
-              data-bs-target="#carouselExampleDark"
+              data-bs-target="#carouselExample"
               data-bs-slide-to="6"
               data-bs-toggle="tooltip"
               title="Slide 7"
@@ -76,7 +76,7 @@ export default function Skills() {
             ></button>
             <button
               type="button"
-              data-bs-target="#carouselExampleDark"
+              data-bs-target="#carouselExample"
               data-bs-slide-to="7"
               data-bs-toggle="tooltip"
               title="Slide 8"
@@ -84,7 +84,7 @@ export default function Skills() {
             ></button>
             <button
               type="button"
-              data-bs-target="#carouselExampleDark"
+              data-bs-target="#carouselExample"
               data-bs-slide-to="8"
               data-bs-toggle="tooltip"
               title="Slide 9"
@@ -92,200 +92,99 @@ export default function Skills() {
             ></button>
             <button
               type="button"
-              data-bs-target="#carouselExampleDark"
+              data-bs-target="#carouselExample"
               data-bs-slide-to="9"
               data-bs-toggle="tooltip"
               title="Slide 10"
               aria-label="Slide 10"
             ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExample"
+              data-bs-slide-to="10"
+              data-bs-toggle="tooltip"
+              title="Slide 11"
+              aria-label="Slide 11"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExample"
+              data-bs-slide-to="11"
+              data-bs-toggle="tooltip"
+              title="Slide 12"
+              aria-label="Slide 12"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExample"
+              data-bs-slide-to="12"
+              data-bs-toggle="tooltip"
+              title="Slide 13"
+              aria-label="Slide 13"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExample"
+              data-bs-slide-to="13"
+              data-bs-toggle="tooltip"
+              title="Slide 14"
+              aria-label="Slide 14"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExample"
+              data-bs-slide-to="14"
+              data-bs-toggle="tooltip"
+              title="Slide 15"
+              aria-label="Slide 15"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExample"
+              data-bs-slide-to="15"
+              data-bs-toggle="tooltip"
+              title="Slide 16"
+              aria-label="Slide 16"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExample"
+              data-bs-slide-to="16"
+              data-bs-toggle="tooltip"
+              title="Slide 17"
+              aria-label="Slide 17"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExample"
+              data-bs-slide-to="17"
+              data-bs-toggle="tooltip"
+              title="Slide 18"
+              aria-label="Slide 18"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExample"
+              data-bs-slide-to="18"
+              data-bs-toggle="tooltip"
+              title="Slide 19"
+              aria-label="Slide 19"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExample"
+              data-bs-slide-to="19"
+              data-bs-toggle="tooltip"
+              title="Slide 20"
+              aria-label="Slide 20"
+            ></button>
           </div>
-          <div className="carousel-inner">
+          <div className="carousel-inner text-center mx-auto rounded">
             <div className="carousel-item active">
               <img
-                src="images/skills/certifications/Belajar Prinsip Pemrograman SOLID sertifikat_course_169_1811892_220921212436.svg"
+                src="images/skills/certifications/Aguna Course/Python Fundamental AC-455-97841590-53.svg"
                 alt="Carousel"
                 loading="lazy"
-                className="img-fluid mx-auto d-block e-certificate"
-              />
-              <div class="carousel-caption">
-                <a
-                  href="https://www.dicoding.com/certificates/N9ZOE9E18XG5/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <button className="btn btn-primary">
-                    <i className="bi bi-box-arrow-up-right"></i>&emsp;
-                    <strong>View E-Certificate</strong>
-                  </button>
-                </a>
-              </div>
-            </div>
-            <div className="carousel-item">
-              <img
-                src="images/skills/certifications/Bootstrap 4.x (Advanced) Probo_498883.svg"
-                alt="Carousel"
-                loading="lazy"
-                className="img-fluid mx-auto d-block e-certificate"
-              />
-              <div class="carousel-caption">
-                <a
-                  href="https://www.studysection.com/users/socialMedia/NDk4ODgz/cHJvYm8ua3Jpc2huYWNhaHlhQGdtYWlsLmNvbQ%3D%3D/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <button className="btn btn-primary">
-                    <i className="bi bi-box-arrow-up-right"></i>&emsp;
-                    <strong>View E-Certificate</strong>
-                  </button>
-                </a>
-              </div>
-            </div>
-            <div className="carousel-item">
-              <img
-                src="images/skills/certifications/CSS 3 (Advanced) Probo_498892.svg"
-                alt="Carousel"
-                loading="lazy"
-                className="img-fluid mx-auto d-block e-certificate"
-              />
-              <div class="carousel-caption">
-                <a
-                  href="https://www.studysection.com/users/socialMedia/NDk4ODky/cHJvYm8ua3Jpc2huYWNhaHlhQGdtYWlsLmNvbQ%3D%3D/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <button className="btn btn-primary">
-                    <i className="bi bi-box-arrow-up-right"></i>&emsp;
-                    <strong>View E-Certificate</strong>
-                  </button>
-                </a>
-              </div>
-            </div>
-            <div className="carousel-item">
-              <img
-                src="images/skills/certifications/Git.svg"
-                alt="Carousel"
-                loading="lazy"
-                className="img-fluid mx-auto d-block e-certificate"
-              />
-              <div class="carousel-caption">
-                <a
-                  href="https://app.testdome.com/cert/3b309305da0f40fda44e5dcfd2d49ec8/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <button className="btn btn-primary">
-                    <i className="bi bi-box-arrow-up-right"></i>&emsp;
-                    <strong>View E-Certificate</strong>
-                  </button>
-                </a>
-              </div>
-            </div>
-            <div className="carousel-item">
-              <img
-                src="images/skills/certifications/HTML - CSS, and Bootstrap.svg"
-                alt="Carousel"
-                loading="lazy"
-                className="img-fluid mx-auto d-block e-certificate"
-              />
-              <div class="carousel-caption">
-                <a
-                  href="https://app.testdome.com/cert/2f62fb3b168e4066bf09e61d6ce201c4/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <button className="btn btn-primary">
-                    <i className="bi bi-box-arrow-up-right"></i>&emsp;
-                    <strong>View E-Certificate</strong>
-                  </button>
-                </a>
-              </div>
-            </div>
-            <div className="carousel-item">
-              <img
-                src="images/skills/certifications/HTML - CSS, JavaScript With jQuery, and Bootstrap.svg"
-                alt="Carousel"
-                loading="lazy"
-                className="img-fluid mx-auto d-block e-certificate"
-              />
-              <div class="carousel-caption">
-                <a
-                  href="https://app.testdome.com/cert/2f62fb3b168e4066bf09e61d6ce201c4/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <button className="btn btn-primary">
-                    <i className="bi bi-box-arrow-up-right"></i>&emsp;
-                    <strong>View E-Certificate</strong>
-                  </button>
-                </a>
-              </div>
-            </div>
-            <div className="carousel-item">
-              <img
-                src="images/skills/certifications/HTML - CSS, JavaScript, and React.svg"
-                alt="Carousel"
-                loading="lazy"
-                className="img-fluid mx-auto d-block e-certificate"
-              />
-              <div class="carousel-caption">
-                <a
-                  href="https://app.testdome.com/cert/e532dc2f33464be081f9c27a9506d72c/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <button className="btn btn-primary">
-                    <i className="bi bi-box-arrow-up-right"></i>&emsp;
-                    <strong>View E-Certificate</strong>
-                  </button>
-                </a>
-              </div>
-            </div>
-            <div className="carousel-item">
-              <img
-                src="images/skills/certifications/HTML - CSS.svg"
-                alt="Carousel"
-                loading="lazy"
-                className="img-fluid mx-auto d-block e-certificate"
-              />
-              <div class="carousel-caption">
-                <a
-                  href="https://app.testdome.com/cert/a8c62a64a3954fba93fe69c6be4ceebb/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <button className="btn btn-primary">
-                    <i className="bi bi-box-arrow-up-right"></i>&emsp;
-                    <strong>View E-Certificate</strong>
-                  </button>
-                </a>
-              </div>
-            </div>
-            <div className="carousel-item">
-              <img
-                src="images/skills/certifications/HTML5 (Advanced) Probo_498645.svg"
-                alt="Carousel"
-                loading="lazy"
-                className="img-fluid mx-auto d-block e-certificate"
-              />
-              <div class="carousel-caption">
-                <a
-                  href="https://www.studysection.com/Users/socialMedia/NDk4NjQ1/cHJvYm8ua3Jpc2huYWNhaHlhQGdtYWlsLmNvbQ%3D%3D/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <button className="btn btn-primary">
-                    <i className="bi bi-box-arrow-up-right"></i>&emsp;
-                    <strong>View E-Certificate</strong>
-                  </button>
-                </a>
-              </div>
-            </div>
-            <div className="carousel-item">
-              <img
-                src="images/skills/certifications/Python Fundamental AC-455-97841590-53.svg"
-                alt="Carousel"
-                loading="lazy"
-                className="img-fluid mx-auto d-block e-certificate"
               />
               <div class="carousel-caption">
                 <a
@@ -293,7 +192,368 @@ export default function Skills() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <button className="btn btn-primary">
+                  <button className="btn btn-primary mb-1">
+                    <i className="bi bi-box-arrow-up-right"></i>&emsp;
+                    <strong>View E-Certificate</strong>
+                  </button>
+                </a>
+              </div>
+            </div>
+            <div className="carousel-item">
+              <img
+                src="images/skills/certifications/Dicoding/Belajar Prinsip Pemrograman SOLID sertifikat_course_169_1811892_220921212436.svg"
+                alt="Carousel"
+                loading="lazy"
+              />
+              <div class="carousel-caption">
+                <a
+                  href="https://www.dicoding.com/certificates/N9ZOE9E18XG5/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button className="btn btn-primary mb-1">
+                    <i className="bi bi-box-arrow-up-right"></i>&emsp;
+                    <strong>View E-Certificate</strong>
+                  </button>
+                </a>
+              </div>
+            </div>
+            <div className="carousel-item">
+              <img
+                src="images/skills/certifications/Great Learning/Front End Development - CSS Probo Krishnacahya.svg"
+                alt="Carousel"
+                loading="lazy"
+              />
+              <div class="carousel-caption">
+                <a
+                  href="https://olympus1.mygreatlearning.com/course_certificate/APMQPGOB/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button className="btn btn-primary mb-1">
+                    <i className="bi bi-box-arrow-up-right"></i>&emsp;
+                    <strong>View E-Certificate</strong>
+                  </button>
+                </a>
+              </div>
+            </div>
+            <div className="carousel-item">
+              <img
+                src="images/skills/certifications/Great Learning/Front End Development - HTML Probo Krishnacahya.svg"
+                alt="Carousel"
+                loading="lazy"
+              />
+              <div class="carousel-caption">
+                <a
+                  href="https://olympus1.mygreatlearning.com/course_certificate/QYUKBBAP/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button className="btn btn-primary mb-1">
+                    <i className="bi bi-box-arrow-up-right"></i>&emsp;
+                    <strong>View E-Certificate</strong>
+                  </button>
+                </a>
+              </div>
+            </div>
+            <div className="carousel-item">
+              <img
+                src="images/skills/certifications/Kaggle/Python - Probo Krishnacahya.svg"
+                alt="Carousel"
+                loading="lazy"
+              />
+              <div class="carousel-caption">
+                <a
+                  href="https://www.kaggle.com/learn/certification/probokrishnacahya/python/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button className="btn btn-primary mb-1">
+                    <i className="bi bi-box-arrow-up-right"></i>&emsp;
+                    <strong>View E-Certificate</strong>
+                  </button>
+                </a>
+              </div>
+            </div>
+            <div className="carousel-item">
+              <img
+                src="images/skills/certifications/StudySection/Bootstrap 4.x (Advanced) Probo_498883.svg"
+                alt="Carousel"
+                loading="lazy"
+              />
+              <div class="carousel-caption">
+                <a
+                  href="https://www.studysection.com/users/socialMedia/NDk4ODgz/cHJvYm8ua3Jpc2huYWNhaHlhQGdtYWlsLmNvbQ%3D%3D/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button className="btn btn-primary mb-1">
+                    <i className="bi bi-box-arrow-up-right"></i>&emsp;
+                    <strong>View E-Certificate</strong>
+                  </button>
+                </a>
+              </div>
+            </div>
+            <div className="carousel-item">
+              <img
+                src="images/skills/certifications/StudySection/CSS 3 (Advanced) Probo_498892.svg"
+                alt="Carousel"
+                loading="lazy"
+              />
+              <div class="carousel-caption">
+                <a
+                  href="https://www.studysection.com/users/socialMedia/NDk4ODky/cHJvYm8ua3Jpc2huYWNhaHlhQGdtYWlsLmNvbQ%3D%3D/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button className="btn btn-primary mb-1">
+                    <i className="bi bi-box-arrow-up-right"></i>&emsp;
+                    <strong>View E-Certificate</strong>
+                  </button>
+                </a>
+              </div>
+            </div>
+            <div className="carousel-item">
+              <img
+                src="images/skills/certifications/StudySection/HTML5 (Advanced) Probo_498645.svg"
+                alt="Carousel"
+                loading="lazy"
+              />
+              <div class="carousel-caption">
+                <a
+                  href="https://www.studysection.com/Users/socialMedia/NDk4NjQ1/cHJvYm8ua3Jpc2huYWNhaHlhQGdtYWlsLmNvbQ%3D%3D/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button className="btn btn-primary mb-1">
+                    <i className="bi bi-box-arrow-up-right"></i>&emsp;
+                    <strong>View E-Certificate</strong>
+                  </button>
+                </a>
+              </div>
+            </div>
+            <div className="carousel-item">
+              <img
+                src="images/skills/certifications/StudySection/UI-UX Developer (Advanced) Probo_502201.svg"
+                alt="Carousel"
+                loading="lazy"
+              />
+              <div class="carousel-caption">
+                <a
+                  href="https://www.studysection.com/users/socialMedia/NTAyMjAx/cHJvYm8ua3Jpc2huYWNhaHlhQGdtYWlsLmNvbQ%3D%3D/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button className="btn btn-primary mb-1">
+                    <i className="bi bi-box-arrow-up-right"></i>&emsp;
+                    <strong>View E-Certificate</strong>
+                  </button>
+                </a>
+              </div>
+            </div>
+            <div className="carousel-item">
+              <img
+                src="images/skills/certifications/StudySection/Web Designing (Advanced) Probo_502211.svg"
+                alt="Carousel"
+                loading="lazy"
+              />
+              <div class="carousel-caption">
+                <a
+                  href="https://www.studysection.com/users/socialMedia/NTAyMjEx/cHJvYm8ua3Jpc2huYWNhaHlhQGdtYWlsLmNvbQ==/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button className="btn btn-primary mb-1">
+                    <i className="bi bi-box-arrow-up-right"></i>&emsp;
+                    <strong>View E-Certificate</strong>
+                  </button>
+                </a>
+              </div>
+            </div>
+            <div className="carousel-item">
+              <img
+                src="images/skills/certifications/TestDome/A-B Testing.svg"
+                alt="Carousel"
+                loading="lazy"
+              />
+              <div class="carousel-caption">
+                <a
+                  href="https://app.testdome.com/cert/36ac75bae42c460db610f9625f83b675/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button className="btn btn-primary mb-1">
+                    <i className="bi bi-box-arrow-up-right"></i>&emsp;
+                    <strong>View E-Certificate</strong>
+                  </button>
+                </a>
+              </div>
+            </div>
+            <div className="carousel-item">
+              <img
+                src="images/skills/certifications/TestDome/Attention to Detail and Time Management.svg"
+                alt="Carousel"
+                loading="lazy"
+              />
+              <div class="carousel-caption">
+                <a
+                  href="https://app.testdome.com/cert/39a6f5d3441848a1b334b761fffd645c/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button className="btn btn-primary mb-1">
+                    <i className="bi bi-box-arrow-up-right"></i>&emsp;
+                    <strong>View E-Certificate</strong>
+                  </button>
+                </a>
+              </div>
+            </div>
+            <div className="carousel-item">
+              <img
+                src="images/skills/certifications/TestDome/Git.svg"
+                alt="Carousel"
+                loading="lazy"
+              />
+              <div class="carousel-caption">
+                <a
+                  href="https://app.testdome.com/cert/3b309305da0f40fda44e5dcfd2d49ec8/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button className="btn btn-primary mb-1">
+                    <i className="bi bi-box-arrow-up-right"></i>&emsp;
+                    <strong>View E-Certificate</strong>
+                  </button>
+                </a>
+              </div>
+            </div>
+            <div className="carousel-item">
+              <img
+                src="images/skills/certifications/TestDome/HTML - CSS, and Bootstrap.svg"
+                alt="Carousel"
+                loading="lazy"
+              />
+              <div class="carousel-caption">
+                <a
+                  href="https://app.testdome.com/cert/2f62fb3b168e4066bf09e61d6ce201c4/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button className="btn btn-primary mb-1">
+                    <i className="bi bi-box-arrow-up-right"></i>&emsp;
+                    <strong>View E-Certificate</strong>
+                  </button>
+                </a>
+              </div>
+            </div>
+            <div className="carousel-item">
+              <img
+                src="images/skills/certifications/TestDome/HTML - CSS, JavaScript With jQuery, and Bootstrap.svg"
+                alt="Carousel"
+                loading="lazy"
+              />
+              <div class="carousel-caption">
+                <a
+                  href="https://app.testdome.com/cert/2f62fb3b168e4066bf09e61d6ce201c4/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button className="btn btn-primary mb-1">
+                    <i className="bi bi-box-arrow-up-right"></i>&emsp;
+                    <strong>View E-Certificate</strong>
+                  </button>
+                </a>
+              </div>
+            </div>
+            <div className="carousel-item">
+              <img
+                src="images/skills/certifications/TestDome/HTML - CSS, JavaScript, and React.svg"
+                alt="Carousel"
+                loading="lazy"
+              />
+              <div class="carousel-caption">
+                <a
+                  href="https://app.testdome.com/cert/e532dc2f33464be081f9c27a9506d72c/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button className="btn btn-primary mb-1">
+                    <i className="bi bi-box-arrow-up-right"></i>&emsp;
+                    <strong>View E-Certificate</strong>
+                  </button>
+                </a>
+              </div>
+            </div>
+            <div className="carousel-item">
+              <img
+                src="images/skills/certifications/TestDome/HTML - CSS.svg"
+                alt="Carousel"
+                loading="lazy"
+              />
+              <div class="carousel-caption">
+                <a
+                  href="https://app.testdome.com/cert/a8c62a64a3954fba93fe69c6be4ceebb/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button className="btn btn-primary mb-1">
+                    <i className="bi bi-box-arrow-up-right"></i>&emsp;
+                    <strong>View E-Certificate</strong>
+                  </button>
+                </a>
+              </div>
+            </div>
+            <div className="carousel-item">
+              <img
+                src="images/skills/certifications/TestDome/Logical Reasoning.svg"
+                alt="Carousel"
+                loading="lazy"
+              />
+              <div class="carousel-caption">
+                <a
+                  href="https://app.testdome.com/cert/98ca9d68e3a0477e9fc9b36335ce3142/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button className="btn btn-primary mb-1">
+                    <i className="bi bi-box-arrow-up-right"></i>&emsp;
+                    <strong>View E-Certificate</strong>
+                  </button>
+                </a>
+              </div>
+            </div>
+            <div className="carousel-item">
+              <img
+                src="images/skills/certifications/TestDome/Marketing Analytics.svg"
+                alt="Carousel"
+                loading="lazy"
+              />
+              <div class="carousel-caption">
+                <a
+                  href="https://app.testdome.com/cert/a8b39c082f744f08a12dde0dd41569ba/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button className="btn btn-primary mb-1">
+                    <i className="bi bi-box-arrow-up-right"></i>&emsp;
+                    <strong>View E-Certificate</strong>
+                  </button>
+                </a>
+              </div>
+            </div>
+            <div className="carousel-item">
+              <img
+                src="images/skills/certifications/TestDome/Project Management and Time Management.svg"
+                alt="Carousel"
+                loading="lazy"
+              />
+              <div class="carousel-caption">
+                <a
+                  href="https://app.testdome.com/cert/528a68cf0ef742f8b89f17825e13e06d/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button className="btn btn-primary mb-1">
                     <i className="bi bi-box-arrow-up-right"></i>&emsp;
                     <strong>View E-Certificate</strong>
                   </button>
@@ -304,7 +564,7 @@ export default function Skills() {
           <button
             className="carousel-control-prev"
             type="button"
-            data-bs-target="#carouselExampleDark"
+            data-bs-target="#carouselExample"
             data-bs-slide="prev"
           >
             <span
@@ -318,7 +578,7 @@ export default function Skills() {
           <button
             className="carousel-control-next"
             type="button"
-            data-bs-target="#carouselExampleDark"
+            data-bs-target="#carouselExample"
             data-bs-slide="next"
           >
             <span
@@ -1229,53 +1489,43 @@ export default function Skills() {
           <span className="fs-6">Hand-Coded using&ensp;</span>
           <span>
             <a href="http://www.w3.org/TR/html5/">
-              <img
-                src="images/skills/technologies/hypertext-markup-language-5.svg"
-                className="technologies"
-                alt="HTML5"
+              <i
+                class="fa-brands fa-html5"
                 data-bs-toggle="tooltip"
                 title="HyperText Markup Language 5"
-              />
+              ></i>
             </a>
             &ensp;
             <a href="http://www.w3.org/TR/CSS/">
-              <img
-                src="images/skills/technologies/cascading-style-sheets-3.svg"
-                className="technologies"
-                alt="CSS3"
+              <i
+                class="fa-brands fa-css3-alt"
                 data-bs-toggle="tooltip"
                 title="Cascading Style Sheets 3"
-              />
+              ></i>
             </a>
             &ensp;
             <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">
-              <img
-                src="images/skills/technologies/javascript.svg"
-                className="technologies"
-                alt="JavaScript"
+              <i
+                class="fa-brands fa-js-square"
                 data-bs-toggle="tooltip"
                 title="JavaScript"
-              />
+              ></i>
             </a>
             &ensp;
             <a href="https://reactjs.org/">
-              <img
-                src="images/skills/technologies/reactjs.svg"
-                className="technologies"
-                alt="ReactJS"
+              <i
+                class="fa-brands fa-react"
                 data-bs-toggle="tooltip"
                 title="ReactJS"
-              />
+              ></i>
             </a>
             &ensp;
             <a href="https://getbootstrap.com/">
-              <img
-                src="images/skills/technologies/bootstrap.svg"
-                className="technologies"
-                alt="Bootstrap"
+              <i
+                class="fa-brands fa-bootstrap"
                 data-bs-toggle="tooltip"
                 title="Bootstrap"
-              />
+              ></i>
             </a>
           </span>
         </div>
@@ -1284,10 +1534,9 @@ export default function Skills() {
         <div className="d-inline">
           <span className="fs-6">Deployed using&ensp;</span>
           <span>
-            <a href="https://www.netlify.com/">
+            <a href="https://app.netlify.com/start/deploy?repository=https://github.com/netlify-templates/next-netlify-starter">
               <img
-                src="images/skills/technologies/netlify.svg"
-                className="technologies"
+                src="https://www.netlify.com/img/deploy/button.svg"
                 alt="Netlify"
                 data-bs-toggle="tooltip"
                 title="Netlify"

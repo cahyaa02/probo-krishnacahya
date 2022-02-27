@@ -31,7 +31,7 @@ export default function PageNotFound() {
                 <hr />
                 <p className="fs-4">Oops.. Please Check Your Keyword Again</p>
                 <br />
-                <NavLink className="btn btn-light btn-lg px-4" to="/">
+                <NavLink className="btn btn-dark btn-lg px-4" to="/">
                   <i className="bi bi-house-door text-danger"></i>&emsp;
                   <strong className="text-danger">Back to Home</strong>
                 </NavLink>

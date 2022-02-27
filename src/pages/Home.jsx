@@ -14,7 +14,7 @@ export default function Home() {
             <div className="col-12 col-sm-6 col-md-12 col-lg-6 text-center">
               <img
                 src="images/assets/author-hero.svg"
-                className="hero-img"
+                className="hero-img border border-5 border-primary rounded-circle shadow-sm"
                 alt="Probo Krishnacahya"
                 loading="lazy"
               />
@@ -43,7 +43,7 @@ export default function Home() {
                   className="btn btn-outline-primary btn-lg px-4 me-md-2"
                   onClick={(e) => {
                     e.preventDefault();
-                    downloadFile("pdf/home/resume.pdf");
+                    downloadFile("pdf/home/Resume Probo Krishnacahya.pdf");
                   }}
                 >
                   <i className="bi bi-download"></i>&emsp;
@@ -69,6 +69,7 @@ export default function Home() {
                   <div className="col-xl-6 text-center pt-xl-1">
                     <img
                       src="images/assets/author-card.svg"
+                      className="border border-2 border-info rounded-circle shadow-sm"
                       id="assets"
                       alt="Probo Krishnacahya"
                       loading="lazy"
@@ -102,11 +103,11 @@ export default function Home() {
                       </p>
                       <p>
                         <i
-                          className="bi bi-sort-numeric-up-alt"
+                          className="bi bi-suit-heart-fill"
                           data-bs-toggle="tooltip"
-                          title="Age"
+                          title="Religion"
                         ></i>
-                        &emsp; 19 y. o.
+                        &emsp; Catholic
                       </p>
                       <p>
                         <i
@@ -129,14 +130,14 @@ export default function Home() {
                 at Surabaya on November 2<sup>nd</sup>, 2002.
               </p>
               <p>
-                I am highly motivated to grow up Frontend Development skills and
-                passionate about Artificial Intelligence, Big Data, Information
-                Security, Cross-Platform Mobile Application Development, and
-                Progressive Web Apps Development.
+                I am highly motivated to grow up Frontend Development & UI/UX
+                Design skills and passionate about Artificial Intelligence, Big
+                Data, Information Security, Cross-Platform Mobile Application
+                Development, and Progressive Web Apps Development.
               </p>
               <p>
-                If You have any business inquiries, please contact me. Thank you
-                and have a nice day!
+                For any business inquiries and/or other subjects, please feel
+                free to contact me. Thank you and have a nice day.
               </p>
             </div>
           </div>

@@ -71,13 +71,37 @@ export default function Projects() {
             <div className="card" data-aos="fade-up">
               <h4 className="text-center">SejarahKita</h4>
               <hr />
-              <div className="d-sm-flex d-grid justify-content-center gap-2 mt-2">
-                <div className="badge bg-dark">PHP</div>
-                <div className="badge bg-dark">JavaScript</div>
-                <div className="badge bg-dark">HTML5</div>
-                <div className="badge bg-dark">CSS3</div>
-                <div className="badge bg-dark">Laravel</div>
-                <div className="badge bg-dark">Bootstrap</div>
+              <div className="d-flex justify-content-center gap-3 mt-2">
+                <i
+                  class="fa-brands fa-php fa-2x"
+                  data-bs-toggle="tooltip"
+                  title="Hypertext Preprocessor"
+                ></i>
+                <i
+                  class="fa-brands fa-js-square fa-2x"
+                  data-bs-toggle="tooltip"
+                  title="JavaScript"
+                ></i>
+                <i
+                  class="fa-brands fa-html5 fa-2x"
+                  data-bs-toggle="tooltip"
+                  title="HyperText Markup Language 5"
+                ></i>
+                <i
+                  class="fa-brands fa-css3-alt fa-2x"
+                  data-bs-toggle="tooltip"
+                  title="Cascading Style Sheets 3"
+                ></i>
+                <i
+                  class="fa-brands fa-laravel fa-2x"
+                  data-bs-toggle="tooltip"
+                  title="Laravel"
+                ></i>
+                <i
+                  class="fa-brands fa-bootstrap fa-2x"
+                  data-bs-toggle="tooltip"
+                  title="Bootstrap"
+                ></i>
               </div>
               <div className="text-white-50 mt-3">
                 <i className="bi bi-clock category-time"></i>
@@ -133,10 +157,27 @@ export default function Projects() {
             <div className="card my-5" data-aos="fade-up">
               <h4 className="text-center">Frontend Mentor Challenges</h4>
               <hr />
-              <div className="d-sm-flex d-grid justify-content-center gap-2 mt-2">
-                <div className="badge bg-dark">HTML5</div>
-                <div className="badge bg-dark">CSS3</div>
-                <div className="badge bg-dark">Bootstrap</div>
+              <div className="d-sm-flex d-grid justify-content-center gap-3 mt-2">
+                <i
+                  class="fa-brands fa-html5 fa-2x"
+                  data-bs-toggle="tooltip"
+                  title="HyperText Markup Language 5"
+                ></i>
+                <i
+                  class="fa-brands fa-css3-alt fa-2x"
+                  data-bs-toggle="tooltip"
+                  title="Cascading Style Sheets 3"
+                ></i>
+                <i
+                  class="fa-brands fa-js-square fa-2x"
+                  data-bs-toggle="tooltip"
+                  title="JavaScript"
+                ></i>
+                <i
+                  class="fa-brands fa-bootstrap fa-2x"
+                  data-bs-toggle="tooltip"
+                  title="Bootstrap"
+                ></i>
               </div>
               <div className="text-white-50 mt-3">
                 <i className="bi bi-clock category-time"></i>
@@ -144,7 +185,7 @@ export default function Projects() {
               </div>
               <div className="my-3">
                 <p>
-                  I took on a front-end challenges that included creating web
+                  I took on a frontend challenges that included creating web
                   designs through&nbsp;
                   <a
                     href="https://www.frontendmentor.io"
@@ -175,11 +216,27 @@ export default function Projects() {
             <div className="card my-5" data-aos="fade-up">
               <h4 className="text-center">PartnerSeeker</h4>
               <hr />
-              <div className="d-sm-flex d-grid justify-content-center gap-2 mt-2">
-                <div className="badge bg-dark">PHP</div>
-                <div className="badge bg-dark">MySQL</div>
-                <div className="badge bg-dark">HTML5</div>
-                <div className="badge bg-dark">CSS3</div>
+              <div className="d-sm-flex d-grid justify-content-center gap-3 mt-2">
+                <i
+                  class="fa-brands fa-php fa-2x"
+                  data-bs-toggle="tooltip"
+                  title="Hypertext Preprocessor"
+                ></i>
+                <i
+                  class="fa-solid fa-database fa-2x"
+                  data-bs-toggle="tooltip"
+                  title="MySQL"
+                ></i>
+                <i
+                  class="fa-brands fa-html5 fa-2x"
+                  data-bs-toggle="tooltip"
+                  title="HyperText Markup Language 5"
+                ></i>
+                <i
+                  class="fa-brands fa-css3-alt fa-2x"
+                  data-bs-toggle="tooltip"
+                  title="Cascading Style Sheets 3"
+                ></i>
               </div>
               <div className="text-white-50 mt-3">
                 <i className="bi bi-clock category-time"></i>
@@ -222,13 +279,32 @@ export default function Projects() {
             <div className="card" data-aos="fade-up">
               <h4 className="text-center">SejarahKita</h4>
               <hr />
-              <div className="d-sm-flex d-grid justify-content-center gap-2 mt-2">
-                <div className="badge bg-dark">Java</div>
-                <div className="badge bg-dark">PHP</div>
-                <div className="badge bg-dark">JSON</div>
-                <div className="badge bg-dark">MySQL</div>
-                <div className="badge bg-dark">Laravel</div>
-                <div className="badge bg-dark">Android</div>
+              <div className="d-sm-flex d-grid justify-content-center gap-3 mt-2">
+                <i
+                  class="fa-brands fa-java fa-2x"
+                  data-bs-toggle="tooltip"
+                  title="Java"
+                ></i>
+                <i
+                  class="fa-brands fa-php fa-2x"
+                  data-bs-toggle="tooltip"
+                  title="Hypertext Preprocessor"
+                ></i>
+                <i
+                  class="fa-solid fa-database fa-2x"
+                  data-bs-toggle="tooltip"
+                  title="MySQL"
+                ></i>
+                <i
+                  class="fa-brands fa-laravel fa-2x"
+                  data-bs-toggle="tooltip"
+                  title="Laravel"
+                ></i>
+                <i
+                  class="fa-brands fa-android fa-2x"
+                  data-bs-toggle="tooltip"
+                  title="Android"
+                ></i>
               </div>
               <div className="text-white-50 mt-3">
                 <i className="bi bi-clock category-time"></i>
@@ -284,11 +360,27 @@ export default function Projects() {
             <div className="card my-5" data-aos="fade-up">
               <h4 className="text-center">LemburanKu</h4>
               <hr />
-              <div className="d-sm-flex d-grid justify-content-center gap-2 mt-2">
-                <div className="badge bg-dark">Java</div>
-                <div className="badge bg-dark">PHP</div>
-                <div className="badge bg-dark">MySQL</div>
-                <div className="badge bg-dark">Android</div>
+              <div className="d-sm-flex d-grid justify-content-center gap-3 mt-2">
+                <i
+                  class="fa-brands fa-java fa-2x"
+                  data-bs-toggle="tooltip"
+                  title="Java"
+                ></i>
+                <i
+                  class="fa-brands fa-php fa-2x"
+                  data-bs-toggle="tooltip"
+                  title="Hypertext Preprocessor"
+                ></i>
+                <i
+                  class="fa-solid fa-database fa-2x"
+                  data-bs-toggle="tooltip"
+                  title="MySQL"
+                ></i>
+                <i
+                  class="fa-brands fa-android fa-2x"
+                  data-bs-toggle="tooltip"
+                  title="Android"
+                ></i>
               </div>
               <div className="text-white-50 mt-3">
                 <i className="bi bi-clock category-time"></i>
@@ -332,8 +424,12 @@ export default function Projects() {
             <div className="card my-5" data-aos="fade-up">
               <h4 className="text-center">LemburanKu</h4>
               <hr />
-              <div className="d-sm-flex d-grid justify-content-center gap-2 mt-2">
-                <div className="badge bg-dark">Java</div>
+              <div className="d-sm-flex d-grid justify-content-center gap-3 mt-2">
+                <i
+                  class="fa-brands fa-java fa-2x"
+                  data-bs-toggle="tooltip"
+                  title="Java"
+                ></i>
               </div>
               <div className="text-white-50 mt-3">
                 <i className="bi bi-clock category-time"></i>

@@ -1,20 +1,20 @@
 :root {
-  --color-primary: #0057E4 !important;
-  --color-secondary: #00EAFF !important;
-  --text-primary: #FFFFFF !important;
-  --text-secondary: #000000 !important;
-  --font-primary: 'Manrope', sans-serif !important;
-  --font-secondary: 'Exo 2', sans-serif !important;
-  --font-tertiary: 'La Belle Aurore', cursive !important;
+  --color-primary: #0057E4;
+  --color-secondary: #00EAFF;
+  --text-primary: #FFFFFF;
+  --text-secondary: #000000;
+  --font-primary: 'Manrope', sans-serif;
+  --font-secondary: 'Exo 2', sans-serif;
+  --font-tertiary: 'La Belle Aurore', cursive;
 }
 
 body {
-  font-family: var(--font-primary) !important;
+  background: url(/images/assets/background-desktop.svg) fixed center / cover no-repeat;
+  font-family: var(--font-primary);
   font-size: var(--normal-font-size);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: url(/public/images/assets/background-desktop.svg) fixed center / cover no-repeat;
-  scroll-behavior: smooth !important
+  scroll-behavior: smooth !important;
 }
 
 ::-webkit-scrollbar {
@@ -97,6 +97,14 @@ img {
 
 .e-certificate {
   border-radius: 10px !important;
+}
+
+.carousel-inner {
+  max-width: 75%;
+}
+
+.carousel-indicators button {
+  background-color: var(--text-secondary) !important;
 }
 
 .technologies {
@@ -393,15 +401,14 @@ textarea:focus {
 
 @media screen and (max-width:768px) {
   body {
-    background: url(/public/images/assets/background-mobile.svg) fixed center / cover no-repeat !important;
+    background: url(/images/assets/background-mobile.svg) fixed center / cover no-repeat !important;
   }
 
   h2 {
     font-size: x-large !important
   }
 
-  h4,
-  summary {
+  h4 {
     font-size: larger !important
   }
 
@@ -417,17 +424,13 @@ textarea:focus {
     font-size: large !important
   }
 
-  #assets {
-    max-width: 70% !important;
-  }
-
   .hero-text {
     margin: 2rem 0;
     text-align: center;
   }
 
   .hero-img {
-    max-width: 75% !important;
+    max-width: 60% !important;
   }
 
   form {
