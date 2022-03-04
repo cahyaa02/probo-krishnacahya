@@ -157,7 +157,7 @@ img {
   border-bottom: solid 2px var(--color-secondary);
 }
 
-.navbar-toggler.collapsed .bi.bi-x-lg {
+.navbar-toggler.collapsed .btn-close {
   display: none;
 }
 
@@ -355,12 +355,14 @@ section {
   max-width: 80% !important;
 }
 
-.m-r-0 {
-  margin-right: 0
+.timeline-lines {
+  max-width: 1% !important;
 }
 
-.m-l-0 {
-  margin-left: 0
+input[type="radio"] {
+  -ms-transform: scale(2.75);
+  -webkit-transform: scale(2.75);
+  transform: scale(2.75);
 }
 
 .bi-arrow-up {
@@ -394,7 +396,7 @@ textarea:focus {
   font-size: large !important;
 }
 
-#myBtn:hover {
+#topBtn:hover {
   cursor: pointer;
   color: var(--color-secondary);
 }

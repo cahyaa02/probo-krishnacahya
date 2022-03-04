@@ -7,8 +7,8 @@ export default function Skills() {
 
   return (
     <div className="skills">
-      <div className="container mt-5" data-aos="fade-up">
-        <h5 className="text-center mb-3">Certifications</h5>
+      <div className="mt-5" data-aos="fade-up">
+        <h5 className="text-center mb-4">Certifications</h5>
         <div
           id="carouselExample"
           className="carousel slide"
@@ -186,7 +186,7 @@ export default function Skills() {
                 alt="Carousel"
                 loading="lazy"
               />
-              <div class="carousel-caption">
+              <div className="carousel-caption">
                 <a
                   href="https://www.agunacourse.com/cek-sertifikat?search=AC-455-97841590-53/"
                   target="_blank"
@@ -205,7 +205,7 @@ export default function Skills() {
                 alt="Carousel"
                 loading="lazy"
               />
-              <div class="carousel-caption">
+              <div className="carousel-caption">
                 <a
                   href="https://www.dicoding.com/certificates/N9ZOE9E18XG5/"
                   target="_blank"
@@ -224,7 +224,7 @@ export default function Skills() {
                 alt="Carousel"
                 loading="lazy"
               />
-              <div class="carousel-caption">
+              <div className="carousel-caption">
                 <a
                   href="https://olympus1.mygreatlearning.com/course_certificate/APMQPGOB/"
                   target="_blank"
@@ -243,7 +243,7 @@ export default function Skills() {
                 alt="Carousel"
                 loading="lazy"
               />
-              <div class="carousel-caption">
+              <div className="carousel-caption">
                 <a
                   href="https://olympus1.mygreatlearning.com/course_certificate/QYUKBBAP/"
                   target="_blank"
@@ -262,7 +262,7 @@ export default function Skills() {
                 alt="Carousel"
                 loading="lazy"
               />
-              <div class="carousel-caption">
+              <div className="carousel-caption">
                 <a
                   href="https://www.kaggle.com/learn/certification/probokrishnacahya/python/"
                   target="_blank"
@@ -281,7 +281,7 @@ export default function Skills() {
                 alt="Carousel"
                 loading="lazy"
               />
-              <div class="carousel-caption">
+              <div className="carousel-caption">
                 <a
                   href="https://www.studysection.com/users/socialMedia/NDk4ODgz/cHJvYm8ua3Jpc2huYWNhaHlhQGdtYWlsLmNvbQ%3D%3D/"
                   target="_blank"
@@ -300,7 +300,7 @@ export default function Skills() {
                 alt="Carousel"
                 loading="lazy"
               />
-              <div class="carousel-caption">
+              <div className="carousel-caption">
                 <a
                   href="https://www.studysection.com/users/socialMedia/NDk4ODky/cHJvYm8ua3Jpc2huYWNhaHlhQGdtYWlsLmNvbQ%3D%3D/"
                   target="_blank"
@@ -319,7 +319,7 @@ export default function Skills() {
                 alt="Carousel"
                 loading="lazy"
               />
-              <div class="carousel-caption">
+              <div className="carousel-caption">
                 <a
                   href="https://www.studysection.com/Users/socialMedia/NDk4NjQ1/cHJvYm8ua3Jpc2huYWNhaHlhQGdtYWlsLmNvbQ%3D%3D/"
                   target="_blank"
@@ -338,7 +338,7 @@ export default function Skills() {
                 alt="Carousel"
                 loading="lazy"
               />
-              <div class="carousel-caption">
+              <div className="carousel-caption">
                 <a
                   href="https://www.studysection.com/users/socialMedia/NTAyMjAx/cHJvYm8ua3Jpc2huYWNhaHlhQGdtYWlsLmNvbQ%3D%3D/"
                   target="_blank"
@@ -357,7 +357,7 @@ export default function Skills() {
                 alt="Carousel"
                 loading="lazy"
               />
-              <div class="carousel-caption">
+              <div className="carousel-caption">
                 <a
                   href="https://www.studysection.com/users/socialMedia/NTAyMjEx/cHJvYm8ua3Jpc2huYWNhaHlhQGdtYWlsLmNvbQ==/"
                   target="_blank"
@@ -376,7 +376,7 @@ export default function Skills() {
                 alt="Carousel"
                 loading="lazy"
               />
-              <div class="carousel-caption">
+              <div className="carousel-caption">
                 <a
                   href="https://app.testdome.com/cert/36ac75bae42c460db610f9625f83b675/"
                   target="_blank"
@@ -395,7 +395,7 @@ export default function Skills() {
                 alt="Carousel"
                 loading="lazy"
               />
-              <div class="carousel-caption">
+              <div className="carousel-caption">
                 <a
                   href="https://app.testdome.com/cert/39a6f5d3441848a1b334b761fffd645c/"
                   target="_blank"
@@ -414,7 +414,7 @@ export default function Skills() {
                 alt="Carousel"
                 loading="lazy"
               />
-              <div class="carousel-caption">
+              <div className="carousel-caption">
                 <a
                   href="https://app.testdome.com/cert/3b309305da0f40fda44e5dcfd2d49ec8/"
                   target="_blank"
@@ -433,7 +433,7 @@ export default function Skills() {
                 alt="Carousel"
                 loading="lazy"
               />
-              <div class="carousel-caption">
+              <div className="carousel-caption">
                 <a
                   href="https://app.testdome.com/cert/2f62fb3b168e4066bf09e61d6ce201c4/"
                   target="_blank"
@@ -452,7 +452,7 @@ export default function Skills() {
                 alt="Carousel"
                 loading="lazy"
               />
-              <div class="carousel-caption">
+              <div className="carousel-caption">
                 <a
                   href="https://app.testdome.com/cert/2f62fb3b168e4066bf09e61d6ce201c4/"
                   target="_blank"
@@ -471,7 +471,7 @@ export default function Skills() {
                 alt="Carousel"
                 loading="lazy"
               />
-              <div class="carousel-caption">
+              <div className="carousel-caption">
                 <a
                   href="https://app.testdome.com/cert/e532dc2f33464be081f9c27a9506d72c/"
                   target="_blank"
@@ -490,7 +490,7 @@ export default function Skills() {
                 alt="Carousel"
                 loading="lazy"
               />
-              <div class="carousel-caption">
+              <div className="carousel-caption">
                 <a
                   href="https://app.testdome.com/cert/a8c62a64a3954fba93fe69c6be4ceebb/"
                   target="_blank"
@@ -509,7 +509,7 @@ export default function Skills() {
                 alt="Carousel"
                 loading="lazy"
               />
-              <div class="carousel-caption">
+              <div className="carousel-caption">
                 <a
                   href="https://app.testdome.com/cert/98ca9d68e3a0477e9fc9b36335ce3142/"
                   target="_blank"
@@ -528,7 +528,7 @@ export default function Skills() {
                 alt="Carousel"
                 loading="lazy"
               />
-              <div class="carousel-caption">
+              <div className="carousel-caption">
                 <a
                   href="https://app.testdome.com/cert/a8b39c082f744f08a12dde0dd41569ba/"
                   target="_blank"
@@ -547,7 +547,7 @@ export default function Skills() {
                 alt="Carousel"
                 loading="lazy"
               />
-              <div class="carousel-caption">
+              <div className="carousel-caption">
                 <a
                   href="https://app.testdome.com/cert/528a68cf0ef742f8b89f17825e13e06d/"
                   target="_blank"
@@ -1490,7 +1490,7 @@ export default function Skills() {
           <span>
             <a href="http://www.w3.org/TR/html5/">
               <i
-                class="fa-brands fa-html5"
+                className="fa-brands fa-html5"
                 data-bs-toggle="tooltip"
                 title="HyperText Markup Language 5"
               ></i>
@@ -1498,7 +1498,7 @@ export default function Skills() {
             &ensp;
             <a href="http://www.w3.org/TR/CSS/">
               <i
-                class="fa-brands fa-css3-alt"
+                className="fa-brands fa-css3-alt"
                 data-bs-toggle="tooltip"
                 title="Cascading Style Sheets 3"
               ></i>
@@ -1506,7 +1506,7 @@ export default function Skills() {
             &ensp;
             <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">
               <i
-                class="fa-brands fa-js-square"
+                className="fa-brands fa-js-square"
                 data-bs-toggle="tooltip"
                 title="JavaScript"
               ></i>
@@ -1514,7 +1514,7 @@ export default function Skills() {
             &ensp;
             <a href="https://reactjs.org/">
               <i
-                class="fa-brands fa-react"
+                className="fa-brands fa-react"
                 data-bs-toggle="tooltip"
                 title="ReactJS"
               ></i>
@@ -1522,7 +1522,7 @@ export default function Skills() {
             &ensp;
             <a href="https://getbootstrap.com/">
               <i
-                class="fa-brands fa-bootstrap"
+                className="fa-brands fa-bootstrap"
                 data-bs-toggle="tooltip"
                 title="Bootstrap"
               ></i>

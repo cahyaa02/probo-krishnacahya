@@ -43,7 +43,7 @@ export default function Home() {
                   className="btn btn-outline-primary btn-lg px-4 me-md-2"
                   onClick={(e) => {
                     e.preventDefault();
-                    downloadFile("pdf/home/Resume Probo Krishnacahya.pdf");
+                    downloadFile("pdf/home/ProboKrishnacahya_Resume.pdf");
                   }}
                 >
                   <i className="bi bi-download"></i>&emsp;
@@ -53,15 +53,21 @@ export default function Home() {
             </div>
           </div>
           <h3 className="scroll-down text-center mt-5">
-            <i
-              className="bi bi-chevron-double-down"
-              data-bs-toggle="tooltip"
-              title="Scroll Down"
-            ></i>
+            <a href="#about-me">
+              <i
+                className="bi bi-chevron-double-down"
+                data-bs-toggle="tooltip"
+                title="Scroll Down"
+              ></i>
+            </a>
           </h3>
         </div>
 
         <section id="content" data-aos="fade-up">
+          <h4 className="text-center" id="about-me">
+            About me
+          </h4>
+          <br />
           <div className="row g-3">
             <div className="col-xl-6 align-self-center">
               <div className="card pb-1">
@@ -122,18 +128,20 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div class="col-xl-6">
-              <h4>About me</h4>
-              <br />
+            <div className="col-xl-6">
               <p>
                 It's me, Probo Krishnacahya. You can call me Krishna. I was born
                 at Surabaya on November 2<sup>nd</sup>, 2002.
               </p>
               <p>
-                I am highly motivated to grow up Frontend Development & UI/UX
-                Design skills and passionate about Artificial Intelligence, Big
+                I am able to work on multiple projects based on Critical
+                Analytics, Attention to Detail, and also Solution Thinking.
+                Beside that, Cooperative Teamwork and nice individual is my
+                plus. Focusing on deepening Frontend Development &amp; UI/UX
+                Design expertise while grow up Artificial Intelligence, Big
                 Data, Information Security, Cross-Platform Mobile Application
-                Development, and Progressive Web Apps Development.
+                Development, and Progressive Web Apps Development skills are my
+                goals.
               </p>
               <p>
                 For any business inquiries and/or other subjects, please feel
@@ -142,6 +150,161 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+        <div className="container" data-aos="fade-up">
+          <h4 className="text-center">Education</h4>
+          <br />
+          <div className="row">
+            <div className="col-auto text-center flex-column d-flex">
+              <div className="row h-50"></div>
+              <input
+                type="radio"
+                name="timeline1"
+                id="timeline1"
+                checked="checked"
+              />
+              <div className="row h-50">
+                <div className="timeline-lines bg-white p-0 mx-auto"></div>
+              </div>
+            </div>
+            <div className="col pb-2">
+              <p className="mb-1">
+                <i className="bi bi-building"></i>&emsp;
+                <strong>Universitas Ciputra Surabaya</strong>
+              </p>
+              <p className="mb-1">
+                <i className="bi bi-mortarboard-fill"></i>&emsp;Sarjana Komputer
+                (Fakultas Teknologi Informasi - Program Studi Informatika)
+              </p>
+              <p className="text-white-50">
+                <i className="bi bi-clock category-time"></i>&emsp;2020 - 2024
+              </p>
+            </div>
+          </div>
+          <div className="row">
+            <div className="col-auto text-center flex-column d-flex">
+              <div className="row h-50">
+                <div className="timeline-lines bg-white p-0 mx-auto"></div>
+              </div>
+              <input
+                type="radio"
+                name="timeline2"
+                id="timeline2"
+                checked="checked"
+              />
+              <div className="row h-50">
+                <div className="timeline-lines bg-white p-0 mx-auto"></div>
+              </div>
+            </div>
+            <div className="col py-2">
+              <p className="mb-1">
+                <i className="bi bi-building"></i>&emsp;
+                <strong>
+                  Sekolah Menengah Atas Kristen Dharma Mulya Surabaya
+                </strong>
+              </p>
+              <p className="mb-1">
+                <i className="bi bi-mortarboard-fill"></i>&emsp;Ilmu Pengetahuan
+                Sosial
+              </p>
+              <p className="text-white-50">
+                <i className="bi bi-clock category-time"></i>&emsp;2017 - 2020
+              </p>
+            </div>
+          </div>
+          <div className="row">
+            <div className="col-auto text-center flex-column d-flex">
+              <div className="row h-50">
+                <div className="timeline-lines bg-white p-0 mx-auto"></div>
+              </div>
+              <input
+                type="radio"
+                name="timeline3"
+                id="timeline3"
+                checked="checked"
+              />
+              <div className="row h-50">
+                <div className="timeline-lines bg-white p-0 mx-auto"></div>
+              </div>
+            </div>
+            <div className="col py-2">
+              <p className="mb-1">
+                <i className="bi bi-building"></i>&emsp;
+                <strong>
+                  Sekolah Menengah Pertama Kristen Dharma Mulya Surabaya
+                </strong>
+              </p>
+              <p className="text-white-50">
+                <i className="bi bi-clock category-time"></i>&emsp;2014 - 2017
+              </p>
+            </div>
+          </div>
+          <div className="row">
+            <div className="col-auto text-center flex-column d-flex">
+              <div className="row h-25">
+                <div className="timeline-lines bg-white p-0 mx-auto"></div>
+              </div>
+              <input
+                type="radio"
+                name="timeline4"
+                id="timeline4"
+                checked="checked"
+              />
+            </div>
+            <div className="col py-2">
+              <p className="mb-1">
+                <i className="bi bi-building"></i>&emsp;
+                <strong>Sekolah Dasar Kristen Dharma Mulya Surabaya</strong>
+              </p>
+              <p className="text-white-50">
+                <i className="bi bi-clock category-time"></i>&emsp;2008 - 2012
+              </p>
+            </div>
+          </div>
+
+          <section id="below-the-fold" data-aos="fade-up">
+            <h4 className="text-center">Volunteering Experience</h4>
+            <br />
+            <p className="mb-1">
+              <i className="bi bi-bookmarks-fill"></i>&emsp;
+              <strong>
+                8<sup>th</sup> National Programming &amp; Logic Competition
+              </strong>
+            </p>
+            <ul>
+              <li className="list-unstyled">
+                <p className="mb-1">
+                  <i className="bi bi-info-circle-fill"></i>&emsp;NPLC is a
+                  yearly programming and logic competition for High School
+                  Students and equivalent organized by the Informatics Student
+                  Union.
+                  <ul>
+                    <li className="ms-3">
+                      Inviting High School Students and equivalent to register
+                      as participants in the competition.
+                    </li>
+                    <li className="ms-3">
+                      Contacting young influencers to participate in promoting
+                      the competition through social media.
+                    </li>
+                  </ul>
+                </p>
+              </li>
+              <li className="list-unstyled">
+                <p className="mb-1">
+                  <i className="bi bi-diagram-3-fill"></i>&emsp;Member of
+                  Marketing Division (Ad Hoc Committee)
+                </p>
+              </li>
+              <li className="list-unstyled">
+                <p className="text-white-50">
+                  <i className="bi bi-clock category-time"></i>&emsp;Nov 2020 -
+                  Jan 2021
+                </p>
+              </li>
+            </ul>
+          </section>
+        </div>
       </div>
     </div>
   );

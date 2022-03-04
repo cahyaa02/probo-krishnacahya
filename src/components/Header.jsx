@@ -27,9 +27,13 @@ export default function Header() {
             aria-label="Toggle navigation"
           >
             <span className="navbar-toggler-icon"></span>
-            <span className="bi bi-x-lg fs-1"></span>
+            <button
+              type="button"
+              className="btn-close btn-close-white p-2"
+              aria-label="Close"
+            ></button>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
+          <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav ms-auto gap-3">
               <li className="nav-item">
                 <NavLink className="nav-link" to="contacts">

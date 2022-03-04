@@ -15,7 +15,8 @@ import {
     Contacts,
     Projects,
     Skills,
-    Blogs
+    Blogs,
+    Footer
 } from "./script/export";
 
 ReactDOM.render(
@@ -29,6 +30,7 @@ ReactDOM.render(
             <Route path="/skills" element={<Skills />} />
             <Route path="/blogs" element={<Blogs />} />
         </Routes>
+        <Footer />
     </Router>,
 
     document.getElementById("root")

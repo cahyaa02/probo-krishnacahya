@@ -243,7 +243,7 @@ export default function Contacts() {
             <div className="d-flex">
               <span className="text-footer social-media">
                 <a
-                  href="https://www.instagram.com/cahyaa_._/"
+                  href="https://www.instagram.com/probo_krishnacahya/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -252,7 +252,7 @@ export default function Contacts() {
                     data-bs-toggle="tooltip"
                     title="Instagram"
                   ></i>
-                  &emsp; cahyaa_._
+                  &emsp; probo_krishnacahya
                 </a>
               </span>
             </div>

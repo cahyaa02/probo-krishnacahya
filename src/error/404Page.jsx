@@ -20,7 +20,7 @@ export default function PageNotFound() {
                 autoplay
               ></lottie-player>
             </div>
-            <div class="col-xl-6 align-self-center">
+            <div className="col-xl-6 align-self-center">
               <div className="alert bg-gradient bg-danger text-center">
                 <span>
                   <h5>

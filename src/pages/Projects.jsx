@@ -73,32 +73,37 @@ export default function Projects() {
               <hr />
               <div className="d-flex justify-content-center gap-3 mt-2">
                 <i
-                  class="fa-brands fa-php fa-2x"
+                  className="fa-brands fa-php fa-2x"
                   data-bs-toggle="tooltip"
                   title="Hypertext Preprocessor"
                 ></i>
                 <i
-                  class="fa-brands fa-js-square fa-2x"
+                  className="fa-solid fa-database fa-2x"
+                  data-bs-toggle="tooltip"
+                  title="MySQL"
+                ></i>
+                <i
+                  className="fa-brands fa-js-square fa-2x"
                   data-bs-toggle="tooltip"
                   title="JavaScript"
                 ></i>
                 <i
-                  class="fa-brands fa-html5 fa-2x"
+                  className="fa-brands fa-html5 fa-2x"
                   data-bs-toggle="tooltip"
                   title="HyperText Markup Language 5"
                 ></i>
                 <i
-                  class="fa-brands fa-css3-alt fa-2x"
+                  className="fa-brands fa-css3-alt fa-2x"
                   data-bs-toggle="tooltip"
                   title="Cascading Style Sheets 3"
                 ></i>
                 <i
-                  class="fa-brands fa-laravel fa-2x"
+                  className="fa-brands fa-laravel fa-2x"
                   data-bs-toggle="tooltip"
                   title="Laravel"
                 ></i>
                 <i
-                  class="fa-brands fa-bootstrap fa-2x"
+                  className="fa-brands fa-bootstrap fa-2x"
                   data-bs-toggle="tooltip"
                   title="Bootstrap"
                 ></i>
@@ -142,7 +147,7 @@ export default function Projects() {
               <br />
               <div className="d-grid justify-content-center">
                 <a
-                  href="https://sejarahkita.my.id/"
+                  href="https://youtu.be/-Kxwhn1nH5Y/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -157,24 +162,24 @@ export default function Projects() {
             <div className="card my-5" data-aos="fade-up">
               <h4 className="text-center">Frontend Mentor Challenges</h4>
               <hr />
-              <div className="d-sm-flex d-grid justify-content-center gap-3 mt-2">
+              <div className="d-flex justify-content-center gap-3 mt-2">
                 <i
-                  class="fa-brands fa-html5 fa-2x"
+                  className="fa-brands fa-html5 fa-2x"
                   data-bs-toggle="tooltip"
                   title="HyperText Markup Language 5"
                 ></i>
                 <i
-                  class="fa-brands fa-css3-alt fa-2x"
+                  className="fa-brands fa-css3-alt fa-2x"
                   data-bs-toggle="tooltip"
                   title="Cascading Style Sheets 3"
                 ></i>
                 <i
-                  class="fa-brands fa-js-square fa-2x"
+                  className="fa-brands fa-js-square fa-2x"
                   data-bs-toggle="tooltip"
                   title="JavaScript"
                 ></i>
                 <i
-                  class="fa-brands fa-bootstrap fa-2x"
+                  className="fa-brands fa-bootstrap fa-2x"
                   data-bs-toggle="tooltip"
                   title="Bootstrap"
                 ></i>
@@ -216,24 +221,24 @@ export default function Projects() {
             <div className="card my-5" data-aos="fade-up">
               <h4 className="text-center">PartnerSeeker</h4>
               <hr />
-              <div className="d-sm-flex d-grid justify-content-center gap-3 mt-2">
+              <div className="d-flex justify-content-center gap-3 mt-2">
                 <i
-                  class="fa-brands fa-php fa-2x"
+                  className="fa-brands fa-php fa-2x"
                   data-bs-toggle="tooltip"
                   title="Hypertext Preprocessor"
                 ></i>
                 <i
-                  class="fa-solid fa-database fa-2x"
+                  className="fa-solid fa-database fa-2x"
                   data-bs-toggle="tooltip"
                   title="MySQL"
                 ></i>
                 <i
-                  class="fa-brands fa-html5 fa-2x"
+                  className="fa-brands fa-html5 fa-2x"
                   data-bs-toggle="tooltip"
                   title="HyperText Markup Language 5"
                 ></i>
                 <i
-                  class="fa-brands fa-css3-alt fa-2x"
+                  className="fa-brands fa-css3-alt fa-2x"
                   data-bs-toggle="tooltip"
                   title="Cascading Style Sheets 3"
                 ></i>
@@ -255,7 +260,7 @@ export default function Projects() {
               <br />
               <div className="d-grid justify-content-center">
                 <a
-                  href="http://bit.ly/partnerseeker2021/"
+                  href="https://github.com/cahyaa02/PartnerSeeker/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -279,29 +284,29 @@ export default function Projects() {
             <div className="card" data-aos="fade-up">
               <h4 className="text-center">SejarahKita</h4>
               <hr />
-              <div className="d-sm-flex d-grid justify-content-center gap-3 mt-2">
+              <div className="d-flex justify-content-center gap-3 mt-2">
                 <i
-                  class="fa-brands fa-java fa-2x"
+                  className="fa-brands fa-java fa-2x"
                   data-bs-toggle="tooltip"
                   title="Java"
                 ></i>
                 <i
-                  class="fa-brands fa-php fa-2x"
+                  className="fa-brands fa-php fa-2x"
                   data-bs-toggle="tooltip"
                   title="Hypertext Preprocessor"
                 ></i>
                 <i
-                  class="fa-solid fa-database fa-2x"
+                  className="fa-solid fa-database fa-2x"
                   data-bs-toggle="tooltip"
                   title="MySQL"
                 ></i>
                 <i
-                  class="fa-brands fa-laravel fa-2x"
+                  className="fa-brands fa-laravel fa-2x"
                   data-bs-toggle="tooltip"
                   title="Laravel"
                 ></i>
                 <i
-                  class="fa-brands fa-android fa-2x"
+                  className="fa-brands fa-android fa-2x"
                   data-bs-toggle="tooltip"
                   title="Android"
                 ></i>
@@ -358,26 +363,78 @@ export default function Projects() {
             </div>
 
             <div className="card my-5" data-aos="fade-up">
-              <h4 className="text-center">LemburanKu</h4>
+              <h4 className="text-center">The Movie Database (TMDB) Clone</h4>
               <hr />
-              <div className="d-sm-flex d-grid justify-content-center gap-3 mt-2">
+              <div className="d-flex justify-content-center gap-3 mt-2">
                 <i
-                  class="fa-brands fa-java fa-2x"
+                  className="fa-brands fa-java fa-2x"
                   data-bs-toggle="tooltip"
                   title="Java"
                 ></i>
                 <i
-                  class="fa-brands fa-php fa-2x"
+                  className="fa-solid fa-file-code fa-2x"
+                  data-bs-toggle="tooltip"
+                  title="The Movie Database's Application Programming Interface"
+                ></i>
+                <i
+                  className="fa-brands fa-android fa-2x"
+                  data-bs-toggle="tooltip"
+                  title="Android"
+                ></i>
+              </div>
+              <div className="text-white-50 mt-3">
+                <i className="bi bi-clock category-time"></i>
+                &emsp; Oct 2021 - Nov 2021
+              </div>
+              <div className="my-3">
+                <p>
+                  <a href="https://www.themoviedb.org/">
+                    The Movie Database (TMDB)
+                  </a>{" "}
+                  Clone is an Android OS based Mobile Application about Movie
+                  Catalog (Now Playing, Upcoming, and Popular Movies) using TMDB
+                  API, Java Programming Language, and Android Jetpack Library
+                  (Navigation Component, Model View ViewModel Pattern, and
+                  Retrofit). Users can search for movie titles, view detailed
+                  information, and also watch trailer.
+                </p>
+              </div>
+              <br />
+              <div className="d-grid justify-content-center">
+                <a
+                  href="https://youtu.be/7VgMHynIaOM/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button className="btn btn-primary">
+                    <i className="bi bi-box-arrow-up-right"></i>&emsp;
+                    <strong>Visit Project</strong>
+                  </button>
+                </a>
+              </div>
+            </div>
+
+            <div className="card my-5" data-aos="fade-up">
+              <h4 className="text-center">LemburanKu</h4>
+              <hr />
+              <div className="d-flex justify-content-center gap-3 mt-2">
+                <i
+                  className="fa-brands fa-java fa-2x"
+                  data-bs-toggle="tooltip"
+                  title="Java"
+                ></i>
+                <i
+                  className="fa-brands fa-php fa-2x"
                   data-bs-toggle="tooltip"
                   title="Hypertext Preprocessor"
                 ></i>
                 <i
-                  class="fa-solid fa-database fa-2x"
+                  className="fa-solid fa-database fa-2x"
                   data-bs-toggle="tooltip"
                   title="MySQL"
                 ></i>
                 <i
-                  class="fa-brands fa-android fa-2x"
+                  className="fa-brands fa-android fa-2x"
                   data-bs-toggle="tooltip"
                   title="Android"
                 ></i>
@@ -422,11 +479,58 @@ export default function Projects() {
         >
           <div className="container">
             <div className="card my-5" data-aos="fade-up">
+              <h4 className="text-center">Dodge Master</h4>
+              <hr />
+              <div className="d-flex justify-content-center mt-2">
+                <i
+                  className="fa-brands fa-c fa-2x"
+                  data-bs-toggle="tooltip"
+                  title="C#"
+                ></i>
+                <i
+                  className="fa-solid fa-hashtag me-3"
+                  data-bs-toggle="tooltip"
+                  title="C#"
+                ></i>
+                <i
+                  className="fa-brands fa-unity fa-2x"
+                  data-bs-toggle="tooltip"
+                  title="Unity"
+                ></i>
+              </div>
+              <div className="text-white-50 mt-3">
+                <i className="bi bi-clock category-time"></i>
+                &emsp; Dec 2021 – Jan 2022
+              </div>
+              <div className="my-3">
+                <p>
+                  Dodge Master is a platformer genre game with 2D graphics that
+                  contains various obstacles that players must pass in order to
+                  complete the game objectives. There are 2 game modes, namely
+                  Easy and Hard.
+                </p>
+              </div>
+              <br />
+              <div className="d-grid justify-content-center">
+                <a
+                  href="https://github.com/cahyaa02/dodge-master/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button className="btn btn-primary">
+                    <i className="bi bi-box-arrow-up-right"></i>&emsp;
+                    <strong>Visit Project</strong>
+                  </button>
+                </a>
+              </div>
+            </div>
+
+            <div className="card my-5" data-aos="fade-up">
               <h4 className="text-center">LemburanKu</h4>
               <hr />
-              <div className="d-sm-flex d-grid justify-content-center gap-3 mt-2">
+              <div className="d-flex justify-content-center gap-3 mt-2">
                 <i
-                  class="fa-brands fa-java fa-2x"
+                  className="fa-brands fa-java fa-2x"
                   data-bs-toggle="tooltip"
                   title="Java"
                 ></i>
