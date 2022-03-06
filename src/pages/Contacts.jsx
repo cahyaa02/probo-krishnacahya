@@ -148,7 +148,7 @@ export default function Contacts() {
         </section> */}
 
         <section id="below-the-fold" data-aos="fade-up">
-          <p>You can also reach me on</p>
+          {/* <p>You can also reach me on</p> */}
           <div className="kontak p-4 my-3">
             <div className="d-flex">
               <span className="text-footer social-media">

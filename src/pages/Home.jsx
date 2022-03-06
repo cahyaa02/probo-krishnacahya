@@ -64,7 +64,7 @@ export default function Home() {
         </div>
 
         <section id="content" data-aos="fade-up">
-          <h4 className="text-center" id="about-me">
+          <h4 className="text-center section-title" id="about-me">
             About me
           </h4>
           <br />
@@ -152,7 +152,7 @@ export default function Home() {
         </section>
 
         <div className="container" data-aos="fade-up">
-          <h4 className="text-center">Education</h4>
+          <h4 className="text-center section-title">Education</h4>
           <br />
           <div className="row">
             <div className="col-auto text-center flex-column d-flex">
@@ -263,7 +263,9 @@ export default function Home() {
           </div>
 
           <section id="below-the-fold" data-aos="fade-up">
-            <h4 className="text-center">Volunteering Experience</h4>
+            <h4 className="text-center section-title">
+              Volunteering Experience
+            </h4>
             <br />
             <p className="mb-1">
               <i className="bi bi-bookmarks-fill"></i>&emsp;

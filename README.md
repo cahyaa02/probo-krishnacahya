@@ -8,7 +8,6 @@
 =====||=====
 
 /:
-- Add Resume on CTA Download Button.
 - 3D Hero section using [WebGL](https://experiments.withgoogle.com/search?q=WebGL) ~ [Three.js](https://threejs.org/)
 	- Animated futuristic sphere or blobs (?)
 	- Donuts with moving 360 degree rotating & swipe interaction (?)

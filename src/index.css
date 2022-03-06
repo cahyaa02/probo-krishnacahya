@@ -91,16 +91,9 @@ img {
   user-select: none !important
 }
 
-#assets {
-  max-width: 75% !important
-}
-
-.e-certificate {
-  border-radius: 10px !important;
-}
-
+#assets,
 .carousel-inner {
-  max-width: 75%;
+  max-width: 75% !important
 }
 
 .carousel-indicators button {
@@ -212,8 +205,8 @@ section {
 .card {
   padding: 1.5rem 2rem 2rem 2rem;
   border-radius: 15px !important;
-  border: solid 2px #fffFFF25 !important;
-  background: #fffFFF1A !important;
+  border: solid 2px #FFFFFF25 !important;
+  background: #FFFFFF1A !important;
   backdrop-filter: blur(5px) !important;
   -webkit-backdrop-filter: blur(5px) !important;
 }
@@ -224,39 +217,25 @@ section {
 
 .keahlian {
   border-radius: 7.5px !important;
-  border: solid 2px #fffFFF25 !important;
-  background: #fffFFF1A !important;
+  border: solid 2px #FFFFFF25 !important;
+  background: #FFFFFF1A !important;
 }
 
 .kontak {
   border-radius: 7.5px !important;
   border-right: solid 10px var(--color-secondary) !important;
-  background: #fffFFF1A !important;
+  background: #FFFFFF1A !important;
   backdrop-filter: blur(5px) !important;
   -webkit-backdrop-filter: blur(5px) !important;
 }
 
 .accordion-button.collapsed::after {
-  background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
-}
-
-.fi {
-  background-size: contain;
-  background-position: 50%;
-  background-repeat: no-repeat;
+  background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23FFF'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
 }
 
 .badge {
   padding: .75rem;
   font-size: medium;
-}
-
-.truncate {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
 }
 
 #pills-web-application-tab.active,
@@ -353,6 +332,15 @@ section {
 
 .hero-img {
   max-width: 80% !important;
+}
+
+.section-title:after {
+  display: block;
+  margin: 0 auto;
+  padding-top: .5rem;
+  width: 5%;
+  content: "";
+  border-bottom: 2px solid var(--text-primary);
 }
 
 .timeline-lines {
