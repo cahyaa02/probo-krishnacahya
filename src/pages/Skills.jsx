@@ -1,8 +1,18 @@
 import React, { useEffect } from "react";
+import { Tooltip } from "bootstrap";
 
 export default function Skills() {
   useEffect(() => {
+    //* Tab Page Title
     document.title = "Skills";
+
+    //* Enable Bootstrap's Tooltip Everywhere
+    var tooltipTriggerList = [].slice.call(
+      document.querySelectorAll('[data-bs-toggle="tooltip"]')
+    );
+    tooltipTriggerList.map(function(tooltipTriggerEl) {
+      return new Tooltip(tooltipTriggerEl);
+    });
   }, []);
 
   return (

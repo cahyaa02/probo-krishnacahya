@@ -8,7 +8,7 @@ export default function Footer() {
         <div className="mx-auto">
           <div className="container">
             <span className="text-footer">&copy; 2022</span>
-            <NavLink to="/" data-bs-toggle="tooltip" title="Home">
+            <NavLink to="/">
               &nbsp;
               <span className="text-footer text-info">Probo Krishnacahya</span>
             </NavLink>

@@ -1,9 +1,38 @@
 import React, { useEffect } from "react";
 import { NavLink } from "react-router-dom";
+import { Tooltip } from "bootstrap";
+import Typewriter from "typewriter-effect/dist/core";
 
 export default function Home() {
   useEffect(() => {
+    //* Tab Page Title
     document.title = "Probo Krishnacahya";
+
+    //* Enable Bootstrap's Tooltip Everywhere
+    var tooltipTriggerList = [].slice.call(
+      document.querySelectorAll('[data-bs-toggle="tooltip"]')
+    );
+    tooltipTriggerList.map(function(tooltipTriggerEl) {
+      return new Tooltip(tooltipTriggerEl);
+    });
+
+    //* Setup TypewriterJS (Typewriting Effect)
+    var typewriting = document.getElementById("typewriting");
+    var typewriter = new Typewriter(typewriting, {
+      delay: 50,
+      loop: !0,
+      devMode: !0,
+      cursorClassName: "typeCursor",
+    });
+    typewriter
+      .typeString("Frontend Developer")
+      .pauseFor(3000)
+      .deleteAll(30)
+      .typeString("UI/UX Designer")
+      .pauseFor(3000)
+      .deleteAll(30)
+      // .typeString('DevSecOps Engineer').pauseFor(3000).deleteAll(30)
+      .start();
   }, []);
 
   return (
@@ -53,7 +82,7 @@ export default function Home() {
             </div>
           </div>
           <h3 className="scroll-down text-center mt-5">
-            <a href="#about-me">
+            <a href="#content">
               <i
                 className="bi bi-chevron-double-down"
                 data-bs-toggle="tooltip"
@@ -64,11 +93,9 @@ export default function Home() {
         </div>
 
         <section id="content" data-aos="fade-up">
-          <h4 className="text-center section-title" id="about-me">
-            About me
-          </h4>
+          <h4 className="text-center section-title">About me</h4>
           <br />
-          <div className="row g-3">
+          <div className="row g-4">
             <div className="col-xl-6 align-self-center">
               <div className="card pb-1">
                 <div className="row g-3">
@@ -135,13 +162,13 @@ export default function Home() {
               </p>
               <p>
                 I am able to work on multiple projects based on Critical
-                Analytics, Attention to Detail, and also Solution Thinking.
-                Beside that, Cooperative Teamwork and nice individual is my
-                plus. Focusing on deepening Frontend Development &amp; UI/UX
-                Design expertise while grow up Artificial Intelligence, Big
-                Data, Information Security, Cross-Platform Mobile Application
-                Development, and Progressive Web Apps Development skills are my
-                goals.
+                Analytics, Attention to Detail, and Solution Thinking. Beside
+                that, Cooperative Teamwork and nice individual are also my
+                strong point. Focusing on deepening Frontend Development &amp;
+                UI/UX Design expertise while grow up Artificial Intelligence,
+                Big Data, Information Security, Cross-Platform Mobile
+                Application Development, and Progressive Web Apps Development
+                skills are my goals.
               </p>
               <p>
                 For any business inquiries and/or other subjects, please feel
@@ -169,12 +196,22 @@ export default function Home() {
             </div>
             <div className="col pb-2">
               <p className="mb-1">
-                <i className="bi bi-building"></i>&emsp;
+                <i
+                  className="bi bi-building"
+                  data-bs-toggle="tooltip"
+                  title="University"
+                ></i>
+                &emsp;
                 <strong>Universitas Ciputra Surabaya</strong>
               </p>
               <p className="mb-1">
-                <i className="bi bi-mortarboard-fill"></i>&emsp;Sarjana Komputer
-                (Fakultas Teknologi Informasi - Program Studi Informatika)
+                <i
+                  className="bi bi-mortarboard-fill"
+                  data-bs-toggle="tooltip"
+                  title="Degree, Major"
+                ></i>
+                &emsp;Sarjana Komputer (Fakultas Teknologi Informasi - Program
+                Studi Informatika)
               </p>
               <p className="text-white-50">
                 <i className="bi bi-clock category-time"></i>&emsp;2020 - 2024
@@ -198,14 +235,23 @@ export default function Home() {
             </div>
             <div className="col py-2">
               <p className="mb-1">
-                <i className="bi bi-building"></i>&emsp;
+                <i
+                  className="bi bi-building"
+                  data-bs-toggle="tooltip"
+                  title="Senior High School"
+                ></i>
+                &emsp;
                 <strong>
                   Sekolah Menengah Atas Kristen Dharma Mulya Surabaya
                 </strong>
               </p>
               <p className="mb-1">
-                <i className="bi bi-mortarboard-fill"></i>&emsp;Ilmu Pengetahuan
-                Sosial
+                <i
+                  className="bi bi-mortarboard-fill"
+                  data-bs-toggle="tooltip"
+                  title="Major"
+                ></i>
+                &emsp;Ilmu Pengetahuan Sosial
               </p>
               <p className="text-white-50">
                 <i className="bi bi-clock category-time"></i>&emsp;2017 - 2020
@@ -229,7 +275,12 @@ export default function Home() {
             </div>
             <div className="col py-2">
               <p className="mb-1">
-                <i className="bi bi-building"></i>&emsp;
+                <i
+                  className="bi bi-building"
+                  data-bs-toggle="tooltip"
+                  title="Junior High School"
+                ></i>
+                &emsp;
                 <strong>
                   Sekolah Menengah Pertama Kristen Dharma Mulya Surabaya
                 </strong>
@@ -253,7 +304,12 @@ export default function Home() {
             </div>
             <div className="col py-2">
               <p className="mb-1">
-                <i className="bi bi-building"></i>&emsp;
+                <i
+                  className="bi bi-building"
+                  data-bs-toggle="tooltip"
+                  title="Elementary School"
+                ></i>
+                &emsp;
                 <strong>Sekolah Dasar Kristen Dharma Mulya Surabaya</strong>
               </p>
               <p className="text-white-50">
@@ -268,7 +324,12 @@ export default function Home() {
             </h4>
             <br />
             <p className="mb-1">
-              <i className="bi bi-bookmarks-fill"></i>&emsp;
+              <i
+                className="bi bi-bookmarks-fill"
+                data-bs-toggle="tooltip"
+                title="Event Name"
+              ></i>
+              &emsp;
               <strong>
                 8<sup>th</sup> National Programming &amp; Logic Competition
               </strong>
@@ -276,26 +337,29 @@ export default function Home() {
             <ul>
               <li className="list-unstyled">
                 <p className="mb-1">
-                  <i className="bi bi-info-circle-fill"></i>&emsp;NPLC is a
-                  yearly programming and logic competition for High School
-                  Students and equivalent organized by the Informatics Student
-                  Union.
-                  <ul>
-                    <li className="ms-3">
-                      Inviting High School Students and equivalent to register
-                      as participants in the competition.
-                    </li>
-                    <li className="ms-3">
-                      Contacting young influencers to participate in promoting
-                      the competition through social media.
-                    </li>
-                  </ul>
+                  <i
+                    className="bi bi-info-circle-fill"
+                    data-bs-toggle="tooltip"
+                    title="Description"
+                  ></i>
+                  &emsp;NPLC is a yearly programming and logic competition for
+                  High School Students and equivalent organized by the
+                  Informatics Student Union @ UC. At this event, I am
+                  responsible as a Member of Marketing Division for Inviting
+                  High School Students and equivalent to register as
+                  participants in the competition and Contacting Young
+                  Influencers to participate in promoting the competition
+                  through social media.
                 </p>
               </li>
               <li className="list-unstyled">
                 <p className="mb-1">
-                  <i className="bi bi-diagram-3-fill"></i>&emsp;Member of
-                  Marketing Division (Ad Hoc Committee)
+                  <i
+                    className="bi bi-diagram-3-fill"
+                    data-bs-toggle="tooltip"
+                    title="Position"
+                  ></i>
+                  &emsp;Member of Marketing Division (Ad Hoc Committee)
                 </p>
               </li>
               <li className="list-unstyled">

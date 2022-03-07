@@ -1,8 +1,18 @@
 import React, { useEffect } from "react";
+import { Tooltip } from "bootstrap";
 
 export default function Projects() {
   useEffect(() => {
+    //* Tab Page Title
     document.title = "Projects";
+
+    //* Enable Bootstrap's Tooltip Everywhere
+    var tooltipTriggerList = [].slice.call(
+      document.querySelectorAll('[data-bs-toggle="tooltip"]')
+    );
+    tooltipTriggerList.map(function(tooltipTriggerEl) {
+      return new Tooltip(tooltipTriggerEl);
+    });
   }, []);
 
   return (
@@ -170,7 +180,7 @@ export default function Projects() {
                   rel="noopener noreferrer"
                 >
                   <button className="btn btn-primary">
-                    <i className="bi bi-play-circle-fill"></i>&emsp;
+                    <i className="bi bi-youtube"></i>&emsp;
                     <strong>Watch Demonstration</strong>
                   </button>
                 </a>
@@ -428,7 +438,7 @@ export default function Projects() {
                   rel="noopener noreferrer"
                 >
                   <button className="btn btn-primary">
-                    <i className="bi bi-play-circle-fill"></i>&emsp;
+                    <i className="bi bi-youtube"></i>&emsp;
                     <strong>Watch Demonstration</strong>
                   </button>
                 </a>
@@ -498,7 +508,7 @@ export default function Projects() {
                   rel="noopener noreferrer"
                 >
                   <button className="btn btn-primary">
-                    <i className="bi bi-play-circle-fill"></i>&emsp;
+                    <i className="bi bi-youtube"></i>&emsp;
                     <strong>Watch Demonstration</strong>
                   </button>
                 </a>
@@ -571,7 +581,7 @@ export default function Projects() {
                   rel="noopener noreferrer"
                 >
                   <button className="btn btn-primary">
-                    <i className="bi bi-play-circle-fill"></i>&emsp;
+                    <i className="bi bi-youtube"></i>&emsp;
                     <strong>Watch Demonstration</strong>
                   </button>
                 </a>

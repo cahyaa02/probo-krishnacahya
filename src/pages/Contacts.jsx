@@ -38,10 +38,20 @@
 // }
 
 import React, { useEffect } from "react";
+import { Tooltip } from "bootstrap";
 
 export default function Contacts() {
   useEffect(() => {
+    //* Tab Page Title
     document.title = "Contacts";
+
+    //* Enable Bootstrap's Tooltip Everywhere
+    var tooltipTriggerList = [].slice.call(
+      document.querySelectorAll('[data-bs-toggle="tooltip"]')
+    );
+    tooltipTriggerList.map(function(tooltipTriggerEl) {
+      return new Tooltip(tooltipTriggerEl);
+    });
   }, []);
 
   return (
@@ -148,7 +158,7 @@ export default function Contacts() {
         </section> */}
 
         <section id="below-the-fold" data-aos="fade-up">
-          {/* <p>You can also reach me on</p> */}
+          <h4 className="text-center mb-4">Let's connect &#128518;</h4>
           <div className="kontak p-4 my-3">
             <div className="d-flex">
               <span className="text-footer social-media">
