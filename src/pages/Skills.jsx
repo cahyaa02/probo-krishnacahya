@@ -18,7 +18,10 @@ export default function Skills() {
   return (
     <div className="skills">
       <div className="mt-5" data-aos="fade-up">
-        <h4 className="text-center section-title mb-4">Certifications</h4>
+        <h4 className="text-center section-title">
+          &#128220;&ensp;Certifications
+        </h4>
+        <br />
         <div
           id="carouselExample"
           className="carousel slide"

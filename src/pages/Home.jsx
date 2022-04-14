@@ -93,7 +93,7 @@ export default function Home() {
         </div>
 
         <section id="content" data-aos="fade-up">
-          <h4 className="text-center section-title">About me</h4>
+          <h4 className="text-center section-title">&#128587;&ensp;About me</h4>
           <br />
           <div className="row g-4">
             <div className="col-xl-6 align-self-center">
@@ -165,21 +165,18 @@ export default function Home() {
                 Analytics, Attention to Detail, and Solution Thinking. Beside
                 that, Cooperative Teamwork and nice individual are also my
                 strong point. Focusing on deepening Frontend Development &amp;
-                UI/UX Design expertise while grow up Artificial Intelligence,
-                Big Data, Information Security, Cross-Platform Mobile
-                Application Development, and Progressive Web Apps Development
-                skills are my goals.
-              </p>
-              <p>
-                For any business inquiries and/or other subjects, please feel
-                free to contact me. Thank you and have a nice day.
+                User Interface - User Experience Design expertise while grow up
+                Artificial Intelligence and Development, Security, and
+                Operations skills are my goals.
               </p>
             </div>
           </div>
         </section>
 
         <div className="container" data-aos="fade-up">
-          <h4 className="text-center section-title">Education</h4>
+          <h4 className="text-center section-title">
+            &#127979;&ensp;Education
+          </h4>
           <br />
           <div className="row">
             <div className="col-auto text-center flex-column d-flex">
@@ -320,7 +317,7 @@ export default function Home() {
 
           <section id="below-the-fold" data-aos="fade-up">
             <h4 className="text-center section-title">
-              Volunteering Experience
+              &#128293;&ensp;Volunteering Experience
             </h4>
             <br />
             <p className="mb-1">
@@ -332,6 +329,7 @@ export default function Home() {
               &emsp;
               <strong>
                 8<sup>th</sup> National Programming &amp; Logic Competition
+                (NPLC)
               </strong>
             </p>
             <ul>
@@ -344,8 +342,10 @@ export default function Home() {
                   ></i>
                   &emsp;NPLC is a yearly programming and logic competition for
                   High School Students and equivalent organized by the
-                  Informatics Student Union @ UC. At this event, I am
-                  responsible as a Member of Marketing Division for Inviting
+                  Informatics Student Union @ UC. It was held with the aim of
+                  honing correct logic and programming skills, strengthening
+                  teamwork, and fostering a competitive spirit among
+                  participants. At this event, I am responsible for Inviting
                   High School Students and equivalent to register as
                   participants in the competition and Contacting Young
                   Influencers to participate in promoting the competition
@@ -366,6 +366,51 @@ export default function Home() {
                 <p className="text-white-50">
                   <i className="bi bi-clock category-time"></i>&emsp;Nov 2020 -
                   Jan 2021
+                </p>
+              </li>
+            </ul>
+            <p className="mb-1">
+              <i
+                className="bi bi-bookmarks-fill"
+                data-bs-toggle="tooltip"
+                title="Event Name"
+              ></i>
+              &emsp;
+              <strong>Technopreneurship Workshop (Technoshop)</strong>
+            </p>
+            <ul>
+              <li className="list-unstyled">
+                <p className="mb-1">
+                  <i
+                    className="bi bi-info-circle-fill"
+                    data-bs-toggle="tooltip"
+                    title="Description"
+                  ></i>
+                  &emsp;Technoshop is a Department Camp for Informatics Students
+                  @ UC, where there are activities in the form of workshops and
+                  webinars. It was held with the aim of honing the
+                  Technopreneurship skills of students through designing
+                  business ideas engaged in technology using the Business Model
+                  Canvas, Pitching Deck, and User Interface Design Prototype to
+                  get investment from investors. At this event, I am responsible
+                  for Configure the Discord's Community Server which is used for
+                  Bonding sessions between Mentors with their Mentees and
+                  Prepare the needs of Mini Games equipment.
+                </p>
+              </li>
+              <li className="list-unstyled">
+                <p className="mb-1">
+                  <i
+                    className="bi bi-diagram-3-fill"
+                    data-bs-toggle="tooltip"
+                    title="Position"
+                  ></i>
+                  &emsp;Member of IT - Inventory Division (Ad Hoc Committee)
+                </p>
+              </li>
+              <li className="list-unstyled">
+                <p className="text-white-50">
+                  <i className="bi bi-clock category-time"></i>&emsp;Apr 2022
                 </p>
               </li>
             </ul>

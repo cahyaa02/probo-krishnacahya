@@ -1,42 +1,3 @@
-// import React, { useRef } from "react";
-// import emailjs from "@emailjs/browser";
-
-// export default function Contacts() {
-//   const form = useRef();
-
-//   const sendEmail = (e) => {
-//     e.preventDefault();
-
-//     emailjs
-//       .sendForm(
-//         "YOUR_SERVICE_ID",
-//         "YOUR_TEMPLATE_ID",
-//         form.current,
-//         "YOUR_USER_ID"
-//       )
-//       .then(
-//         (result) => {
-//           console.log(result.text);
-//         },
-//         (error) => {
-//           console.log(error.text);
-//         }
-//       );
-//   };
-
-//   return (
-//     <form ref={form} onSubmit={sendEmail}>
-//       <label>Name</label>
-//       <input type="text" name="user_name" />
-//       <label>Email</label>
-//       <input type="email" name="user_email" />
-//       <label>Message</label>
-//       <textarea name="message" />
-//       <input type="submit" value="Send" />
-//     </form>
-//   );
-// }
-
 import React, { useEffect } from "react";
 import { Tooltip } from "bootstrap";
 
@@ -57,109 +18,32 @@ export default function Contacts() {
   return (
     <div className="contacts">
       <div className="container">
-        {/* <section id="above-the-fold" data-aos="fade-up">
-          <div className="container card">
-            <div className="row text-center mb-3">
-              <div className="col">
-                <h2>Send me messages</h2>
-                <p>
-                  For any inquiries, please send me the details via the form
-                  below.
-                </p>
-              </div>
-            </div>
-            <div className="row justify-content-center">
-              <div className="col">
-                <div
-                  className="alert alert-primary alert-dismissible fade show d-none my-alert"
-                  role="alert"
-                >
-                  <strong>
-                    Thank you, your message has been sent. I will reply it soon.
-                  </strong>
-                  <button
-                    type="button"
-                    className="btn-close"
-                    data-bs-dismiss="alert"
-                    aria-label="Close"
-                  ></button>
-                </div>
-                <form name="Probo-Krishnacahya-Web-Contact-Me-Form">
-                  <div className="mb-3">
-                    <i className="bi bi-person-fill"></i>
-                    &emsp;
-                    <label for="name" className="form-label">
-                      Full Name
-                    </label>
-                    <input
-                      type="text"
-                      className="form-control caret bg-dark"
-                      id="full-name"
-                      aria-describedby="full-name"
-                      name="full-name"
-                      placeholder="John Doe"
-                      required
-                    />
-                  </div>
-                  <div className="mb-3">
-                    <i className="bi bi-envelope-fill"></i>
-                    &emsp;
-                    <label for="email" className="form-label">
-                      Email Address
-                    </label>
-                    <input
-                      type="email"
-                      className="form-control caret bg-dark"
-                      id="email-address"
-                      aria-describedby="email-address"
-                      name="email-address"
-                      placeholder="johndoe@email.net"
-                      required
-                    />
-                  </div>
-                  <div className="mb-3">
-                    <i className="bi bi-chat-dots-fill"></i>
-                    &emsp;
-                    <label for="pesan" className="form-label">
-                      Message
-                    </label>
-                    <textarea
-                      className="form-control caret bg-dark"
-                      id="message"
-                      rows="5"
-                      name="message"
-                      placeholder="Hi there, ..."
-                      required
-                    ></textarea>
-                  </div>
-                  <br />
-                  <div className="d-grid">
-                    <button type="submit" className="btn btn-primary btn-kirim">
-                      <i className="bi bi-send"></i>&emsp;
-                      <strong>Submit</strong>
-                    </button>
-                    <button
-                      className="btn btn-primary btn-loading d-none"
-                      type="button"
-                      disabled
-                    >
-                      <span
-                        className="spinner-border spinner-border-sm"
-                        role="status"
-                        aria-hidden="true"
-                      ></span>
-                      Sending message.. Please wait.
-                    </button>
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
-        </section> */}
-
         <section id="below-the-fold" data-aos="fade-up">
-          <h4 className="text-center mb-4">Let's connect &#128518;</h4>
-          <div className="kontak p-4 my-3">
+          <h4 className="text-center section-title">
+            Contact Form&ensp;&#129309;
+          </h4>
+          <br />
+          <p className="mb-3 text-center">
+            For any business inquiries and/or other subjects, please feel free
+            to contact me. Thank you and have a nice day.
+          </p>
+          <iframe
+            src="https://docs.google.com/forms/d/e/1FAIpQLSfRF70mJ7nkWU2keksmYnTtLxroJctmfSz1cnDRHP-bTosz-Q/viewform?embedded=true"
+            width="100%"
+            height="947"
+            frameborder="0"
+            marginheight="0"
+            marginwidth="0"
+            className="card mx-auto d-block"
+          ></iframe>
+        </section>
+
+        <div className="mb-5" data-aos="fade-up">
+          <h4 className="text-center section-title">
+            Let's connect&ensp;&#128518;
+          </h4>
+          <br />
+          <div className="kontak p-4 mb-3">
             <div className="d-flex">
               <span className="text-footer social-media">
                 <a
@@ -167,11 +51,12 @@ export default function Contacts() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <i
-                    className="bi bi-envelope"
+                  <img
+                    src="images/contacts/gmail.svg"
+                    alt="GMail"
                     data-bs-toggle="tooltip"
-                    title="E-Mail"
-                  ></i>
+                    title="GMail"
+                  />
                   &emsp; probo.krishnacahya@gmail.com
                 </a>
               </span>
@@ -185,11 +70,12 @@ export default function Contacts() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <i
-                    className="bi bi-linkedin"
+                  <img
+                    src="images/contacts/linkedin.svg"
+                    alt="LinkedIn"
                     data-bs-toggle="tooltip"
                     title="LinkedIn"
-                  ></i>
+                  />
                   &emsp; Probo Krishnacahya
                 </a>
               </span>
@@ -203,11 +89,12 @@ export default function Contacts() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <i
-                    className="bi bi-line"
+                  <img
+                    src="images/contacts/line.svg"
+                    alt="LINE"
                     data-bs-toggle="tooltip"
                     title="LINE"
-                  ></i>
+                  />
                   &emsp; krshn_
                 </a>
               </span>
@@ -221,11 +108,12 @@ export default function Contacts() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <i
-                    className="bi bi-discord"
+                  <img
+                    src="images/contacts/discord.svg"
+                    alt="Discord"
                     data-bs-toggle="tooltip"
                     title="Discord"
-                  ></i>
+                  />
                   &emsp; cahyaa_ #0912
                 </a>
               </span>
@@ -239,11 +127,12 @@ export default function Contacts() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <i
-                    className="bi bi-telegram"
+                  <img
+                    src="images/contacts/telegram.svg"
+                    alt="Telegram"
                     data-bs-toggle="tooltip"
                     title="Telegram"
-                  ></i>
+                  />
                   &emsp; cahyaa_
                 </a>
               </span>
@@ -257,11 +146,12 @@ export default function Contacts() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <i
-                    className="bi bi-instagram"
+                  <img
+                    src="images/contacts/instagram.svg"
+                    alt="Instagram"
                     data-bs-toggle="tooltip"
                     title="Instagram"
-                  ></i>
+                  />
                   &emsp; probo_krishnacahya
                 </a>
               </span>
@@ -275,17 +165,18 @@ export default function Contacts() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <i
-                    className="bi bi-github"
+                  <img
+                    src="images/contacts/github.svg"
+                    alt="GitHub"
                     data-bs-toggle="tooltip"
                     title="GitHub"
-                  ></i>
+                  />
                   &emsp;cahyaa02
                 </a>
               </span>
             </div>
           </div>
-        </section>
+        </div>
       </div>
     </div>
   );
