@@ -160,7 +160,7 @@ export default function Projects() {
                     aria-expanded="false"
                     aria-controls="SejarahKitaWebsite"
                   >
-                    <strong>Read More..</strong>
+                    <strong>Load More..</strong>
                   </a>
                   <div className="collapse mt-3" id="SejarahKitaWebsite">
                     <img
@@ -238,7 +238,7 @@ export default function Projects() {
                     aria-expanded="false"
                     aria-controls="FrontendMentor"
                   >
-                    <strong>&nbsp;Read More..</strong>
+                    <strong>&nbsp;Load More..</strong>
                   </a>
                   <div className="collapse mt-3" id="FrontendMentor">
                     <img
@@ -310,7 +310,7 @@ export default function Projects() {
                     aria-expanded="false"
                     aria-controls="PartnerSeeker"
                   >
-                    <strong>&nbsp;Read More..</strong>
+                    <strong>&nbsp;Load More..</strong>
                   </a>
                   <div className="collapse mt-3" id="PartnerSeeker">
                     <img
@@ -418,7 +418,7 @@ export default function Projects() {
                     aria-expanded="false"
                     aria-controls="SejarahKitaMobile"
                   >
-                    <strong>Read More..</strong>
+                    <strong>Load More..</strong>
                   </a>
                   <div className="collapse mt-3" id="SejarahKitaMobile">
                     <img
@@ -488,7 +488,7 @@ export default function Projects() {
                     aria-expanded="false"
                     aria-controls="TMDBClone"
                   >
-                    <strong>&nbsp;Read More..</strong>
+                    <strong>&nbsp;Load More..</strong>
                   </a>
                   <div className="collapse mt-3" id="TMDBClone">
                     <img
@@ -561,7 +561,7 @@ export default function Projects() {
                     aria-expanded="false"
                     aria-controls="LemburanKuMobile"
                   >
-                    <strong>&nbsp;Read More..</strong>
+                    <strong>&nbsp;Load More..</strong>
                   </a>
                   <div className="collapse mt-3" id="LemburanKuMobile">
                     <img
@@ -635,7 +635,7 @@ export default function Projects() {
                     aria-expanded="false"
                     aria-controls="DodgeMaster"
                   >
-                    <strong>&nbsp;Read More..</strong>
+                    <strong>&nbsp;Load More..</strong>
                   </a>
                   <div className="collapse mt-3" id="DodgeMaster">
                     <img
@@ -693,7 +693,7 @@ export default function Projects() {
                     aria-expanded="false"
                     aria-controls="LemburanKuDesktop"
                   >
-                    <strong>&nbsp;Read More..</strong>
+                    <strong>&nbsp;Load More..</strong>
                   </a>
                   <div className="collapse mt-3" id="LemburanKuDesktop">
                     <img

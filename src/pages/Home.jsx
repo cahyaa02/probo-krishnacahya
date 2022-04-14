@@ -164,7 +164,7 @@ export default function Home() {
                 I am able to work on multiple projects based on Critical
                 Analytics, Attention to Detail, and Solution Thinking. Beside
                 that, Cooperative Teamwork and nice individual are also my
-                strong point. Focusing on deepening Frontend Development &amp;
+                strong point. Focusing on deepening Frontend Development and
                 User Interface - User Experience Design expertise while grow up
                 Artificial Intelligence and Development, Security, and
                 Operations skills are my goals.
@@ -175,7 +175,7 @@ export default function Home() {
 
         <div className="container" data-aos="fade-up">
           <h4 className="text-center section-title">
-            &#127979;&ensp;Education
+            &#127979;&ensp;Educations
           </h4>
           <br />
           <div className="row">
@@ -317,7 +317,7 @@ export default function Home() {
 
           <section id="below-the-fold" data-aos="fade-up">
             <h4 className="text-center section-title">
-              &#128293;&ensp;Volunteering Experience
+              &#128293;&ensp;Volunteering Experiences
             </h4>
             <br />
             <p className="mb-1">
@@ -415,6 +415,122 @@ export default function Home() {
               </li>
             </ul>
           </section>
+
+          <div className="container mb-5" data-aos="fade-up">
+            <h4 className="text-center section-title">&#10024;&ensp;Hobbies</h4>
+            <div className="text-center row row-cols-1 row-cols-md-3 g-4 mt-2">
+              <div className="col">
+                <div className="keahlian h-100">
+                  <figure className="figure d-block mx-auto">
+                    <img
+                      src="images/home/photography.svg"
+                      className="card-img-top d-block mx-auto py-3"
+                      alt="Photography"
+                    />
+                    <figcaption className="figure-caption text-white-50">
+                      Landscape Genre
+                    </figcaption>
+                  </figure>
+                  <div className="card-body">
+                    <p className="card-title">Photography</p>
+                  </div>
+                </div>
+              </div>
+              <div className="col">
+                <div className="keahlian h-100">
+                  <a
+                    href="https://storyset.com/illustration/jiu-jitsu/rafiki"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <figure className="figure d-block mx-auto">
+                      <img
+                        src="images/home/sports.svg"
+                        className="card-img-top d-block mx-auto py-3"
+                        alt="Sports"
+                        data-bs-toggle="tooltip"
+                        title="Storyset"
+                      />
+                      <figcaption className="figure-caption text-white-50">
+                        Martial Arts
+                      </figcaption>
+                    </figure>
+                  </a>
+                  <div className="card-body">
+                    <p className="card-title">Sports</p>
+                  </div>
+                </div>
+              </div>
+              <div className="col">
+                <div className="keahlian h-100">
+                  <figure className="figure d-block mx-auto">
+                    <img
+                      src="images/home/cooking.svg"
+                      className="card-img-top d-block mx-auto py-3"
+                      alt="Photography"
+                    />
+                    <figcaption className="figure-caption text-white-50">
+                      Main Course and Dessert
+                    </figcaption>
+                  </figure>
+                  <div className="card-body">
+                    <p className="card-title">Cooking</p>
+                  </div>
+                </div>
+              </div>
+              <div className="col">
+                <div className="keahlian h-100">
+                  <figure className="figure d-block mx-auto">
+                    <img
+                      src="images/home/watch-movies-and-series.svg"
+                      className="card-img-top d-block mx-auto py-3"
+                      alt="Photography"
+                    />
+                    <figcaption className="figure-caption text-white-50">
+                      Action and Science Fiction Genre
+                    </figcaption>
+                  </figure>
+                  <div className="card-body">
+                    <p className="card-title">Watch Movies and Series</p>
+                  </div>
+                </div>
+              </div>
+              <div className="col">
+                <div className="keahlian h-100">
+                  <figure className="figure d-block mx-auto">
+                    <img
+                      src="images/home/listen-to-songs.svg"
+                      className="card-img-top d-block mx-auto pt-5 pb-3"
+                      alt="Photography"
+                    />
+                    <figcaption className="figure-caption text-white-50">
+                      Pop Genre
+                    </figcaption>
+                  </figure>
+                  <div className="card-body">
+                    <p className="card-title">Listen to Songs</p>
+                  </div>
+                </div>
+              </div>
+              <div className="col">
+                <div className="keahlian h-100">
+                  <figure className="figure d-block mx-auto">
+                    <img
+                      src="images/home/playing-games.svg"
+                      className="card-img-top d-block mx-auto pt-5 pb-3"
+                      alt="Photography"
+                    />
+                    <figcaption className="figure-caption text-white-50">
+                      Action, Racing, Sports, Third Person Shooter, and Open World Genre
+                    </figcaption>
+                  </figure>
+                  <div className="card-body">
+                    <p className="card-title">Playing Games</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
