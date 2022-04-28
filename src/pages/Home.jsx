@@ -12,7 +12,7 @@ export default function Home() {
     var tooltipTriggerList = [].slice.call(
       document.querySelectorAll('[data-bs-toggle="tooltip"]')
     );
-    tooltipTriggerList.map(function(tooltipTriggerEl) {
+    tooltipTriggerList.map(function (tooltipTriggerEl) {
       return new Tooltip(tooltipTriggerEl);
     });
 
@@ -96,7 +96,7 @@ export default function Home() {
           <h4 className="text-center section-title">&#128587;&ensp;About me</h4>
           <br />
           <div className="row g-4">
-            <div className="col-xl-6 align-self-center">
+            <div className="col-xl-6">
               <div className="card pb-1">
                 <div className="row g-3">
                   <div className="col-xl-6 text-center pt-xl-1">
@@ -155,7 +155,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="col-xl-6">
+            <div className="col-xl-6 align-self-center">
               <p>
                 It's me, Probo Krishnacahya. You can call me Krishna. I was born
                 at Surabaya on November 2<sup>nd</sup>, 2002.
@@ -165,9 +165,9 @@ export default function Home() {
                 Analytics, Attention to Detail, and Solution Thinking. Beside
                 that, Cooperative Teamwork and nice individual are also my
                 strong point. Focusing on deepening Frontend Development and
-                User Interface - User Experience Design expertise while grow up
-                Artificial Intelligence and Development, Security, and
-                Operations skills are my goals.
+                User Interface - User Experience (UI/UX) Design expertise while
+                grow up Artificial Intelligence (AI) and Development, Security,
+                and Operations (DevSecOps) skills are my goals.
               </p>
             </div>
           </div>
@@ -418,117 +418,253 @@ export default function Home() {
 
           <div className="container mb-5" data-aos="fade-up">
             <h4 className="text-center section-title">&#10024;&ensp;Hobbies</h4>
-            <div className="text-center row row-cols-1 row-cols-md-3 g-4 mt-2">
-              <div className="col">
-                <div className="keahlian h-100">
-                  <figure className="figure d-block mx-auto">
-                    <img
-                      src="images/home/photography.svg"
-                      className="card-img-top d-block mx-auto py-3"
-                      alt="Photography"
-                    />
-                    <figcaption className="figure-caption text-white-50">
-                      Landscape Genre
-                    </figcaption>
-                  </figure>
-                  <div className="card-body">
-                    <p className="card-title">Photography</p>
+            <br />
+            <div
+              id="carouselExample"
+              className="carousel slide"
+              data-bs-ride="carousel"
+              data-bs-interval="false"
+            >
+              <div className="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#carouselExample"
+                  data-bs-slide-to="0"
+                  data-bs-toggle="tooltip"
+                  title="Photography"
+                  className="active"
+                  aria-current="true"
+                  aria-label="Photography"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExample"
+                  data-bs-slide-to="1"
+                  data-bs-toggle="tooltip"
+                  title="Sports"
+                  aria-label="Sports"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExample"
+                  data-bs-slide-to="2"
+                  data-bs-toggle="tooltip"
+                  title="Cooking"
+                  aria-label="Cooking"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExample"
+                  data-bs-slide-to="3"
+                  data-bs-toggle="tooltip"
+                  title="Watch Movies and Series"
+                  aria-label="Watch Movies and Series"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExample"
+                  data-bs-slide-to="4"
+                  data-bs-toggle="tooltip"
+                  title="Listen to Songs"
+                  aria-label="Listen to Songs"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#carouselExample"
+                  data-bs-slide-to="5"
+                  data-bs-toggle="tooltip"
+                  title="Playing Games"
+                  aria-label="Playing Games"
+                ></button>
+              </div>
+              <div className="carousel-inner text-center mx-auto">
+                <div className="carousel-item active">
+                  <div className="col">
+                    <div className="keahlian h-100">
+                      <figure className="figure d-block mx-auto">
+                        <img
+                          src="images/home/photography.svg"
+                          className="card-img-top d-block mx-auto pt-5 pb-3"
+                          alt="Playing Games"
+                          loading="lazy"
+                        />
+                        <figcaption className="figure-caption text-white-50">
+                          Landscape Genre
+                        </figcaption>
+                        <p className="card-title mb-5">Photography</p>
+                        {/* <button
+                          type="button"
+                          className="btn btn-primary mb-5"
+                          data-bs-toggle="modal"
+                          data-bs-target="#modalPhotography"
+                        >
+                          <i className="bi bi-image-fill"></i>&emsp;
+                          <strong>Look Photos</strong>
+                        </button> */}
+                      </figure>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  className="modal fade"
+                  id="modalPhotography"
+                  data-bs-backdrop="static"
+                  tabindex="-1"
+                  aria-labelledby="staticBackdropLabel"
+                  aria-hidden="true"
+                >
+                  <div className="modal-dialog modal-fullscreen">
+                    <div className="modal-content bg-dark">
+                      <div className="modal-header text-center">
+                        <h5 className="modal-title" id="staticBackdropLabel">
+                          Collection of my shoots
+                        </h5>
+                        <button
+                          type="button"
+                          className="btn-close btn-close-white"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+                      <div className="modal-body">
+                        <img
+                          src="images/home/sports.svg"
+                          className="card-img-top d-block mx-auto py-3"
+                          alt="Photography"
+                          loading="lazy"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="carousel-item">
+                  <div className="col">
+                    <div className="keahlian h-100">
+                      <figure className="figure d-block mx-auto">
+                        <a
+                          href="https://storyset.com/illustration/jiu-jitsu/rafiki"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <img
+                            src="images/home/sports.svg"
+                            className="card-img-top d-block mx-auto py-3"
+                            alt="Photography"
+                            loading="lazy"
+                          />
+                        </a>
+                        <figcaption className="figure-caption text-white-50">
+                          Martial Arts
+                        </figcaption>
+                        <p className="card-title mb-5">Sports</p>
+                      </figure>
+                    </div>
+                  </div>
+                </div>
+                <div className="carousel-item">
+                  <div className="col">
+                    <div className="keahlian h-100">
+                      <figure className="figure d-block mx-auto">
+                        <img
+                          src="images/home/cooking.svg"
+                          className="card-img-top d-block mx-auto py-3"
+                          alt="Cooking"
+                          loading="lazy"
+                        />
+                        <figcaption className="figure-caption text-white-50">
+                          Main Course and Dessert
+                        </figcaption>
+                        <p className="card-title mb-5">Cooking</p>
+                      </figure>
+                    </div>
+                  </div>
+                </div>
+                <div className="carousel-item">
+                  <div className="col">
+                    <div className="keahlian h-100">
+                      <figure className="figure d-block mx-auto">
+                        <img
+                          src="images/home/watch-movies-and-series.svg"
+                          className="card-img-top d-block mx-auto py-3"
+                          alt="Watch Movies and Series"
+                          loading="lazy"
+                        />
+                        <figcaption className="figure-caption text-white-50">
+                          Action and Science Fiction Genres
+                        </figcaption>
+                        <p className="card-title mb-5">
+                          Watch Movies and Series
+                        </p>
+                      </figure>
+                    </div>
+                  </div>
+                </div>
+                <div className="carousel-item">
+                  <div className="col">
+                    <div className="keahlian h-100">
+                      <figure className="figure d-block mx-auto">
+                        <img
+                          src="images/home/listen-to-songs.svg"
+                          className="card-img-top d-block mx-auto pt-5 pb-3"
+                          alt="Listen to Songs"
+                          loading="lazy"
+                        />
+                        <figcaption className="figure-caption ">
+                          Pop Genre
+                        </figcaption>
+                        <p className="card-title mb-5">Listen to Songs</p>
+                      </figure>
+                    </div>
+                  </div>
+                </div>
+                <div className="carousel-item">
+                  <div className="col">
+                    <div className="keahlian h-100">
+                      <figure className="figure d-block mx-auto">
+                        <img
+                          src="images/home/playing-games.svg"
+                          className="card-img-top d-block mx-auto pt-5 pb-3"
+                          alt="Playing Games"
+                          loading="lazy"
+                        />
+                        <figcaption className="figure-caption text-white-50">
+                          Action, Racing, Sports, Third Person Shooter, and Open
+                          World Genres
+                        </figcaption>
+                        <p className="card-title mb-5">Playing Games</p>
+                      </figure>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div className="col">
-                <div className="keahlian h-100">
-                  <a
-                    href="https://storyset.com/illustration/jiu-jitsu/rafiki"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <figure className="figure d-block mx-auto">
-                      <img
-                        src="images/home/sports.svg"
-                        className="card-img-top d-block mx-auto py-3"
-                        alt="Sports"
-                        data-bs-toggle="tooltip"
-                        title="Storyset"
-                      />
-                      <figcaption className="figure-caption text-white-50">
-                        Martial Arts
-                      </figcaption>
-                    </figure>
-                  </a>
-                  <div className="card-body">
-                    <p className="card-title">Sports</p>
-                  </div>
-                </div>
-              </div>
-              <div className="col">
-                <div className="keahlian h-100">
-                  <figure className="figure d-block mx-auto">
-                    <img
-                      src="images/home/cooking.svg"
-                      className="card-img-top d-block mx-auto py-3"
-                      alt="Photography"
-                    />
-                    <figcaption className="figure-caption text-white-50">
-                      Main Course and Dessert
-                    </figcaption>
-                  </figure>
-                  <div className="card-body">
-                    <p className="card-title">Cooking</p>
-                  </div>
-                </div>
-              </div>
-              <div className="col">
-                <div className="keahlian h-100">
-                  <figure className="figure d-block mx-auto">
-                    <img
-                      src="images/home/watch-movies-and-series.svg"
-                      className="card-img-top d-block mx-auto py-3"
-                      alt="Photography"
-                    />
-                    <figcaption className="figure-caption text-white-50">
-                      Action and Science Fiction Genre
-                    </figcaption>
-                  </figure>
-                  <div className="card-body">
-                    <p className="card-title">Watch Movies and Series</p>
-                  </div>
-                </div>
-              </div>
-              <div className="col">
-                <div className="keahlian h-100">
-                  <figure className="figure d-block mx-auto">
-                    <img
-                      src="images/home/listen-to-songs.svg"
-                      className="card-img-top d-block mx-auto pt-5 pb-3"
-                      alt="Photography"
-                    />
-                    <figcaption className="figure-caption text-white-50">
-                      Pop Genre
-                    </figcaption>
-                  </figure>
-                  <div className="card-body">
-                    <p className="card-title">Listen to Songs</p>
-                  </div>
-                </div>
-              </div>
-              <div className="col">
-                <div className="keahlian h-100">
-                  <figure className="figure d-block mx-auto">
-                    <img
-                      src="images/home/playing-games.svg"
-                      className="card-img-top d-block mx-auto pt-5 pb-3"
-                      alt="Photography"
-                    />
-                    <figcaption className="figure-caption text-white-50">
-                      Action, Racing, Sports, Third Person Shooter, and Open World Genre
-                    </figcaption>
-                  </figure>
-                  <div className="card-body">
-                    <p className="card-title">Playing Games</p>
-                  </div>
-                </div>
-              </div>
+              <button
+                className="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExample"
+                data-bs-slide="prev"
+              >
+                <span
+                  className="carousel-control-prev-icon"
+                  aria-hidden="true"
+                  data-bs-toggle="tooltip"
+                  title="Previous"
+                ></span>
+                <span className="visually-hidden">Previous</span>
+              </button>
+              <button
+                className="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExample"
+                data-bs-slide="next"
+              >
+                <span
+                  className="carousel-control-next-icon"
+                  aria-hidden="true"
+                  data-bs-toggle="tooltip"
+                  title="Next"
+                ></span>
+                <span className="visually-hidden">Next</span>
+              </button>
             </div>
           </div>
         </div>
