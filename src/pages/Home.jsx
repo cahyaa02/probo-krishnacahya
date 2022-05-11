@@ -483,16 +483,16 @@ export default function Home() {
                     <div className="keahlian h-100">
                       <figure className="figure d-block mx-auto">
                         <img
-                          src="images/home/photography.svg"
-                          className="card-img-top d-block mx-auto pt-5 pb-3"
-                          alt="Playing Games"
+                          src="images/home/hobbies/photography.svg"
+                          className="card-img-top mx-auto pt-5 pb-3"
+                          alt="Photography"
                           loading="lazy"
                         />
                         <figcaption className="figure-caption text-white-50">
                           Landscape Genre
                         </figcaption>
-                        <p className="card-title mb-5">Photography</p>
-                        {/* <button
+                        <p className="card-title mb-3">Photography</p>
+                        <button
                           type="button"
                           className="btn btn-primary mb-5"
                           data-bs-toggle="modal"
@@ -500,40 +500,8 @@ export default function Home() {
                         >
                           <i className="bi bi-image-fill"></i>&emsp;
                           <strong>Look Photos</strong>
-                        </button> */}
+                        </button>
                       </figure>
-                    </div>
-                  </div>
-                </div>
-                <div
-                  className="modal fade"
-                  id="modalPhotography"
-                  data-bs-backdrop="static"
-                  tabindex="-1"
-                  aria-labelledby="staticBackdropLabel"
-                  aria-hidden="true"
-                >
-                  <div className="modal-dialog modal-fullscreen">
-                    <div className="modal-content bg-dark">
-                      <div className="modal-header text-center">
-                        <h5 className="modal-title" id="staticBackdropLabel">
-                          Collection of my shoots
-                        </h5>
-                        <button
-                          type="button"
-                          className="btn-close btn-close-white"
-                          data-bs-dismiss="modal"
-                          aria-label="Close"
-                        ></button>
-                      </div>
-                      <div className="modal-body">
-                        <img
-                          src="images/home/sports.svg"
-                          className="card-img-top d-block mx-auto py-3"
-                          alt="Photography"
-                          loading="lazy"
-                        />
-                      </div>
                     </div>
                   </div>
                 </div>
@@ -547,9 +515,9 @@ export default function Home() {
                           rel="noopener noreferrer"
                         >
                           <img
-                            src="images/home/sports.svg"
-                            className="card-img-top d-block mx-auto py-3"
-                            alt="Photography"
+                            src="images/home/hobbies/sports.svg"
+                            className="card-img-top mx-auto py-3"
+                            alt="Sports"
                             loading="lazy"
                           />
                         </a>
@@ -566,8 +534,8 @@ export default function Home() {
                     <div className="keahlian h-100">
                       <figure className="figure d-block mx-auto">
                         <img
-                          src="images/home/cooking.svg"
-                          className="card-img-top d-block mx-auto py-3"
+                          src="images/home/hobbies/cooking.svg"
+                          className="card-img-top mx-auto py-3"
                           alt="Cooking"
                           loading="lazy"
                         />
@@ -584,8 +552,8 @@ export default function Home() {
                     <div className="keahlian h-100">
                       <figure className="figure d-block mx-auto">
                         <img
-                          src="images/home/watch-movies-and-series.svg"
-                          className="card-img-top d-block mx-auto py-3"
+                          src="images/home/hobbies/watch-movies-and-series.svg"
+                          className="card-img-top mx-auto py-3"
                           alt="Watch Movies and Series"
                           loading="lazy"
                         />
@@ -604,8 +572,8 @@ export default function Home() {
                     <div className="keahlian h-100">
                       <figure className="figure d-block mx-auto">
                         <img
-                          src="images/home/listen-to-songs.svg"
-                          className="card-img-top d-block mx-auto pt-5 pb-3"
+                          src="images/home/hobbies/listen-to-songs.svg"
+                          className="card-img-top mx-auto pt-5 pb-3"
                           alt="Listen to Songs"
                           loading="lazy"
                         />
@@ -622,8 +590,8 @@ export default function Home() {
                     <div className="keahlian h-100">
                       <figure className="figure d-block mx-auto">
                         <img
-                          src="images/home/playing-games.svg"
-                          className="card-img-top d-block mx-auto pt-5 pb-3"
+                          src="images/home/hobbies/playing-games.svg"
+                          className="card-img-top mx-auto pt-5 pb-3"
                           alt="Playing Games"
                           loading="lazy"
                         />
@@ -633,6 +601,119 @@ export default function Home() {
                         </figcaption>
                         <p className="card-title mb-5">Playing Games</p>
                       </figure>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                className="modal fade"
+                id="modalPhotography"
+                data-bs-backdrop="static"
+                tabindex="-1"
+                aria-labelledby="staticBackdropLabel"
+                aria-hidden="true"
+              >
+                <div className="modal-dialog modal-dialog-centered">
+                  <div className="modal-content bg-dark">
+                    <div className="modal-header text-center">
+                      <h5 className="modal-title" id="staticBackdropLabel">
+                        &#128248;&ensp;Collection of my shoots
+                      </h5>
+                      <button
+                        type="button"
+                        className="btn-close btn-close-white"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div className="modal-body">
+                      <div class="shoots d-flex justify-content-between align-items-center h-100">
+                        <div
+                          class="picture x mandatory-scroll-snapping d-flex overflow-auto"
+                          dir="ltr"
+                        >
+                          <div>
+                            <img
+                              src="images/home/photography/photography (1).jpg"
+                              className="photo rounded d-block mx-auto shadow-sm"
+                              alt="shoots"
+                              loading="lazy"
+                            />
+                          </div>
+                          <div>
+                            <img
+                              src="images/home/photography/photography (2).jpg"
+                              className="photo rounded d-block mx-auto shadow-sm"
+                              alt="shoots"
+                              loading="lazy"
+                            />
+                          </div>
+                          <div>
+                            <img
+                              src="images/home/photography/photography (3).jpg"
+                              className="photo rounded d-block mx-auto shadow-sm"
+                              alt="shoots"
+                              loading="lazy"
+                            />
+                          </div>
+                          <div>
+                            <img
+                              src="images/home/photography/photography (4).jpg"
+                              className="photo rounded d-block mx-auto shadow-sm"
+                              alt="shoots"
+                              loading="lazy"
+                            />
+                          </div>
+                          <div>
+                            <img
+                              src="images/home/photography/photography (5).jpg"
+                              className="photo rounded d-block mx-auto shadow-sm"
+                              alt="shoots"
+                              loading="lazy"
+                            />
+                          </div>
+                          <div>
+                            <img
+                              src="images/home/photography/photography (6).jpg"
+                              className="photo rounded d-block mx-auto shadow-sm"
+                              alt="shoots"
+                              loading="lazy"
+                            />
+                          </div>
+                          <div>
+                            <img
+                              src="images/home/photography/photography (7).jpg"
+                              className="photo rounded d-block mx-auto shadow-sm"
+                              alt="shoots"
+                              loading="lazy"
+                            />
+                          </div>
+                          <div>
+                            <img
+                              src="images/home/photography/photography (8).jpg"
+                              className="photo rounded d-block mx-auto shadow-sm"
+                              alt="shoots"
+                              loading="lazy"
+                            />
+                          </div>
+                          <div>
+                            <img
+                              src="images/home/photography/photography (9).jpg"
+                              className="photo rounded d-block mx-auto shadow-sm"
+                              alt="shoots"
+                              loading="lazy"
+                            />
+                          </div>
+                          <div>
+                            <img
+                              src="images/home/photography/photography (10).jpg"
+                              className="photo rounded d-block mx-auto shadow-sm"
+                              alt="shoots"
+                              loading="lazy"
+                            />
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>

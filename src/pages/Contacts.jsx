@@ -123,7 +123,7 @@ export default function Contacts() {
             <div className="d-flex">
               <span className="text-footer social-media">
                 <a
-                  href="https://t.me/cahyaa_"
+                  href="https://t.me/cahyaa02"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -133,7 +133,7 @@ export default function Contacts() {
                     data-bs-toggle="tooltip"
                     title="Telegram"
                   />
-                  &emsp; cahyaa_
+                  &emsp; cahyaa02
                 </a>
               </span>
             </div>

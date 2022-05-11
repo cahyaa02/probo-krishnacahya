@@ -99,6 +99,15 @@ img {
   max-width: 50% !important
 }
 
+.card-img-top, .photo {
+  height: 20vw;
+  object-fit: contain;
+}
+
+.card-img-top:hover {
+  transform: scale(1.1);
+}
+
 .technologies {
   max-width: 5% !important;
 }
@@ -380,7 +389,33 @@ textarea:focus {
 }
 
 .modal-backdrop {
-  display: none;
+  z-index: -1 !important;
+}
+
+.shoots {
+  flex-flow: column nowrap;
+}
+
+.picture {
+  flex: none;
+}
+
+.picture.x {
+  flex-flow: row nowrap;
+}
+
+.x.mandatory-scroll-snapping {
+  scroll-snap-type: x mandatory;
+}
+
+.picture>div {
+  scroll-snap-align: center;
+  flex: none;
+}
+
+.x.picture>div {
+  width: 100%;
+  padding-bottom: 2.5%;
 }
 
 table {
@@ -457,5 +492,9 @@ tr:last-child td:last-child {
 
   form {
     margin: 1rem
+  }
+
+  .card-img-top {
+    height: 100vw;
   }
 }

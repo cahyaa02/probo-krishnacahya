@@ -59,7 +59,7 @@ export default function Footer() {
                 ></i>
               </a>
               <a
-                href="https://t.me/cahyaa_"
+                href="https://t.me/cahyaa02"
                 target="_blank"
                 rel="noopener noreferrer"
               >

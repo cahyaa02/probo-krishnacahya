@@ -23,10 +23,9 @@ export default function Skills() {
             &#128220;&ensp;Certifications
           </h4>
           <br />
-          <table class="table table-responsive table-dark table-striped table-hover">
+          <table className="table table-responsive table-dark table-striped table-hover">
             <thead>
               <tr>
-                <th scope="col">#</th>
                 <th scope="col">Subject</th>
                 <th scope="col">Publisher Organization</th>
                 <th scope="col">Date Achieved</th>
@@ -34,7 +33,32 @@ export default function Skills() {
             </thead>
             <tbody>
               <tr>
-                <td>1</td>
+                <td>
+                  <a
+                    href="https://app.testdome.com/cert/7834a499fcfd4123b947002eea0a63df"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    DevOps
+                  </a>
+                </td>
+                <td>TestDome</td>
+                <td>May 2022</td>
+              </tr>
+              <tr>
+                <td>
+                  <a
+                    href="https://app.testdome.com/cert/7e5b2f29a59f48efa71e8b0bc72b0bcc"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Flutter
+                  </a>
+                </td>
+                <td>TestDome</td>
+                <td>May 2022</td>
+              </tr>
+              <tr>
                 <td>
                   <a
                     href="https://app.testdome.com/cert/575f7de7f7634b73892a42e4ac2d3e49"
@@ -48,7 +72,6 @@ export default function Skills() {
                 <td>Mar 2022</td>
               </tr>
               <tr>
-                <td>2</td>
                 <td>
                   <a
                     href="https://www.hackerrank.com/certificates/e33caa399655"
@@ -62,7 +85,6 @@ export default function Skills() {
                 <td>Mar 2022</td>
               </tr>
               <tr>
-                <td>3</td>
                 <td>
                   <a
                     href="https://app.testdome.com/cert/949b8c4448564bca9b03a05ab6ca4ef2"
@@ -76,7 +98,6 @@ export default function Skills() {
                 <td>Mar 2022</td>
               </tr>
               <tr>
-                <td>4</td>
                 <td>
                   <a
                     href="https://www.studysection.com/users/socialMedia/NTExODI0/cHJvYm8ua3Jpc2huYWNhaHlhQGdtYWlsLmNvbQ=="
@@ -90,7 +111,6 @@ export default function Skills() {
                 <td>Mar 2022</td>
               </tr>
               <tr>
-                <td>5</td>
                 <td>
                   <a
                     href="https://app.testdome.com/cert/2d5ba222fb1142928e0bd04e5cd29639"
@@ -104,7 +124,6 @@ export default function Skills() {
                 <td>Mar 2022</td>
               </tr>
               <tr>
-                <td>6</td>
                 <td>
                   <a
                     href="https://www.studysection.com/users/socialMedia/NTEwMTY5/cHJvYm8ua3Jpc2huYWNhaHlhQGdtYWlsLmNvbQ=="
@@ -118,7 +137,6 @@ export default function Skills() {
                 <td>Mar 2022</td>
               </tr>
               <tr>
-                <td>7</td>
                 <td>
                   <a
                     href="https://app.testdome.com/cert/b5e61587a6ef4e65afda2ac3d79c804f"
@@ -132,7 +150,6 @@ export default function Skills() {
                 <td>Mar 2022</td>
               </tr>
               <tr>
-                <td>8</td>
                 <td>
                   <a
                     href="https://app.testdome.com/cert/cc07de34412f4285a13180659b712405"
@@ -146,21 +163,6 @@ export default function Skills() {
                 <td>Mar 2022</td>
               </tr>
               <tr>
-                <td>9</td>
-                <td>
-                  <a
-                    href="https://app.testdome.com/cert/67e902ff4b874e53a405051cadc11d8e"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Project Management and Time Management
-                  </a>
-                </td>
-                <td>TestDome</td>
-                <td>Mar 2022</td>
-              </tr>
-              <tr>
-                <td>10</td>
                 <td>
                   <a
                     href="https://www.studysection.com/users/socialMedia/NTExODM5/cHJvYm8ua3Jpc2huYWNhaHlhQGdtYWlsLmNvbQ=="
@@ -174,7 +176,6 @@ export default function Skills() {
                 <td>Mar 2022</td>
               </tr>
               <tr>
-                <td>11</td>
                 <td>
                   <a
                     href="https://app.testdome.com/cert/d9cf9e4ff8d44090ac27560f0fc59836"
@@ -188,7 +189,6 @@ export default function Skills() {
                 <td>Mar 2022</td>
               </tr>
               <tr>
-                <td>12</td>
                 <td>
                   <a
                     href="https://app.testdome.com/cert/b1c99a672cf848c78adba23062f749b8"
@@ -202,7 +202,6 @@ export default function Skills() {
                 <td>Mar 2022</td>
               </tr>
               <tr>
-                <td>13</td>
                 <td>
                   <a
                     href="https://www.studysection.com/users/socialMedia/NTEwMTYy/cHJvYm8ua3Jpc2huYWNhaHlhQGdtYWlsLmNvbQ=="
@@ -216,7 +215,6 @@ export default function Skills() {
                 <td>Mar 2022</td>
               </tr>
               <tr>
-                <td>14</td>
                 <td>
                   <a
                     href="https://www.studysection.com/users/socialMedia/NTEyMDQ0/cHJvYm8ua3Jpc2huYWNhaHlhQGdtYWlsLmNvbQ=="
@@ -230,7 +228,6 @@ export default function Skills() {
                 <td>Mar 2022</td>
               </tr>
               <tr>
-                <td>15</td>
                 <td>
                   <a
                     href="https://app.testdome.com/cert/87b38d51c20f4f8bae38a87af9d50d8b"
@@ -244,7 +241,6 @@ export default function Skills() {
                 <td>Mar 2022</td>
               </tr>
               <tr>
-                <td>16</td>
                 <td>
                   <a
                     href="https://app.testdome.com/cert/3e9554be3c624302a0975eb37fa4029a"
@@ -258,7 +254,6 @@ export default function Skills() {
                 <td>Mar 2022</td>
               </tr>
               <tr>
-                <td>17</td>
                 <td>
                   <a
                     href="https://app.testdome.com/cert/36ac75bae42c460db610f9625f83b675"
@@ -272,7 +267,6 @@ export default function Skills() {
                 <td>Feb 2022</td>
               </tr>
               <tr>
-                <td>18</td>
                 <td>
                   <a
                     href="https://app.testdome.com/cert/39a6f5d3441848a1b334b761fffd645c"
@@ -286,7 +280,6 @@ export default function Skills() {
                 <td>Feb 2022</td>
               </tr>
               <tr>
-                <td>19</td>
                 <td>
                   <a
                     href="https://www.studysection.com/users/socialMedia/NDk4ODgz/cHJvYm8ua3Jpc2huYWNhaHlhQGdtYWlsLmNvbQ%3D%3D/"
@@ -300,7 +293,6 @@ export default function Skills() {
                 <td>Feb 2022</td>
               </tr>
               <tr>
-                <td>20</td>
                 <td>
                   <a
                     href="https://www.studysection.com/users/socialMedia/NDk4ODky/cHJvYm8ua3Jpc2huYWNhaHlhQGdtYWlsLmNvbQ%3D%3D/"
@@ -314,7 +306,6 @@ export default function Skills() {
                 <td>Feb 2022</td>
               </tr>
               <tr>
-                <td>21</td>
                 <td>
                   <a
                     href="https://olympus1.mygreatlearning.com/course_certificate/APMQPGOB"
@@ -328,7 +319,6 @@ export default function Skills() {
                 <td>Feb 2022</td>
               </tr>
               <tr>
-                <td>22</td>
                 <td>
                   <a
                     href="https://olympus1.mygreatlearning.com/course_certificate/QYUKBBAP"
@@ -342,7 +332,6 @@ export default function Skills() {
                 <td>Feb 2022</td>
               </tr>
               <tr>
-                <td>23</td>
                 <td>
                   <a
                     href="https://app.testdome.com/cert/3b309305da0f40fda44e5dcfd2d49ec8"
@@ -356,7 +345,6 @@ export default function Skills() {
                 <td>Feb 2022</td>
               </tr>
               <tr>
-                <td>24</td>
                 <td>
                   <a
                     href="https://app.testdome.com/cert/2f62fb3b168e4066bf09e61d6ce201c4"
@@ -370,7 +358,6 @@ export default function Skills() {
                 <td>Feb 2022</td>
               </tr>
               <tr>
-                <td>25</td>
                 <td>
                   <a
                     href="https://app.testdome.com/cert/7c434b03589e4a71ac9f84c6b206fc74"
@@ -384,7 +371,6 @@ export default function Skills() {
                 <td>Feb 2022</td>
               </tr>
               <tr>
-                <td>26</td>
                 <td>
                   <a
                     href="https://app.testdome.com/cert/e532dc2f33464be081f9c27a9506d72c"
@@ -398,7 +384,6 @@ export default function Skills() {
                 <td>Feb 2022</td>
               </tr>
               <tr>
-                <td>27</td>
                 <td>
                   <a
                     href="https://www.studysection.com/Users/socialMedia/NDk4NjQ1/cHJvYm8ua3Jpc2huYWNhaHlhQGdtYWlsLmNvbQ%3D%3D"
@@ -412,7 +397,6 @@ export default function Skills() {
                 <td>Feb 2022</td>
               </tr>
               <tr>
-                <td>28</td>
                 <td>
                   <a
                     href="https://app.testdome.com/cert/98ca9d68e3a0477e9fc9b36335ce3142"
@@ -426,7 +410,6 @@ export default function Skills() {
                 <td>Feb 2022</td>
               </tr>
               <tr>
-                <td>29</td>
                 <td>
                   <a
                     href="https://app.testdome.com/cert/a8b39c082f744f08a12dde0dd41569ba"
@@ -440,7 +423,6 @@ export default function Skills() {
                 <td>Feb 2022</td>
               </tr>
               <tr>
-                <td>30</td>
                 <td>
                   <a
                     href="https://app.testdome.com/cert/528a68cf0ef742f8b89f17825e13e06d"
@@ -454,7 +436,6 @@ export default function Skills() {
                 <td>Feb 2022</td>
               </tr>
               <tr>
-                <td>31</td>
                 <td>
                   <a
                     href="https://www.kaggle.com/learn/certification/probokrishnacahya/python"
@@ -468,7 +449,6 @@ export default function Skills() {
                 <td>Feb 2022</td>
               </tr>
               <tr>
-                <td>32</td>
                 <td>
                   <a
                     href="https://www.agunacourse.com/cek-sertifikat?search=AC-455-97841590-53"
@@ -482,7 +462,6 @@ export default function Skills() {
                 <td>Feb 2022</td>
               </tr>
               <tr>
-                <td>33</td>
                 <td>
                   <a
                     href="https://www.studysection.com/users/socialMedia/NTAyMjAx/cHJvYm8ua3Jpc2huYWNhaHlhQGdtYWlsLmNvbQ%3D%3D/"
@@ -496,7 +475,6 @@ export default function Skills() {
                 <td>Feb 2022</td>
               </tr>
               <tr>
-                <td>34</td>
                 <td>
                   <a
                     href="https://www.studysection.com/users/socialMedia/NTAyMjEx/cHJvYm8ua3Jpc2huYWNhaHlhQGdtYWlsLmNvbQ=="
@@ -510,7 +488,6 @@ export default function Skills() {
                 <td>Feb 2022</td>
               </tr>
               <tr>
-                <td>35</td>
                 <td>
                   <a
                     href="https://www.dicoding.com/certificates/N9ZOE9E18XG5"
@@ -566,7 +543,7 @@ export default function Skills() {
                         <div className="keahlian h-100">
                           <img
                             src="images/skills/technologies/bootstrap.svg"
-                            className="card-img-top d-block mx-auto py-5"
+                            className="card-img-top mx-auto py-5"
                             alt="bootstrap"
                           />
                           <div className="card-body">
@@ -601,7 +578,7 @@ export default function Skills() {
                         <div className="keahlian h-100">
                           <img
                             src="images/skills/technologies/cascading-style-sheets-3.svg"
-                            className="card-img-top d-block mx-auto px-3 pt-3"
+                            className="card-img-top mx-auto px-3"
                             alt="CSS3"
                           />
                           <div className="card-body">
@@ -638,7 +615,7 @@ export default function Skills() {
                         <div className="keahlian h-100">
                           <img
                             src="images/skills/technologies/hypertext-markup-language-5.svg"
-                            className="card-img-top d-block mx-auto px-3 pt-3"
+                            className="card-img-top mx-auto px-3"
                             alt="HTML5"
                           />
                           <div className="card-body">
@@ -675,7 +652,7 @@ export default function Skills() {
                         <div className="keahlian h-100">
                           <img
                             src="images/skills/technologies/javascript.svg"
-                            className="card-img-top d-block mx-auto pt-3"
+                            className="card-img-top mx-auto"
                             alt="JavaScript"
                           />
                           <div className="card-body">
@@ -710,7 +687,7 @@ export default function Skills() {
                         <div className="keahlian h-100">
                           <img
                             src="images/skills/technologies/reactjs.svg"
-                            className="card-img-top d-block mx-auto pt-3"
+                            className="card-img-top mx-auto"
                             alt="ReactJS"
                           />
                           <div className="card-body">
@@ -751,7 +728,7 @@ export default function Skills() {
                         <div className="keahlian h-100">
                           <img
                             src="images/skills/technologies/firebase.svg"
-                            className="card-img-top d-block mx-auto px-3 pt-3"
+                            className="card-img-top mx-auto px-3"
                             alt="Firebase"
                           />
                           <div className="card-body">
@@ -786,7 +763,7 @@ export default function Skills() {
                         <div className="keahlian h-100">
                           <img
                             src="images/skills/technologies/hypertext-preprocessor.svg"
-                            className="card-img-top d-block mx-auto py-5"
+                            className="card-img-top mx-auto py-5"
                             alt="PHP"
                           />
                           <div className="card-body">
@@ -823,7 +800,7 @@ export default function Skills() {
                         <div className="keahlian h-100">
                           <img
                             src="images/skills/technologies/java.svg"
-                            className="card-img-top d-block mx-auto px-3 pt-3"
+                            className="card-img-top mx-auto px-3"
                             alt="Java"
                           />
                           <div className="card-body">
@@ -858,7 +835,7 @@ export default function Skills() {
                         <div className="keahlian h-100">
                           <img
                             src="images/skills/technologies/laravel.svg"
-                            className="card-img-top d-block mx-auto pt-3"
+                            className="card-img-top mx-auto"
                             alt="Laravel"
                           />
                           <div className="card-body">
@@ -893,7 +870,7 @@ export default function Skills() {
                         <div className="keahlian h-100">
                           <img
                             src="images/skills/technologies/mysql.svg"
-                            className="card-img-top d-block mx-auto pt-3"
+                            className="card-img-top mx-auto"
                             alt="MySQL"
                           />
                           <div className="card-body">
@@ -928,7 +905,7 @@ export default function Skills() {
                         <div className="keahlian h-100">
                           <img
                             src="images/skills/technologies/python.svg"
-                            className="card-img-top d-block mx-auto px-3 pt-3"
+                            className="card-img-top mx-auto px-3"
                             alt="Python"
                           />
                           <div className="card-body">
@@ -963,7 +940,7 @@ export default function Skills() {
                         <div className="keahlian h-100">
                           <img
                             src="images/skills/technologies/swift.svg"
-                            className="card-img-top d-block mx-auto px-3 pt-3"
+                            className="card-img-top mx-auto px-3"
                             alt="Swift"
                           />
                           <div className="card-body">
@@ -1004,7 +981,7 @@ export default function Skills() {
                         <div className="keahlian h-100">
                           <img
                             src="images/skills/technologies/github.svg"
-                            className="card-img-top d-block mx-auto pt-3"
+                            className="card-img-top mx-auto"
                             alt="GitHub"
                           />
                           <div className="card-body">
@@ -1039,7 +1016,7 @@ export default function Skills() {
                         <div className="keahlian h-100">
                           <img
                             src="images/skills/technologies/postman.svg"
-                            className="card-img-top d-block mx-auto pt-3"
+                            className="card-img-top mx-auto"
                             alt="Postman"
                           />
                           <div className="card-body">
@@ -1074,7 +1051,7 @@ export default function Skills() {
                         <div className="keahlian h-100">
                           <img
                             src="images/skills/technologies/trello.svg"
-                            className="card-img-top d-block mx-auto pt-3"
+                            className="card-img-top mx-auto"
                             alt="Trello"
                           />
                           <div className="card-body">
@@ -1137,7 +1114,7 @@ export default function Skills() {
                         <div className="keahlian h-100">
                           <img
                             src="images/skills/technologies/figma.svg"
-                            className="card-img-top d-block mx-auto px-3 pt-3"
+                            className="card-img-top mx-auto px-3"
                             alt="Figma"
                           />
                           <div className="card-body">
@@ -1172,7 +1149,7 @@ export default function Skills() {
                         <div className="keahlian h-100">
                           <img
                             src="images/skills/technologies/illustrator.svg"
-                            className="card-img-top d-block mx-auto pt-3"
+                            className="card-img-top mx-auto"
                             alt="Ai"
                           />
                           <div className="card-body">
@@ -1207,7 +1184,7 @@ export default function Skills() {
                         <div className="keahlian h-100">
                           <img
                             src="images/skills/technologies/photoshop.svg"
-                            className="card-img-top d-block mx-auto pt-3"
+                            className="card-img-top mx-auto"
                             alt="Ps"
                           />
                           <div className="card-body">
@@ -1242,7 +1219,7 @@ export default function Skills() {
                         <div className="keahlian h-100">
                           <img
                             src="images/skills/technologies/lightroom.svg"
-                            className="card-img-top d-block mx-auto pt-3"
+                            className="card-img-top mx-auto"
                             alt="Lr"
                           />
                           <div className="card-body">
@@ -1277,7 +1254,7 @@ export default function Skills() {
                         <div className="keahlian h-100">
                           <img
                             src="images/skills/technologies/premiere-pro.svg"
-                            className="card-img-top d-block mx-auto pt-3"
+                            className="card-img-top mx-auto"
                             alt="Pr"
                           />
                           <div className="card-body">
@@ -1312,7 +1289,7 @@ export default function Skills() {
                         <div className="keahlian h-100">
                           <img
                             src="images/skills/technologies/after-effects.svg"
-                            className="card-img-top d-block mx-auto pt-3"
+                            className="card-img-top mx-auto"
                             alt="Ae"
                           />
                           <div className="card-body">
@@ -1374,7 +1351,7 @@ export default function Skills() {
                           <div className="keahlian h-100">
                             <img
                               src="images/skills/flags/indonesia.svg"
-                              className="card-img-top d-block mx-auto pt-3"
+                              className="card-img-top mx-auto"
                               alt="id"
                             />
                             <div className="card-body">
@@ -1389,7 +1366,7 @@ export default function Skills() {
                           <div className="keahlian h-100">
                             <img
                               src="images/skills/flags/united-kingdom.svg"
-                              className="card-img-top d-block mx-auto pt-3"
+                              className="card-img-top mx-auto"
                               alt="gb"
                             />
                             <div className="card-body">
@@ -1404,7 +1381,7 @@ export default function Skills() {
                           <div className="keahlian h-100">
                             <img
                               src="images/skills/flags/china.svg"
-                              className="card-img-top d-block mx-auto pt-3"
+                              className="card-img-top mx-auto"
                               alt="cn"
                             />
                             <div className="card-body">
