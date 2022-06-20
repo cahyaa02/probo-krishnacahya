@@ -32,6 +32,19 @@ export default function Skills() {
               </tr>
             </thead>
             <tbody>
+            <tr>
+                <td>
+                  <a
+                    href="https://app.testdome.com/cert/46085a635bee467f8eb95925916f9250"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Android
+                  </a>
+                </td>
+                <td>TestDome</td>
+                <td>Jun 2022</td>
+              </tr>
               <tr>
                 <td>
                   <a

@@ -310,7 +310,7 @@ export default function Home() {
                 <strong>Sekolah Dasar Kristen Dharma Mulya Surabaya</strong>
               </p>
               <p className="text-white-50">
-                <i className="bi bi-clock category-time"></i>&emsp;2008 - 2012
+                <i className="bi bi-clock category-time"></i>&emsp;2008 - 2014
               </p>
             </div>
           </div>
