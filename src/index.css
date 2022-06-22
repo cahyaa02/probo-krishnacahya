@@ -9,7 +9,7 @@
 }
 
 body {
-  background: url(/images/assets/background-desktop.svg) fixed center / cover no-repeat;
+  background: url(backgrounds/background-desktop.svg) fixed center / cover no-repeat;
   font-family: var(--font-primary);
   font-size: var(--normal-font-size);
   -webkit-font-smoothing: antialiased;
@@ -454,7 +454,7 @@ tr:last-child td:last-child {
 
 @media screen and (max-width:768px) {
   body {
-    background: url(/images/assets/background-mobile.svg) fixed center / cover no-repeat !important;
+    background: url(backgrounds/background-mobile.svg) fixed center / cover no-repeat !important;
   }
 
   h2 {
