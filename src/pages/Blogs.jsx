@@ -1,5 +1,7 @@
 import React, { useEffect } from "react";
 import { Tooltip } from "bootstrap";
+import Header from "./../components/Header";
+import Footer from "./../components/Footer";
 
 export default function Blogs() {
   useEffect(() => {
@@ -17,10 +19,11 @@ export default function Blogs() {
 
   return (
     <div className="blogs">
+      <Header />
       <section id="content">
         <div className="container">
           <div className="card" data-aos="fade-up">
-            <div className="d-flex">
+            <div className="d-flex mb-5">
               <i
                 className="bi bi-people-fill"
                 data-bs-toggle="tooltip"
@@ -43,10 +46,30 @@ export default function Blogs() {
               ></i>
               &emsp;11 minutes
             </div>
-            <h3 className="text-center py-5">
+            <h3 className="text-center">
               Klasifikasi Tingkat Keganasan Kanker Payudara Menggunakan
               Algoritma K-Nearest Neighbors
             </h3>
+            <figure className="py-3">
+              <img
+                src="https://images.unsplash.com/photo-1579154341098-e4e158cc7f55?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop"
+                className="rounded d-block mx-auto shadow-sm mb-1"
+                loading="lazy"
+                alt="Breast Cancer"
+              />
+              <figcaption className="text-white-50 text-center pt-1">
+                Photo by&nbsp;
+                <a
+                  href="https://unsplash.com/@nci"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-info"
+                >
+                  National Cancer Institute
+                </a>
+                &nbsp;
+              </figcaption>
+            </figure>
             <h5>Latar Belakang</h5>
             <p>
               Kanker merupakan salah satu masalah kesehatan terbesar di dunia.
@@ -154,6 +177,7 @@ export default function Blogs() {
           </div>
         </div>
       </section>
+      <Footer />
     </div>
   );
 }

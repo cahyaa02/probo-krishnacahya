@@ -1,5 +1,7 @@
 import React, { useEffect } from "react";
 import { Tooltip } from "bootstrap";
+import Header from "./../components/Header";
+import Footer from "./../components/Footer";
 
 export default function Contacts() {
   useEffect(() => {
@@ -10,13 +12,14 @@ export default function Contacts() {
     var tooltipTriggerList = [].slice.call(
       document.querySelectorAll('[data-bs-toggle="tooltip"]')
     );
-    tooltipTriggerList.map(function(tooltipTriggerEl) {
+    tooltipTriggerList.map(function (tooltipTriggerEl) {
       return new Tooltip(tooltipTriggerEl);
     });
   }, []);
 
   return (
     <div className="contacts">
+      <Header />
       <div className="container">
         <section id="below-the-fold" data-aos="fade-up">
           <h4 className="text-center section-title">
@@ -35,6 +38,7 @@ export default function Contacts() {
             marginheight="0"
             marginwidth="0"
             className="card mx-auto d-block"
+            title="Contact Form"
           ></iframe>
         </section>
 
@@ -178,6 +182,7 @@ export default function Contacts() {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

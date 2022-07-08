@@ -7,7 +7,7 @@ export default function Footer() {
       <footer className="navbar d-inline shadow-sm text-center user-select-none mt-auto">
         <div className="mx-auto">
           <div className="container">
-            <span className="text-footer">&copy; 2022</span>
+            <span className="text-footer">Hand-Coded by</span>
             <NavLink to="/">
               &nbsp;
               <span className="text-footer text-info">Probo Krishnacahya</span>
@@ -113,7 +113,6 @@ export default function Footer() {
 }
 
 function scrollToTop() {
-  var top = document.getElementById("topBtn");
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }

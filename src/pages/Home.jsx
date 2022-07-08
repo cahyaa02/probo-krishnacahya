@@ -2,6 +2,9 @@ import React, { useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import { Tooltip } from "bootstrap";
 import Typewriter from "typewriter-effect/dist/core";
+import Images from "./../photography.json";
+import Header from "./../components/Header";
+import Footer from "./../components/Footer";
 
 export default function Home() {
   useEffect(() => {
@@ -37,6 +40,7 @@ export default function Home() {
 
   return (
     <div className="home">
+      <Header />
       <div className="container">
         <div className="col mt-4" data-aos="fade-up">
           <div className="row flex-lg-row-reverse align-items-center">
@@ -199,7 +203,13 @@ export default function Home() {
                   title="University"
                 ></i>
                 &emsp;
-                <strong>Universitas Ciputra Surabaya</strong>
+                <a
+                  href="https://www.uc.ac.id/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <strong>Universitas Ciputra Surabaya</strong>
+                </a>
               </p>
               <p className="mb-1">
                 <i
@@ -238,9 +248,15 @@ export default function Home() {
                   title="Senior High School"
                 ></i>
                 &emsp;
-                <strong>
-                  Sekolah Menengah Atas Kristen Dharma Mulya Surabaya
-                </strong>
+                <a
+                  href="https://dm.sch.id/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <strong>
+                    Sekolah Menengah Atas Kristen Dharma Mulya Surabaya
+                  </strong>
+                </a>
               </p>
               <p className="mb-1">
                 <i
@@ -278,9 +294,15 @@ export default function Home() {
                   title="Junior High School"
                 ></i>
                 &emsp;
-                <strong>
-                  Sekolah Menengah Pertama Kristen Dharma Mulya Surabaya
-                </strong>
+                <a
+                  href="https://dm.sch.id/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <strong>
+                    Sekolah Menengah Pertama Kristen Dharma Mulya Surabaya
+                  </strong>
+                </a>
               </p>
               <p className="text-white-50">
                 <i className="bi bi-clock category-time"></i>&emsp;2014 - 2017
@@ -307,7 +329,13 @@ export default function Home() {
                   title="Elementary School"
                 ></i>
                 &emsp;
-                <strong>Sekolah Dasar Kristen Dharma Mulya Surabaya</strong>
+                <a
+                  href="https://dm.sch.id/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <strong>Sekolah Dasar Kristen Dharma Mulya Surabaya</strong>
+                </a>
               </p>
               <p className="text-white-50">
                 <i className="bi bi-clock category-time"></i>&emsp;2008 - 2014
@@ -327,10 +355,16 @@ export default function Home() {
                 title="Event Name"
               ></i>
               &emsp;
-              <strong>
-                8<sup>th</sup> National Programming &amp; Logic Competition
-                (NPLC)
-              </strong>
+              <a
+                href="https://sites.google.com/ciputra.ac.id/ct-for-educators/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <strong>
+                  Best Practices on Computational Thinking for Future Educators
+                  Workshop
+                </strong>
+              </a>
             </p>
             <ul>
               <li className="list-unstyled">
@@ -340,16 +374,128 @@ export default function Home() {
                     data-bs-toggle="tooltip"
                     title="Description"
                   ></i>
-                  &emsp;NPLC is a yearly programming and logic competition for
-                  High School Students and equivalent organized by the
-                  Informatics Student Union @ UC. It was held with the aim of
+                  &emsp;Best Practices on Computational Thinking for Future
+                  Educators Workshop is a special program designed by
+                  Universitas Ciputra Techno Center for Teachers to train
+                  Computational Thinking successfully. This program empowers
+                  Educators to become Experts in embedding Computational
+                  Thinking in their teaching strategies. Workshop topics include
+                  Introduction to Computational Thinking, Computational Thinking
+                  in Class &amp; Developing Computational Thinking Tasks, and
+                  Computational Thinking Tools. At this event, I am responsible
+                  as a member of the Module (Presentation Slides) Division
+                  through designing the layout of the content and making
+                  illustrations of the material that has been prepared by the
+                  Trainer.
+                </p>
+              </li>
+              <li className="list-unstyled">
+                <p className="mb-1">
+                  <i
+                    className="bi bi-diagram-3-fill"
+                    data-bs-toggle="tooltip"
+                    title="Position"
+                  ></i>
+                  &emsp;Member of Module (Presentation Slides) Division (Ad Hoc
+                  Committee)
+                </p>
+              </li>
+              <li className="list-unstyled">
+                <p className="text-white-50">
+                  <i className="bi bi-clock category-time"></i>&emsp;Jul 2022
+                </p>
+              </li>
+            </ul>
+
+            <p className="mb-1">
+              <i
+                className="bi bi-bookmarks-fill"
+                data-bs-toggle="tooltip"
+                title="Event Name"
+              ></i>
+              &emsp;
+              <a
+                href="https://informatika.uc.ac.id/id/2022/04/technopreneurship-workshop-2022-day-1/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <strong>Technopreneurship Workshop</strong>
+              </a>
+            </p>
+            <ul>
+              <li className="list-unstyled">
+                <p className="mb-1">
+                  <i
+                    className="bi bi-info-circle-fill"
+                    data-bs-toggle="tooltip"
+                    title="Description"
+                  ></i>
+                  &emsp;Technopreneurship Workshop is a Department Camp for
+                  Informatics Students at Universitas Ciputra Surabaya, where
+                  there are activities in the form of workshops and webinars. It
+                  was held with the aim of honing the Technopreneurship skills
+                  of students through designing business ideas engaged in
+                  technology using the Business Model Canvas, Pitching Deck, and
+                  User Interface Design Prototype to get investment from
+                  investors. At this event, I am responsible as a Member of IT -
+                  Inventory Division for Configure the Discord's Community
+                  Server which is used for Bonding sessions between Mentors with
+                  their Mentees and Prepare the needs of Mini Games equipment.
+                </p>
+              </li>
+              <li className="list-unstyled">
+                <p className="mb-1">
+                  <i
+                    className="bi bi-diagram-3-fill"
+                    data-bs-toggle="tooltip"
+                    title="Position"
+                  ></i>
+                  &emsp;Member of IT - Inventory Division (Ad Hoc Committee)
+                </p>
+              </li>
+              <li className="list-unstyled">
+                <p className="text-white-50">
+                  <i className="bi bi-clock category-time"></i>&emsp;Apr 2022
+                </p>
+              </li>
+            </ul>
+
+            <p className="mb-1">
+              <i
+                className="bi bi-bookmarks-fill"
+                data-bs-toggle="tooltip"
+                title="Event Name"
+              ></i>
+              &emsp;
+              <a
+                href="https://nplc.uc.ac.id/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <strong>
+                  8<sup>th</sup> National Programming &amp; Logic Competition
+                </strong>
+              </a>
+            </p>
+            <ul>
+              <li className="list-unstyled">
+                <p className="mb-1">
+                  <i
+                    className="bi bi-info-circle-fill"
+                    data-bs-toggle="tooltip"
+                    title="Description"
+                  ></i>
+                  &emsp;National Programming &amp; Logic Competition is a yearly
+                  programming and logic competition for High School Students and
+                  equivalent organized by the Informatics Student Union at
+                  Universitas Ciputra Surabaya. It was held with the aim of
                   honing correct logic and programming skills, strengthening
                   teamwork, and fostering a competitive spirit among
-                  participants. At this event, I am responsible for Inviting
-                  High School Students and equivalent to register as
-                  participants in the competition and Contacting Young
-                  Influencers to participate in promoting the competition
-                  through social media.
+                  participants. At this event, I am responsible as a Member of
+                  Marketing Division for Inviting High School Students and
+                  equivalent to register as participants in the competition and
+                  Contacting Young Influencers to participate in promoting the
+                  competition through social media.
                 </p>
               </li>
               <li className="list-unstyled">
@@ -366,51 +512,6 @@ export default function Home() {
                 <p className="text-white-50">
                   <i className="bi bi-clock category-time"></i>&emsp;Nov 2020 -
                   Jan 2021
-                </p>
-              </li>
-            </ul>
-            <p className="mb-1">
-              <i
-                className="bi bi-bookmarks-fill"
-                data-bs-toggle="tooltip"
-                title="Event Name"
-              ></i>
-              &emsp;
-              <strong>Technopreneurship Workshop (Technoshop)</strong>
-            </p>
-            <ul>
-              <li className="list-unstyled">
-                <p className="mb-1">
-                  <i
-                    className="bi bi-info-circle-fill"
-                    data-bs-toggle="tooltip"
-                    title="Description"
-                  ></i>
-                  &emsp;Technoshop is a Department Camp for Informatics Students
-                  @ UC, where there are activities in the form of workshops and
-                  webinars. It was held with the aim of honing the
-                  Technopreneurship skills of students through designing
-                  business ideas engaged in technology using the Business Model
-                  Canvas, Pitching Deck, and User Interface Design Prototype to
-                  get investment from investors. At this event, I am responsible
-                  for Configure the Discord's Community Server which is used for
-                  Bonding sessions between Mentors with their Mentees and
-                  Prepare the needs of Mini Games equipment.
-                </p>
-              </li>
-              <li className="list-unstyled">
-                <p className="mb-1">
-                  <i
-                    className="bi bi-diagram-3-fill"
-                    data-bs-toggle="tooltip"
-                    title="Position"
-                  ></i>
-                  &emsp;Member of IT - Inventory Division (Ad Hoc Committee)
-                </p>
-              </li>
-              <li className="list-unstyled">
-                <p className="text-white-50">
-                  <i className="bi bi-clock category-time"></i>&emsp;Apr 2022
                 </p>
               </li>
             </ul>
@@ -632,86 +733,16 @@ export default function Home() {
                           class="picture x mandatory-scroll-snapping d-flex overflow-auto"
                           dir="ltr"
                         >
-                          <div>
-                            <img
-                              src="images/home/photography/photography (1).jpg"
-                              className="photo rounded d-block mx-auto shadow-sm"
-                              alt="shoots"
-                              loading="lazy"
-                            />
-                          </div>
-                          <div>
-                            <img
-                              src="images/home/photography/photography (2).jpg"
-                              className="photo rounded d-block mx-auto shadow-sm"
-                              alt="shoots"
-                              loading="lazy"
-                            />
-                          </div>
-                          <div>
-                            <img
-                              src="images/home/photography/photography (3).jpg"
-                              className="photo rounded d-block mx-auto shadow-sm"
-                              alt="shoots"
-                              loading="lazy"
-                            />
-                          </div>
-                          <div>
-                            <img
-                              src="images/home/photography/photography (4).jpg"
-                              className="photo rounded d-block mx-auto shadow-sm"
-                              alt="shoots"
-                              loading="lazy"
-                            />
-                          </div>
-                          <div>
-                            <img
-                              src="images/home/photography/photography (5).jpg"
-                              className="photo rounded d-block mx-auto shadow-sm"
-                              alt="shoots"
-                              loading="lazy"
-                            />
-                          </div>
-                          <div>
-                            <img
-                              src="images/home/photography/photography (6).jpg"
-                              className="photo rounded d-block mx-auto shadow-sm"
-                              alt="shoots"
-                              loading="lazy"
-                            />
-                          </div>
-                          <div>
-                            <img
-                              src="images/home/photography/photography (7).jpg"
-                              className="photo rounded d-block mx-auto shadow-sm"
-                              alt="shoots"
-                              loading="lazy"
-                            />
-                          </div>
-                          <div>
-                            <img
-                              src="images/home/photography/photography (8).jpg"
-                              className="photo rounded d-block mx-auto shadow-sm"
-                              alt="shoots"
-                              loading="lazy"
-                            />
-                          </div>
-                          <div>
-                            <img
-                              src="images/home/photography/photography (9).jpg"
-                              className="photo rounded d-block mx-auto shadow-sm"
-                              alt="shoots"
-                              loading="lazy"
-                            />
-                          </div>
-                          <div>
-                            <img
-                              src="images/home/photography/photography (10).jpg"
-                              className="photo rounded d-block mx-auto shadow-sm"
-                              alt="shoots"
-                              loading="lazy"
-                            />
-                          </div>
+                          {Images.map((item) => (
+                            <div key={item.id}>
+                              <img
+                                src={item.image}
+                                className="photo rounded d-block mx-auto shadow-sm"
+                                loading="lazy"
+                                alt="Photography"
+                              />
+                            </div>
+                          ))}
                         </div>
                       </div>
                     </div>
@@ -750,6 +781,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

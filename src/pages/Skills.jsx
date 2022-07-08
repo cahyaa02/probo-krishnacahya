@@ -1,5 +1,7 @@
 import React, { useEffect } from "react";
 import { Tooltip } from "bootstrap";
+import Header from "./../components/Header";
+import Footer from "./../components/Footer";
 
 export default function Skills() {
   useEffect(() => {
@@ -17,6 +19,7 @@ export default function Skills() {
 
   return (
     <div className="skills">
+      <Header />
       <div className="container">
         <div className="mt-5" data-aos="fade-up">
           <h4 className="text-center section-title">
@@ -613,12 +616,12 @@ export default function Skills() {
                               <div
                                 className="progress-bar"
                                 role="progressbar"
-                                style={{ width: "88%", fontSize: "1rem" }}
-                                aria-valuenow="88"
+                                style={{ width: "90%", fontSize: "1rem" }}
+                                aria-valuenow="90"
                                 aria-valuemin="0"
                                 aria-valuemax="100"
                               >
-                                88%
+                                90%
                               </div>
                             </div>
                           </div>
@@ -650,12 +653,12 @@ export default function Skills() {
                               <div
                                 className="progress-bar"
                                 role="progressbar"
-                                style={{ width: "93%", fontSize: "1rem" }}
-                                aria-valuenow="93"
+                                style={{ width: "90%", fontSize: "1rem" }}
+                                aria-valuenow="90"
                                 aria-valuemin="0"
                                 aria-valuemax="100"
                               >
-                                93%
+                                90%
                               </div>
                             </div>
                           </div>
@@ -685,12 +688,12 @@ export default function Skills() {
                               <div
                                 className="progress-bar"
                                 role="progressbar"
-                                style={{ width: "41%", fontSize: "1rem" }}
-                                aria-valuenow="41"
+                                style={{ width: "40%", fontSize: "1rem" }}
+                                aria-valuenow="40"
                                 aria-valuemin="0"
                                 aria-valuemax="100"
                               >
-                                41%
+                                40%
                               </div>
                             </div>
                           </div>
@@ -720,12 +723,12 @@ export default function Skills() {
                               <div
                                 className="progress-bar"
                                 role="progressbar"
-                                style={{ width: "50%", fontSize: "1rem" }}
-                                aria-valuenow="50"
+                                style={{ width: "55%", fontSize: "1rem" }}
+                                aria-valuenow="55"
                                 aria-valuemin="0"
                                 aria-valuemax="100"
                               >
-                                50%
+                                55%
                               </div>
                             </div>
                           </div>
@@ -798,12 +801,12 @@ export default function Skills() {
                               <div
                                 className="progress-bar"
                                 role="progressbar"
-                                style={{ width: "58%", fontSize: "1rem" }}
-                                aria-valuenow="58"
+                                style={{ width: "60%", fontSize: "1rem" }}
+                                aria-valuenow="60"
                                 aria-valuemin="0"
                                 aria-valuemax="100"
                               >
-                                58%
+                                60%
                               </div>
                             </div>
                           </div>
@@ -903,12 +906,12 @@ export default function Skills() {
                               <div
                                 className="progress-bar"
                                 role="progressbar"
-                                style={{ width: "66%", fontSize: "1rem" }}
-                                aria-valuenow="66"
+                                style={{ width: "65%", fontSize: "1rem" }}
+                                aria-valuenow="65"
                                 aria-valuemin="0"
                                 aria-valuemax="100"
                               >
-                                66%
+                                65%
                               </div>
                             </div>
                           </div>
@@ -938,12 +941,12 @@ export default function Skills() {
                               <div
                                 className="progress-bar"
                                 role="progressbar"
-                                style={{ width: "50%", fontSize: "1rem" }}
-                                aria-valuenow="50"
+                                style={{ width: "60%", fontSize: "1rem" }}
+                                aria-valuenow="60"
                                 aria-valuemin="0"
                                 aria-valuemax="100"
                               >
-                                50%
+                                60%
                               </div>
                             </div>
                           </div>
@@ -973,12 +976,12 @@ export default function Skills() {
                               <div
                                 className="progress-bar"
                                 role="progressbar"
-                                style={{ width: "30%", fontSize: "1rem" }}
-                                aria-valuenow="30"
+                                style={{ width: "60%", fontSize: "1rem" }}
+                                aria-valuenow="60"
                                 aria-valuemin="0"
                                 aria-valuemax="100"
                               >
-                                30%
+                                60%
                               </div>
                             </div>
                           </div>
@@ -1014,12 +1017,12 @@ export default function Skills() {
                               <div
                                 className="progress-bar"
                                 role="progressbar"
-                                style={{ width: "79%", fontSize: "1rem" }}
-                                aria-valuenow="79"
+                                style={{ width: "80%", fontSize: "1rem" }}
+                                aria-valuenow="80"
                                 aria-valuemin="0"
                                 aria-valuemax="100"
                               >
-                                79%
+                                80%
                               </div>
                             </div>
                           </div>
@@ -1049,12 +1052,12 @@ export default function Skills() {
                               <div
                                 className="progress-bar"
                                 role="progressbar"
-                                style={{ width: "47%", fontSize: "1rem" }}
-                                aria-valuenow="47"
+                                style={{ width: "50%", fontSize: "1rem" }}
+                                aria-valuenow="50"
                                 aria-valuemin="0"
                                 aria-valuemax="100"
                               >
-                                47%
+                                50%
                               </div>
                             </div>
                           </div>
@@ -1084,12 +1087,12 @@ export default function Skills() {
                               <div
                                 className="progress-bar"
                                 role="progressbar"
-                                style={{ width: "86%", fontSize: "1rem" }}
-                                aria-valuenow="86"
+                                style={{ width: "85%", fontSize: "1rem" }}
+                                aria-valuenow="85"
                                 aria-valuemin="0"
                                 aria-valuemax="100"
                               >
-                                86%
+                                85%
                               </div>
                             </div>
                           </div>
@@ -1147,12 +1150,12 @@ export default function Skills() {
                               <div
                                 className="progress-bar"
                                 role="progressbar"
-                                style={{ width: "76%", fontSize: "1rem" }}
-                                aria-valuenow="76"
+                                style={{ width: "80%", fontSize: "1rem" }}
+                                aria-valuenow="80"
                                 aria-valuemin="0"
                                 aria-valuemax="100"
                               >
-                                76%
+                                80%
                               </div>
                             </div>
                           </div>
@@ -1182,12 +1185,12 @@ export default function Skills() {
                               <div
                                 className="progress-bar"
                                 role="progressbar"
-                                style={{ width: "68%", fontSize: "1rem" }}
-                                aria-valuenow="68"
+                                style={{ width: "65%", fontSize: "1rem" }}
+                                aria-valuenow="65"
                                 aria-valuemin="0"
                                 aria-valuemax="100"
                               >
-                                68%
+                                65%
                               </div>
                             </div>
                           </div>
@@ -1252,12 +1255,12 @@ export default function Skills() {
                               <div
                                 className="progress-bar"
                                 role="progressbar"
-                                style={{ width: "82%", fontSize: "1rem" }}
-                                aria-valuenow="82"
+                                style={{ width: "85%", fontSize: "1rem" }}
+                                aria-valuenow="85"
                                 aria-valuemin="0"
                                 aria-valuemax="100"
                               >
-                                82%
+                                85%
                               </div>
                             </div>
                           </div>
@@ -1386,7 +1389,7 @@ export default function Skills() {
                               <p className="card-title">English</p>
                             </div>
                             <div className="card-footer border-0 bg-transparent pb-0">
-                              <p>Intermediate Level</p>
+                              <p>Professional Level</p>
                             </div>
                           </div>
                         </div>
@@ -1476,6 +1479,7 @@ export default function Skills() {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

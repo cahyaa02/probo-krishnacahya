@@ -1,5 +1,7 @@
 import React, { useEffect } from "react";
 import { Tooltip } from "bootstrap";
+import Header from "./../components/Header";
+import Footer from "./../components/Footer";
 
 export default function Projects() {
   useEffect(() => {
@@ -10,13 +12,14 @@ export default function Projects() {
     var tooltipTriggerList = [].slice.call(
       document.querySelectorAll('[data-bs-toggle="tooltip"]')
     );
-    tooltipTriggerList.map(function(tooltipTriggerEl) {
+    tooltipTriggerList.map(function (tooltipTriggerEl) {
       return new Tooltip(tooltipTriggerEl);
     });
   }, []);
 
   return (
     <div className="projects">
+      <Header />
       <ul
         className="nav nav-pills justify-content-center gap-3 my-5"
         id="pills-tab"
@@ -35,7 +38,7 @@ export default function Projects() {
             aria-selected="true"
           >
             <i className="bi bi-globe2"></i>
-            &emsp; Website
+            &emsp;Website
           </button>
         </li>
         <li className="nav-item" role="presentation">
@@ -50,7 +53,7 @@ export default function Projects() {
             aria-selected="false"
           >
             <i className="bi bi-phone"></i>
-            &emsp; Mobile Application
+            &emsp;Mobile Application
           </button>
         </li>
         <li className="nav-item" role="presentation">
@@ -65,7 +68,7 @@ export default function Projects() {
             aria-selected="false"
           >
             <i className="bi bi-laptop"></i>
-            &emsp; Desktop Application
+            &emsp;Desktop Application
           </button>
         </li>
       </ul>
@@ -120,13 +123,14 @@ export default function Projects() {
               </div>
               <div className="text-white-50 mt-3">
                 <i className="bi bi-clock category-time"></i>
-                &emsp; Nov 2021 - Jan 2022
+                &emsp;Nov 2021 - Jan 2022
               </div>
               <div className="mt-3">
                 <p>
-                  SejarahKita is Education Game in the form of Anagram Word Game
-                  about Sejarah Indonesia subject for 12<sup>th</sup> Grade of
-                  High School Students that focused to the following chapters:
+                  SejarahKita is an Education Game in the form of Anagram Word
+                  Game about Sejarah Indonesia subject for 12<sup>th</sup> Grade
+                  of High School Students that focused to the following
+                  chapters:
                   <ol>
                     <li>
                       The Struggle of the Indonesian Nation in Facing the Threat
@@ -214,7 +218,7 @@ export default function Projects() {
               </div>
               <div className="text-white-50 mt-3">
                 <i className="bi bi-clock category-time"></i>
-                &emsp; Jul 2021
+                &emsp;Jul 2021
               </div>
               <div className="mt-3">
                 <p>
@@ -292,7 +296,7 @@ export default function Projects() {
               </div>
               <div className="text-white-50 mt-3">
                 <i className="bi bi-clock category-time"></i>
-                &emsp; May 2021 – Jun 2021
+                &emsp;May 2021 – Jun 2021
               </div>
               <div className="mt-3">
                 <p>
@@ -346,6 +350,62 @@ export default function Projects() {
           aria-labelledby="pills-mobile-application-tab"
         >
           <div className="container">
+            <div className="card my-5" data-aos="fade-up">
+              <h4 className="text-center">Holiyay</h4>
+              <hr />
+              <div className="d-flex justify-content-center gap-3 mt-2">
+                <i
+                  className="fa-brands fa-swift fa-2x"
+                  data-bs-toggle="tooltip"
+                  title="Swift"
+                ></i>
+              </div>
+              <div className="text-white-50 mt-3">
+                <i className="bi bi-clock category-time"></i>
+                &emsp;May 2022 - Jun 2022
+              </div>
+              <div className="mt-3">
+                <p>
+                  Holiyay is an application that aims to help holiday planning
+                  through selecting the tourist destinations that everyone want
+                  to visit and determining the specific time (day, date, month,
+                  and year) of the visit. It displays an amazing selection of
+                  holiday destinations from various countries and categories.
+                  <a
+                    className="text-info"
+                    data-bs-toggle="collapse"
+                    href="#Holiyay"
+                    role="button"
+                    aria-expanded="false"
+                    aria-controls="Holiyay"
+                  >
+                    <strong>&nbsp;Load More..</strong>
+                  </a>
+                  <div className="collapse mt-3" id="Holiyay">
+                    <img
+                      src="images/projects/Mobile/Holiyay.svg"
+                      className="w-75 h-75 d-block mx-auto"
+                      alt="Carousel"
+                      loading="lazy"
+                    />
+                  </div>
+                </p>
+              </div>
+              <br />
+              <div className="d-grid justify-content-center">
+                <a
+                  href="https://youtu.be/94Wd0Zwe26o/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button className="btn btn-primary">
+                    <i className="bi bi-youtube"></i>&emsp;
+                    <strong>Watch Demonstration</strong>
+                  </button>
+                </a>
+              </div>
+            </div>
+
             <div className="card" data-aos="fade-up">
               <h4 className="text-center">SejarahKita</h4>
               <hr />
@@ -378,13 +438,14 @@ export default function Projects() {
               </div>
               <div className="text-white-50 mt-3">
                 <i className="bi bi-clock category-time"></i>
-                &emsp; Nov 2021 - Jan 2022
+                &emsp;Nov 2021 - Jan 2022
               </div>
               <div className="mt-3">
                 <p>
-                  SejarahKita is Education Game in the form of Anagram Word Game
-                  about Sejarah Indonesia subject for 12<sup>th</sup> Grade of
-                  High School Students that focused to the following chapters:
+                  SejarahKita is an Education Game in the form of Anagram Word
+                  Game about Sejarah Indonesia subject for 12<sup>th</sup> Grade
+                  of High School Students that focused to the following
+                  chapters:
                   <ol>
                     <li>
                       The Struggle of the Indonesian Nation in Facing the Threat
@@ -467,7 +528,7 @@ export default function Projects() {
               </div>
               <div className="text-white-50 mt-3">
                 <i className="bi bi-clock category-time"></i>
-                &emsp; Oct 2021 - Nov 2021
+                &emsp;Oct 2021 - Nov 2021
               </div>
               <div className="mt-3">
                 <p>
@@ -542,7 +603,7 @@ export default function Projects() {
               </div>
               <div className="text-white-50 mt-3">
                 <i className="bi bi-clock category-time"></i>
-                &emsp; May 2021 – Jun 2021
+                &emsp;May 2021 – Jun 2021
               </div>
               <div className="mt-3">
                 <p>
@@ -598,6 +659,85 @@ export default function Projects() {
         >
           <div className="container">
             <div className="card my-5" data-aos="fade-up">
+              <h4 className="text-center">Sortrash</h4>
+              <hr />
+              <div className="d-flex justify-content-center mt-2">
+                <i
+                  className="fa-brands fa-python fa-2x"
+                  data-bs-toggle="tooltip"
+                  title="Python"
+                ></i>
+              </div>
+              <div className="text-white-50 mt-3">
+                <i className="bi bi-clock category-time"></i>
+                &emsp;May 2022 - Jun 2022
+              </div>
+              <div className="mt-3">
+                <p>
+                  Sortrash is an Image Classification application that used to
+                  detect objects in the form of waste based on 3 categories
+                  (types) of waste, namely:
+                  <ol>
+                    <li>Organic</li>
+                    <li>Inorganic Paper Made</li>
+                    <li>Non-Paper Inorganic</li>
+                  </ol>
+                  The system in Sortrash can provide information in the form of
+                  results (responses) of garbage categories (types) according to
+                  the garbage objects uploaded from files available in the
+                  user's device local disk directory.
+                  <br />
+                  <br />
+                  Benefits of using Sortrash:
+                  <ul className="benefits">
+                    <li>
+                      &nbsp; Make it easier for the public to sort a single unit
+                      of uncontaminated waste with other categories (types) of
+                      waste with practical steps so that they can be directed to
+                      dispose of in the right trash can.
+                    </li>
+                    <li>
+                      &nbsp; Assisting the waste management in carrying out
+                      further waste management process regarding the waste that
+                      has been disposed of in the trash.
+                    </li>
+                  </ul>
+                  <a
+                    className="text-info"
+                    data-bs-toggle="collapse"
+                    href="#Sortrash"
+                    role="button"
+                    aria-expanded="false"
+                    aria-controls="Sortrash"
+                  >
+                    <strong>&nbsp;Load More..</strong>
+                  </a>
+                  <div className="collapse mt-3" id="Sortrash">
+                    <img
+                      src="images/projects/Desktop/Sortrash.svg"
+                      className="w-50 h-50 d-block mx-auto"
+                      alt="Carousel"
+                      loading="lazy"
+                    />
+                  </div>
+                </p>
+              </div>
+              <br />
+              <div className="d-grid justify-content-center">
+                <a
+                  href="https://github.com/cahyaa02/Sortrash/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button className="btn btn-primary">
+                    <i className="bi bi-github"></i>&emsp;
+                    <strong>View Repository</strong>
+                  </button>
+                </a>
+              </div>
+            </div>
+
+            <div className="card my-5" data-aos="fade-up">
               <h4 className="text-center">Dodge Master</h4>
               <hr />
               <div className="d-flex justify-content-center mt-2">
@@ -619,7 +759,7 @@ export default function Projects() {
               </div>
               <div className="text-white-50 mt-3">
                 <i className="bi bi-clock category-time"></i>
-                &emsp; Dec 2021 – Jan 2022
+                &emsp;Dec 2021 – Jan 2022
               </div>
               <div className="mt-3">
                 <p>
@@ -674,7 +814,7 @@ export default function Projects() {
               </div>
               <div className="text-white-50 mt-3">
                 <i className="bi bi-clock category-time"></i>
-                &emsp; Nov 2020 – Jan 2021
+                &emsp;Nov 2020 – Jan 2021
               </div>
               <div className="mt-3">
                 <p>
@@ -722,6 +862,7 @@ export default function Projects() {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

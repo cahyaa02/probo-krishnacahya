@@ -30,22 +30,22 @@ export default function Header() {
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav ms-auto gap-3">
               <li className="nav-item">
-                <NavLink className="nav-link" to="contacts">
+                <NavLink className="nav-link" to="/contacts">
                   Contacts
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link" to="projects">
+                <NavLink className="nav-link" to="/projects">
                   Projects
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link" to="skills">
+                <NavLink className="nav-link" to="/skills">
                   Skills
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link" to="blogs">
+                <NavLink className="nav-link" to="/blogs">
                   Blogs
                 </NavLink>
               </li>

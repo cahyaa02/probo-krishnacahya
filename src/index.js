@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { createRoot } from 'react-dom/client';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import reportWebVitals from './reportWebVitals';
 import * as serviceWorker from "./serviceWorker";
@@ -7,19 +7,18 @@ import AOS from 'aos';
 import "aos/dist/aos.css";
 import './index.css';
 import {
-    Header,
     PageNotFound,
     Home,
     Contacts,
     Projects,
     Skills,
-    Blogs,
-    Footer
+    Blogs
 } from "./script/export";
 
-ReactDOM.render(
+const container = document.getElementById('root');
+const root = createRoot(container);
+root.render(
     <Router>
-        <Header />
         <Routes>
             <Route path="*" element={<PageNotFound />} />
             <Route path="/" element={<Home />} />
@@ -28,10 +27,7 @@ ReactDOM.render(
             <Route path="/skills" element={<Skills />} />
             <Route path="/blogs" element={<Blogs />} />
         </Routes>
-        <Footer />
-    </Router>,
-
-    document.getElementById("root")
+    </Router>
 );
 
 //* Initialize Animate On Scroll (Scrolling Effect)

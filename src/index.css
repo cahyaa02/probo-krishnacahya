@@ -4,8 +4,7 @@
   --text-primary: #FFFFFF;
   --text-secondary: #000000;
   --font-primary: 'Manrope', sans-serif;
-  --font-secondary: 'Exo 2', sans-serif;
-  --font-tertiary: 'La Belle Aurore', cursive;
+  --font-secondary: 'La Belle Aurore', cursive;
 }
 
 body {
@@ -68,20 +67,15 @@ a,
 h1,
 h2,
 h3 {
-  font-family: var(--font-primary);
   font-weight: 800 !important;
 }
 
 h4,
 h5,
-h6 {
-  font-family: var(--font-secondary);
-  font-weight: 600;
-}
-
+h6,
 nav,
 footer {
-  font-family: var(--font-secondary);
+  font-weight: 600 !important;
 }
 
 #assets,
@@ -99,7 +93,8 @@ img {
   max-width: 50% !important
 }
 
-.card-img-top, .photo {
+.card-img-top,
+.photo {
   height: 20vw;
   object-fit: contain;
 }
@@ -113,7 +108,7 @@ img {
 }
 
 #logo {
-  font-family: var(--font-tertiary);
+  font-family: var(--font-secondary);
 }
 
 .font-secondary {
@@ -121,7 +116,6 @@ img {
 }
 
 .pk {
-  font-family: var(--font-secondary) !important;
   font-size: 1.5rem;
   border-bottom: transparent !important
 }
@@ -441,6 +435,10 @@ tr:last-child td:first-child {
 
 tr:last-child td:last-child {
   border-bottom-right-radius: 5px !important;
+}
+
+.benefits {
+  list-style-type: '\2713';
 }
 
 .text-footer {
