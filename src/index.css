@@ -1,6 +1,7 @@
 :root {
   --color-primary: #0057E4;
   --color-secondary: #00EAFF;
+  --color-tertiary: #0C4C67;
   --text-primary: #FFFFFF;
   --text-secondary: #000000;
   --font-primary: 'Manrope', sans-serif;
@@ -66,13 +67,15 @@ a,
 
 h1,
 h2,
-h3 {
+h3,
+.pk {
   font-weight: 800 !important;
 }
 
 h4,
 h5,
 h6,
+strong,
 nav,
 footer {
   font-weight: 600 !important;
@@ -178,20 +181,21 @@ span {
   transform: scale(.9);
 }
 
-.btn-outline-primary {
-  border: solid 2px var(--color-secondary) !important;
+.btn-secondary {
+  background-color: var(--color-tertiary) !important;
+  border: solid 1px transparent;
   color: var(--color-secondary) !important;
 }
 
-.btn-outline-primary:hover,
-.btn-outline-primary:focus {
+.btn-secondary:hover,
+.btn-secondary:focus {
   box-shadow: none !important;
+  border: solid 1px transparent;
   filter: brightness(110%) !important;
-  background-color: transparent !important;
   color: var(--color-secondary) !important;
 }
 
-.btn-outline-primary:active {
+.btn-secondary:active {
   box-shadow: 0 0 0 2px var(--color-secondary) !important;
 }
 
@@ -240,16 +244,16 @@ section {
   font-size: medium;
 }
 
-#pills-web-application-tab.active,
-#pills-mobile-application-tab.active,
-#pills-desktop-application-tab.active {
+#pills-web-tab.active,
+#pills-mobile-tab.active,
+#pills-desktop-tab.active {
   background-color: var(--color-secondary);
   color: var(--text-secondary) !important;
 }
 
-#pills-web-application-tab.nav-link:not(.active),
-#pills-mobile-application-tab.nav-link:not(.active),
-#pills-desktop-application-tab.nav-link:not(.active) {
+#pills-web-tab.nav-link:not(.active),
+#pills-mobile-tab.nav-link:not(.active),
+#pills-desktop-tab.nav-link:not(.active) {
   color: var(--color-secondary) !important;
 }
 
@@ -394,11 +398,11 @@ textarea:focus {
   flex: none;
 }
 
-.picture.x {
+.picture.gallery {
   flex-flow: row nowrap;
 }
 
-.x.mandatory-scroll-snapping {
+.gallery.mandatory-scroll-snapping {
   scroll-snap-type: x mandatory;
 }
 
@@ -407,9 +411,8 @@ textarea:focus {
   flex: none;
 }
 
-.x.picture>div {
-  width: 100%;
-  padding-bottom: 2.5%;
+.gallery.picture>div {
+  padding: .5rem 1rem 1.25rem 0;
 }
 
 table {
@@ -486,10 +489,6 @@ tr:last-child td:last-child {
 
   .carousel-inner {
     max-width: 100% !important
-  }
-
-  form {
-    margin: 1rem
   }
 
   .card-img-top {

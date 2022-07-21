@@ -17,6 +17,84 @@ export default function Contacts() {
     });
   }, []);
 
+  // * Contacts
+  const accounts = [
+    {
+      id: 1,
+      url: "mailto:probo.krishnacahya@gmail.com",
+      image: "images/contacts/gmail.svg",
+      title: "Gmail",
+      text: "probo.krishnacahya@gmail.com",
+    },
+    {
+      id: 2,
+      url: "https://www.linkedin.com/in/probo-krishnacahya/",
+      image: "images/contacts/linkedin.svg",
+      title: "LinkedIn",
+      text: "Probo Krishnacahya",
+    },
+    {
+      id: 3,
+      url: "https://line.me/ti/p/~krshn_",
+      image: "images/contacts/line.svg",
+      title: "LINE",
+      text: "krshn_",
+    },
+    {
+      id: 4,
+      url: "https://discord.com/users/542619130428391434",
+      image: "images/contacts/discord.svg",
+      title: "Discord",
+      text: "cahyaa_ #0912",
+    },
+    {
+      id: 5,
+      url: "https://t.me/cahyaa02",
+      image: "images/contacts/instagram.svg",
+      title: "Instagram",
+      text: "probo_krishnacahya",
+    },
+    {
+      id: 6,
+      url: "https://www.instagram.com/probo_krishnacahya/",
+      image: "images/contacts/telegram.svg",
+      title: "Telegram",
+      text: "cahyaa02",
+    },
+    {
+      id: 7,
+      url: "https://www.github.com/cahyaa02",
+      image: "images/contacts/github.svg",
+      title: "GitHub",
+      text: "cahyaa02",
+    },
+  ];
+
+  const connects = [];
+
+  for (const account of accounts) {
+    connects.push(
+      <div className="kontak p-4 mb-3">
+        <div className="d-flex">
+          <span className="text-footer social-media">
+            <a href={account.url} target="_blank" rel="noopener noreferrer">
+              <div key={account.id}>
+                <img
+                  src={account.image}
+                  loading="lazy"
+                  alt="Connect"
+                  data-bs-toggle="tooltip"
+                  title={account.title}
+                />
+                &emsp;{account.text}
+              </div>
+            </a>
+          </span>
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div className="contacts">
       <Header />
@@ -32,154 +110,20 @@ export default function Contacts() {
           </p>
           <iframe
             src="https://docs.google.com/forms/d/e/1FAIpQLSfRF70mJ7nkWU2keksmYnTtLxroJctmfSz1cnDRHP-bTosz-Q/viewform?embedded=true"
-            width="100%"
-            height="947"
             frameborder="0"
             marginheight="0"
             marginwidth="0"
-            className="card mx-auto d-block"
+            className="card mx-auto d-block w-100 vh-100"
             title="Contact Form"
           ></iframe>
         </section>
 
         <div className="mb-5" data-aos="fade-up">
           <h4 className="text-center section-title">
-            Let's connect&ensp;&#128518;
+            Would Be Glad to Connect&ensp;&#128518;
           </h4>
           <br />
-          <div className="kontak p-4 mb-3">
-            <div className="d-flex">
-              <span className="text-footer social-media">
-                <a
-                  href="mailto:probo.krishnacahya@gmail.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img
-                    src="images/contacts/gmail.svg"
-                    alt="GMail"
-                    data-bs-toggle="tooltip"
-                    title="GMail"
-                  />
-                  &emsp; probo.krishnacahya@gmail.com
-                </a>
-              </span>
-            </div>
-          </div>
-          <div className="kontak p-4">
-            <div className="d-flex">
-              <span className="text-footer social-media">
-                <a
-                  href="https://www.linkedin.com/in/probo-krishnacahya/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img
-                    src="images/contacts/linkedin.svg"
-                    alt="LinkedIn"
-                    data-bs-toggle="tooltip"
-                    title="LinkedIn"
-                  />
-                  &emsp; Probo Krishnacahya
-                </a>
-              </span>
-            </div>
-          </div>
-          <div className="kontak p-4 my-3">
-            <div className="d-flex">
-              <span className="text-footer social-media">
-                <a
-                  href="https://line.me/ti/p/~krshn_"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img
-                    src="images/contacts/line.svg"
-                    alt="LINE"
-                    data-bs-toggle="tooltip"
-                    title="LINE"
-                  />
-                  &emsp; krshn_
-                </a>
-              </span>
-            </div>
-          </div>
-          <div className="kontak p-4">
-            <div className="d-flex">
-              <span className="text-footer social-media">
-                <a
-                  href="https://discord.com/users/542619130428391434"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img
-                    src="images/contacts/discord.svg"
-                    alt="Discord"
-                    data-bs-toggle="tooltip"
-                    title="Discord"
-                  />
-                  &emsp; cahyaa_ #0912
-                </a>
-              </span>
-            </div>
-          </div>
-          <div className="kontak p-4 my-3">
-            <div className="d-flex">
-              <span className="text-footer social-media">
-                <a
-                  href="https://t.me/cahyaa02"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img
-                    src="images/contacts/telegram.svg"
-                    alt="Telegram"
-                    data-bs-toggle="tooltip"
-                    title="Telegram"
-                  />
-                  &emsp; cahyaa02
-                </a>
-              </span>
-            </div>
-          </div>
-          <div className="kontak p-4">
-            <div className="d-flex">
-              <span className="text-footer social-media">
-                <a
-                  href="https://www.instagram.com/probo_krishnacahya/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img
-                    src="images/contacts/instagram.svg"
-                    alt="Instagram"
-                    data-bs-toggle="tooltip"
-                    title="Instagram"
-                  />
-                  &emsp; probo_krishnacahya
-                </a>
-              </span>
-            </div>
-          </div>
-          <div className="kontak p-4 my-3">
-            <div className="d-flex">
-              <span className="text-footer social-media">
-                <a
-                  href="https://www.github.com/cahyaa02"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <img
-                    src="images/contacts/github.svg"
-                    alt="GitHub"
-                    data-bs-toggle="tooltip"
-                    title="GitHub"
-                  />
-                  &emsp;cahyaa02
-                </a>
-              </span>
-            </div>
-          </div>
+          {connects}
         </div>
       </div>
       <Footer />

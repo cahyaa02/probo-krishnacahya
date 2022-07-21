@@ -2,7 +2,6 @@ import React, { useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import { Tooltip } from "bootstrap";
 import Typewriter from "typewriter-effect/dist/core";
-import Images from "./../photography.json";
 import Header from "./../components/Header";
 import Footer from "./../components/Footer";
 
@@ -38,6 +37,160 @@ export default function Home() {
       .start();
   }, []);
 
+  //* About Me
+  const profiles = [
+    {
+      id: 1,
+      icon: "bi bi-person-circle",
+      title: "Full Name",
+      text: "Probo Krishnacahya",
+    },
+    {
+      id: 2,
+      icon: "bi bi-geo-alt-fill",
+      title: "City",
+      text: "Surabaya, East Java",
+    },
+    {
+      id: 3,
+      icon: "bi bi-flag-fill",
+      title: "Nationality",
+      text: "Indonesia",
+    },
+    {
+      id: 4,
+      icon: "bi bi-suit-heart-fill",
+      title: "Religion",
+      text: "Catholic",
+    },
+    {
+      id: 5,
+      icon: "bi bi-gender-male",
+      title: "Gender",
+      text: "Male",
+    },
+  ];
+
+  const aboutMe = [];
+
+  for (const profile of profiles) {
+    aboutMe.push(
+      <p>
+        <i
+          className={profile.icon}
+          data-bs-toggle="tooltip"
+          title={profile.title}
+        ></i>
+        &emsp; {profile.text}
+      </p>
+    );
+  }
+
+  //* Volunteering Experiences
+  const events = [
+    {
+      id: 1,
+      url: "https://sites.google.com/ciputra.ac.id/ct-for-educators/",
+      name: "Best Practices on Computational Thinking for Future Educators Workshop",
+      description:
+        "Best Practices on Computational Thinking for Future Educators Workshop is a special program designed by Universitas Ciputra Techno Center for Teachers to train Computational Thinking successfully. This program empowers Educators to become Experts in embedding Computational Thinking in their teaching strategies. Workshop topics include Introduction to Computational Thinking, Computational Thinking in Class & Developing Computational Thinking Tasks, and Computational Thinking Tools. At this event, I am responsible as a member of the Module (Presentation Slides) Division through designing the layout of the content and making illustrations of the material that has been prepared by the Trainer.",
+      position:
+        "Member of Module (Presentation Slides) Division (Ad Hoc Committee)",
+      date: "Jul 2022",
+    },
+    {
+      id: 2,
+      url: "https://informatika.uc.ac.id/id/2022/04/technopreneurship-workshop-2022-day-1/",
+      name: "Technopreneurship Workshop",
+      description:
+        "Technopreneurship Workshop is a Department Camp for Informatics Students at Universitas Ciputra Surabaya, where there are activities in the form of workshops and webinars. It was held with the aim of honing the Technopreneurship skills of students through designing business ideas engaged in technology using the Business Model Canvas, Pitching Deck, and User Interface Design Prototype to get investment from investors. At this event, I am responsible as a Member of IT - Inventory Division for Configure the Discord's Community Server which is used for Bonding sessions between Mentors with their Mentees and Prepare the needs of Mini Games equipment.",
+      position: "Member of IT - Inventory Division (Ad Hoc Committee)",
+      date: "Apr 2022",
+    },
+    {
+      id: 3,
+      url: "https://nplc.uc.ac.id/",
+      name: "8th National Programming & Logic Competition",
+      description:
+        "National Programming & Logic Competition is a yearly programming and logic competition for High School Students and equivalent organized by the Informatics Student Union at Universitas Ciputra Surabaya. It was held with the aim of honing correct logic and programming skills, strengthening teamwork, and fostering a competitive spirit among participants. At this event, I am responsible as a Member of Marketing Division for Inviting High School Students and equivalent to register as participants in the competition and Contacting Young Influencers to participate in promoting the competition through social media.",
+      position: "Member of Marketing Division (Ad Hoc Committee)",
+      date: "Nov 2020 - Jan 2021",
+    },
+  ];
+
+  const volunteeringExperiences = [];
+
+  for (const event of events) {
+    volunteeringExperiences.push(
+      <div className="card mb-4 pt-4 pb-2">
+        <p className="mb-0">
+          <a href={event.url} target="_blank" rel="noopener noreferrer">
+            <h3 className="text-center">{event.name}</h3>
+          </a>
+          <hr />
+        </p>
+        <p className="mb-3">
+          <i
+            className="bi bi-info-circle-fill"
+            data-bs-toggle="tooltip"
+            title="Event Description"
+          ></i>
+          &emsp;{event.description}
+        </p>
+        <p className="mb-3">
+          <i
+            className="bi bi-diagram-3-fill"
+            data-bs-toggle="tooltip"
+            title="Event Position"
+          ></i>
+          &emsp;{event.position}
+        </p>
+        <p className="text-white-50">
+          <i
+            className="bi bi-clock-fill category-time"
+            data-bs-toggle="tooltip"
+            title="Event Time"
+          ></i>
+          &emsp;{event.date}
+        </p>
+      </div>
+    );
+  }
+
+  //* Hobbies
+  const shoots = [
+    { id: 1, image: "images/home/photography/candi-1.jpg" },
+    { id: 2, image: "images/home/photography/candi-2.jpg" },
+    { id: 3, image: "images/home/photography/candi-3.jpg" },
+    { id: 4, image: "images/home/photography/chochin.jpg" },
+    { id: 5, image: "images/home/photography/golf.jpg" },
+    { id: 6, image: "images/home/photography/hujan.jpg" },
+    { id: 7, image: "images/home/photography/lilin.jpg" },
+    { id: 8, image: "images/home/photography/pantai-1.jpg" },
+    { id: 9, image: "images/home/photography/pantai-2.jpg" },
+    { id: 10, image: "images/home/photography/pantai-3.jpg" },
+    { id: 11, image: "images/home/photography/permukiman.jpg" },
+    { id: 12, image: "images/home/photography/tanaman-1.jpg" },
+    { id: 13, image: "images/home/photography/tanaman-2.jpg" },
+    { id: 14, image: "images/home/photography/tanaman-3.jpg" },
+    { id: 15, image: "images/home/photography/tanaman-4.jpg" },
+  ];
+
+  const collections = [];
+
+  for (const shoot of shoots) {
+    collections.push(
+      <div key={shoot.id}>
+        <img
+          src={shoot.image}
+          className="photo rounded d-block mx-auto shadow-sm"
+          loading="lazy"
+          alt="Photography"
+        />
+      </div>
+    );
+  }
+
   return (
     <div className="home">
       <Header />
@@ -60,7 +213,7 @@ export default function Home() {
                 <span className="fs-1 fw-bold">Probo Krishnacahya</span>
                 <span className="fs-1">.</span>
               </span>
-              <hr />
+              <br />
               <span id="typewriting"></span>
               <br />
               <div className="d-grid gap-4 d-md-block justify-content-md-start mt-5">
@@ -73,7 +226,7 @@ export default function Home() {
                 </NavLink>
                 <button
                   type="button"
-                  className="btn btn-outline-primary btn-lg px-4 me-md-2"
+                  className="btn btn-secondary btn-lg px-4 me-md-2"
                   onClick={(e) => {
                     e.preventDefault();
                     downloadFile("pdf/home/ProboKrishnacahya_Resume.pdf");
@@ -97,7 +250,7 @@ export default function Home() {
         </div>
 
         <section id="content" data-aos="fade-up">
-          <h4 className="text-center section-title">&#128587;&ensp;About me</h4>
+          <h4 className="text-center section-title">&#128587;&ensp;About Me</h4>
           <br />
           <div className="row g-4">
             <div className="col-xl-6">
@@ -113,48 +266,7 @@ export default function Home() {
                     />
                   </div>
                   <div className="col-xl-6">
-                    <div className="row">
-                      <p>
-                        <i
-                          className="bi bi-person-circle"
-                          data-bs-toggle="tooltip"
-                          title="Full Name"
-                        ></i>
-                        &emsp; Probo Krishnacahya
-                      </p>
-                      <p>
-                        <i
-                          className="bi bi-geo-alt-fill"
-                          data-bs-toggle="tooltip"
-                          title="City"
-                        ></i>
-                        &emsp; Surabaya, East Java
-                      </p>
-                      <p>
-                        <i
-                          className="bi bi-flag-fill"
-                          data-bs-toggle="tooltip"
-                          title="Nationality"
-                        ></i>
-                        &emsp; Indonesia
-                      </p>
-                      <p>
-                        <i
-                          className="bi bi-suit-heart-fill"
-                          data-bs-toggle="tooltip"
-                          title="Religion"
-                        ></i>
-                        &emsp; Catholic
-                      </p>
-                      <p>
-                        <i
-                          className="bi bi-gender-male"
-                          data-bs-toggle="tooltip"
-                          title="Gender"
-                        ></i>
-                        &emsp; Male
-                      </p>
-                    </div>
+                    <div className="row">{aboutMe}</div>
                   </div>
                 </div>
               </div>
@@ -221,7 +333,12 @@ export default function Home() {
                 Studi Informatika)
               </p>
               <p className="text-white-50">
-                <i className="bi bi-clock category-time"></i>&emsp;2020 - 2024
+                <i
+                  className="bi bi-clock-fill category-time"
+                  data-bs-toggle="tooltip"
+                  title="Education Time"
+                ></i>
+                &emsp;2020 - 2024
               </p>
             </div>
           </div>
@@ -267,7 +384,12 @@ export default function Home() {
                 &emsp;Ilmu Pengetahuan Sosial
               </p>
               <p className="text-white-50">
-                <i className="bi bi-clock category-time"></i>&emsp;2017 - 2020
+                <i
+                  className="bi bi-clock-fill category-time"
+                  data-bs-toggle="tooltip"
+                  title="Education Time"
+                ></i>
+                &emsp;2017 - 2020
               </p>
             </div>
           </div>
@@ -305,7 +427,12 @@ export default function Home() {
                 </a>
               </p>
               <p className="text-white-50">
-                <i className="bi bi-clock category-time"></i>&emsp;2014 - 2017
+                <i
+                  className="bi bi-clock-fill category-time"
+                  data-bs-toggle="tooltip"
+                  title="Education Time"
+                ></i>
+                &emsp;2014 - 2017
               </p>
             </div>
           </div>
@@ -338,7 +465,12 @@ export default function Home() {
                 </a>
               </p>
               <p className="text-white-50">
-                <i className="bi bi-clock category-time"></i>&emsp;2008 - 2014
+                <i
+                  className="bi bi-clock-fill category-time"
+                  data-bs-toggle="tooltip"
+                  title="Education Time"
+                ></i>
+                &emsp;2008 - 2014
               </p>
             </div>
           </div>
@@ -348,173 +480,7 @@ export default function Home() {
               &#128293;&ensp;Volunteering Experiences
             </h4>
             <br />
-            <p className="mb-1">
-              <i
-                className="bi bi-bookmarks-fill"
-                data-bs-toggle="tooltip"
-                title="Event Name"
-              ></i>
-              &emsp;
-              <a
-                href="https://sites.google.com/ciputra.ac.id/ct-for-educators/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <strong>
-                  Best Practices on Computational Thinking for Future Educators
-                  Workshop
-                </strong>
-              </a>
-            </p>
-            <ul>
-              <li className="list-unstyled">
-                <p className="mb-1">
-                  <i
-                    className="bi bi-info-circle-fill"
-                    data-bs-toggle="tooltip"
-                    title="Description"
-                  ></i>
-                  &emsp;Best Practices on Computational Thinking for Future
-                  Educators Workshop is a special program designed by
-                  Universitas Ciputra Techno Center for Teachers to train
-                  Computational Thinking successfully. This program empowers
-                  Educators to become Experts in embedding Computational
-                  Thinking in their teaching strategies. Workshop topics include
-                  Introduction to Computational Thinking, Computational Thinking
-                  in Class &amp; Developing Computational Thinking Tasks, and
-                  Computational Thinking Tools. At this event, I am responsible
-                  as a member of the Module (Presentation Slides) Division
-                  through designing the layout of the content and making
-                  illustrations of the material that has been prepared by the
-                  Trainer.
-                </p>
-              </li>
-              <li className="list-unstyled">
-                <p className="mb-1">
-                  <i
-                    className="bi bi-diagram-3-fill"
-                    data-bs-toggle="tooltip"
-                    title="Position"
-                  ></i>
-                  &emsp;Member of Module (Presentation Slides) Division (Ad Hoc
-                  Committee)
-                </p>
-              </li>
-              <li className="list-unstyled">
-                <p className="text-white-50">
-                  <i className="bi bi-clock category-time"></i>&emsp;Jul 2022
-                </p>
-              </li>
-            </ul>
-
-            <p className="mb-1">
-              <i
-                className="bi bi-bookmarks-fill"
-                data-bs-toggle="tooltip"
-                title="Event Name"
-              ></i>
-              &emsp;
-              <a
-                href="https://informatika.uc.ac.id/id/2022/04/technopreneurship-workshop-2022-day-1/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <strong>Technopreneurship Workshop</strong>
-              </a>
-            </p>
-            <ul>
-              <li className="list-unstyled">
-                <p className="mb-1">
-                  <i
-                    className="bi bi-info-circle-fill"
-                    data-bs-toggle="tooltip"
-                    title="Description"
-                  ></i>
-                  &emsp;Technopreneurship Workshop is a Department Camp for
-                  Informatics Students at Universitas Ciputra Surabaya, where
-                  there are activities in the form of workshops and webinars. It
-                  was held with the aim of honing the Technopreneurship skills
-                  of students through designing business ideas engaged in
-                  technology using the Business Model Canvas, Pitching Deck, and
-                  User Interface Design Prototype to get investment from
-                  investors. At this event, I am responsible as a Member of IT -
-                  Inventory Division for Configure the Discord's Community
-                  Server which is used for Bonding sessions between Mentors with
-                  their Mentees and Prepare the needs of Mini Games equipment.
-                </p>
-              </li>
-              <li className="list-unstyled">
-                <p className="mb-1">
-                  <i
-                    className="bi bi-diagram-3-fill"
-                    data-bs-toggle="tooltip"
-                    title="Position"
-                  ></i>
-                  &emsp;Member of IT - Inventory Division (Ad Hoc Committee)
-                </p>
-              </li>
-              <li className="list-unstyled">
-                <p className="text-white-50">
-                  <i className="bi bi-clock category-time"></i>&emsp;Apr 2022
-                </p>
-              </li>
-            </ul>
-
-            <p className="mb-1">
-              <i
-                className="bi bi-bookmarks-fill"
-                data-bs-toggle="tooltip"
-                title="Event Name"
-              ></i>
-              &emsp;
-              <a
-                href="https://nplc.uc.ac.id/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <strong>
-                  8<sup>th</sup> National Programming &amp; Logic Competition
-                </strong>
-              </a>
-            </p>
-            <ul>
-              <li className="list-unstyled">
-                <p className="mb-1">
-                  <i
-                    className="bi bi-info-circle-fill"
-                    data-bs-toggle="tooltip"
-                    title="Description"
-                  ></i>
-                  &emsp;National Programming &amp; Logic Competition is a yearly
-                  programming and logic competition for High School Students and
-                  equivalent organized by the Informatics Student Union at
-                  Universitas Ciputra Surabaya. It was held with the aim of
-                  honing correct logic and programming skills, strengthening
-                  teamwork, and fostering a competitive spirit among
-                  participants. At this event, I am responsible as a Member of
-                  Marketing Division for Inviting High School Students and
-                  equivalent to register as participants in the competition and
-                  Contacting Young Influencers to participate in promoting the
-                  competition through social media.
-                </p>
-              </li>
-              <li className="list-unstyled">
-                <p className="mb-1">
-                  <i
-                    className="bi bi-diagram-3-fill"
-                    data-bs-toggle="tooltip"
-                    title="Position"
-                  ></i>
-                  &emsp;Member of Marketing Division (Ad Hoc Committee)
-                </p>
-              </li>
-              <li className="list-unstyled">
-                <p className="text-white-50">
-                  <i className="bi bi-clock category-time"></i>&emsp;Nov 2020 -
-                  Jan 2021
-                </p>
-              </li>
-            </ul>
+            {volunteeringExperiences}
           </section>
 
           <div className="container mb-5" data-aos="fade-up">
@@ -714,11 +680,11 @@ export default function Home() {
                 aria-labelledby="staticBackdropLabel"
                 aria-hidden="true"
               >
-                <div className="modal-dialog modal-dialog-centered">
+                <div className="modal-dialog modal-xl modal-dialog-centered">
                   <div className="modal-content bg-dark">
                     <div className="modal-header text-center">
                       <h5 className="modal-title" id="staticBackdropLabel">
-                        &#128248;&ensp;Collection of my shoots
+                        &#128248;&ensp;Collection of My Shoots
                       </h5>
                       <button
                         type="button"
@@ -730,19 +696,10 @@ export default function Home() {
                     <div className="modal-body">
                       <div class="shoots d-flex justify-content-between align-items-center h-100">
                         <div
-                          class="picture x mandatory-scroll-snapping d-flex overflow-auto"
+                          class="picture gallery mandatory-scroll-snapping d-flex overflow-auto"
                           dir="ltr"
                         >
-                          {Images.map((item) => (
-                            <div key={item.id}>
-                              <img
-                                src={item.image}
-                                className="photo rounded d-block mx-auto shadow-sm"
-                                loading="lazy"
-                                alt="Photography"
-                              />
-                            </div>
-                          ))}
+                          {collections}
                         </div>
                       </div>
                     </div>

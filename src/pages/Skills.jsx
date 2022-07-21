@@ -26,7 +26,10 @@ export default function Skills() {
             &#128220;&ensp;Certifications
           </h4>
           <br />
-          <table className="table table-responsive table-dark table-striped table-hover">
+          <table
+            className="table table-responsive table-dark table-striped table-hover"
+            id="certificationList"
+          >
             <thead>
               <tr>
                 <th scope="col">Subject</th>
@@ -35,7 +38,7 @@ export default function Skills() {
               </tr>
             </thead>
             <tbody>
-            <tr>
+              <tr>
                 <td>
                   <a
                     href="https://app.testdome.com/cert/46085a635bee467f8eb95925916f9250"
@@ -538,8 +541,12 @@ export default function Skills() {
                     aria-controls="collapseOne"
                   >
                     <h5>
-                      <i className="bi bi-code-slash"></i>&emsp;Information of
-                      Technology
+                      <i
+                        className="bi bi-code-slash"
+                        data-bs-toggle="tooltip"
+                        title="Category"
+                      ></i>
+                      &emsp;Information of Technology
                     </h5>
                   </button>
                 </h2>
@@ -551,7 +558,12 @@ export default function Skills() {
                 >
                   <div className="accordion-body">
                     <div className="d-flex mb-3">
-                      <i className="bi bi-star-fill"></i>&emsp;
+                      <i
+                        className="bi bi-star-fill"
+                        data-bs-toggle="tooltip"
+                        title="Specialize"
+                      ></i>
+                      &emsp;
                       <strong>Frontend Development</strong>
                     </div>
                     <div className="row row-cols-1 row-cols-md-4 g-4">
@@ -736,7 +748,12 @@ export default function Skills() {
                       </div>
                     </div>
                     <div className="d-flex my-3">
-                      <i className="bi bi-star-fill"></i>&emsp;
+                      <i
+                        className="bi bi-star-fill"
+                        data-bs-toggle="tooltip"
+                        title="Specialize"
+                      ></i>
+                      &emsp;
                       <strong>Backend Development</strong>
                     </div>
                     <div className="row row-cols-1 row-cols-md-4 g-4">
@@ -989,7 +1006,12 @@ export default function Skills() {
                       </div>
                     </div>
                     <div className="d-flex my-3">
-                      <i className="bi bi-star-fill"></i>&emsp;
+                      <i
+                        className="bi bi-star-fill"
+                        data-bs-toggle="tooltip"
+                        title="Specialize"
+                      ></i>
+                      &emsp;
                       <strong>Others</strong>
                     </div>
                     <div className="row row-cols-1 row-cols-md-4 g-4">
@@ -1114,7 +1136,12 @@ export default function Skills() {
                     aria-controls="collapseThree"
                   >
                     <h5>
-                      <i className="bi bi-vector-pen"></i>&emsp;Visual Design
+                      <i
+                        className="bi bi-vector-pen"
+                        data-bs-toggle="tooltip"
+                        title="Category"
+                      ></i>
+                      &emsp;Visual Design
                     </h5>
                   </button>
                 </h2>
@@ -1351,7 +1378,12 @@ export default function Skills() {
                       aria-controls="collapseTwo"
                     >
                       <h5>
-                        <i className="bi bi-translate"></i>&emsp;Human Languages
+                        <i
+                          className="bi bi-translate"
+                          data-bs-toggle="tooltip"
+                          title="Category"
+                        ></i>
+                        &emsp;Human Languages
                       </h5>
                     </button>
                   </h2>
